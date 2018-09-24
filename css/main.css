@@ -3336,6 +3336,9 @@ header {
 .new-game .game-item {
   margin-bottom: 10px;
 }
+.action-container {
+  margin-bottom: 20px;
+}
 .action-container:hover .action:after {
   content: '';
   position: absolute;
@@ -3356,6 +3359,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 .action_black-text {
   color: #000000;
@@ -3364,10 +3368,36 @@ header {
   display: none;
 }
 .action:hover .action__block {
-  background: rgba(0, 0, 0, 0.85);
   color: white;
 }
-.action:hover .action__block:after {
+.action:hover .action__bg {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+.action__block {
+  position: relative;
+  padding: 20px;
+  z-index: 1;
+}
+.action__bg {
+  -webkit-transform: translateX(calc(-100% - 100px));
+  -ms-transform: translateX(calc(-100% - 100px));
+  transform: translateX(calc(-100% - 100px));
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: -1;
+}
+.action__bg:after {
   position: absolute;
   right: -100px;
   top: 0;
@@ -3378,10 +3408,6 @@ header {
   border-bottom: 90px solid rgba(0, 0, 0, 0.85);
   border-left: 50px solid rgba(0, 0, 0, 0.85);
   border-right: 50px solid transparent;
-}
-.action__block {
-  position: relative;
-  padding: 20px;
 }
 .action__title {
   font-weight: bold;
