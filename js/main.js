@@ -22,6 +22,7 @@ $(document).ready(function () {
 //		nav:true,
 	})
 	
+	
 	$('.header-banner__slider').addClass('owl-carousel').addClass('owl-theme').owlCarousel({
 		items: 1,
 		rtl: false,
@@ -30,4 +31,14 @@ $(document).ready(function () {
 	})
 	
 	
+	
+	$('.achievement').addClass('owl-carousel');
+	$('.achievement').owlCarousel({
+		stagePadding: 10,
+		items: 5,
+		margin: 20,
+		loop: true,
+//		rtl: false,
+		nav:true,
+	})
 })

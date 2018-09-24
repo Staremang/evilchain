@@ -1,0 +1,66 @@
+.vip-banner {
+	height: 450px;
+	.bg-img("vip-banner.jpg");
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 20px;
+}
+.vip-description {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 15px 20px;
+	height: 100%;
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	&__text {
+		font-size: 14px;
+	}
+}
+
+
+.vip-info {
+	margin-bottom: 14px;
+    margin-top: 37px;
+	&_bg {
+		background: rgba(0, 0, 0, 0.5);
+		padding: 15px 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	&__title {
+		color: #FFD53A;
+		font-weight: bold;
+		font-size: 14px;
+		margin-top: 6px;
+	}
+	&__text {
+		font-size: 14px;
+		color: white;
+		margin-bottom: 0;
+	}
+}
+.vip-price-item {
+	
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	.bg-img("vip-price-bg.png");
+	&__title {
+		font-weight: bold;
+		font-size: 24px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 16px;
+	}
+	&__img {
+		height: 300px;
+		.bg-img("vip-price-img.png");
+		position: relative;
+	}
+	&__badge {
+		position: absolute;
+		top: 0;
+		right: -1px;
+	}
+}
