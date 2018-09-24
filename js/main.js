@@ -21,4 +21,13 @@ $(document).ready(function () {
 		loop: true,
 //		nav:true,
 	})
+	
+	$('.header-banner__slider').addClass('owl-carousel').addClass('owl-theme').owlCarousel({
+		items: 1,
+		rtl: false,
+		loop: true,
+//		nav:true,
+	})
+	
+	
 })

@@ -552,13 +552,13 @@ template {
   margin-top: 10px;
 }
 .owl-theme .owl-dots {
-  text-align: center;
   -webkit-tap-highlight-color: transparent;
-}
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .owl-theme .owl-dots .owl-dot span {
   width: 25px;
@@ -2188,12 +2188,24 @@ body {
   color: white;
   background-image: url("../img/bg.png");
   background-color: black;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body.modal-open {
+  overflow: hidden;
 }
 img,
 video,
 audio {
   max-width: 100%;
   height: auto;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.orange {
+  color: #FFD53A;
 }
 .wrapper {
   display: -webkit-box;
@@ -2215,6 +2227,28 @@ header {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+}
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+.i-arrow-up {
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M14.9412%2020V10.0592H20L10%200L0%2010.0592H5.05882V20H14.9412Z%22%20fill%3D%22%2300FF44%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-top: 3px;
+}
+.i-arrow-down {
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M14.9412%200V10H20L10%2020L0%2010H5.05882V0H14.9412Z%22%20fill%3D%22%23D30131%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-top: 3px;
 }
 .btn-global {
   font-family: "Roboto", sans-serif;
@@ -2303,8 +2337,99 @@ header {
 .btn-global.active {
   background: #D30131;
 }
+.registration {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+  overflow: auto;
+  padding-top: 97px;
+  padding-bottom: 100px;
+}
+.registration.show .registration__container {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.registration__container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  max-width: 1176px;
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.registration__title {
+  font-size: 18px;
+  color: #FFD53A;
+  margin-bottom: 17px;
+}
+.registration__input-group {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.registration__label {
+  display: block;
+  margin-bottom: 3px;
+}
+.registration__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 0;
+  padding: 10px 20px;
+}
+.registration__info {
+  background: black;
+  padding: 17px 16px;
+  margin-top: 20px;
+  margin-bottom: 17px;
+  font-size: 18px;
+  line-height: normal;
+}
+.registration__text {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0;
+}
+.registration__img {
+  height: 1000px;
+  background-image: url("../img/reg-img.png");
+  background-size: cover;
+  background-position: center;
+}
+.registration__checkbox-label {
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  margin: 13px 0;
+}
+.registration__checkbox-label a {
+  text-decoration: none;
+}
+.registration__btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
 .header-menu {
   background: rgba(0, 0, 0, 0.75);
+  z-index: 20;
+  position: relative;
 }
 .header-menu__container {
   height: 70px;
@@ -2320,7 +2445,7 @@ header {
   height: 100%;
   width: 190px;
   position: absolute;
-  left: 0;
+  left: 15px;
   top: 0;
   background-image: url("../img/logo.png");
   background-position: center;
@@ -2335,25 +2460,38 @@ header {
   position: absolute;
   height: 40px;
   top: 15px;
-  right: 0;
+  right: 15px;
 }
-.header-banner__container {
+.header-menu__block_fix-width {
+  width: 362px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/*
+ * Баннер в шапке
+ */
+.header-banner {
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 100%;
-  max-width: 1176px;
 }
 .header-banner__item {
-  background-image: url("../img/banner.png");
+  background-size: cover;
+  background-position: center;
   height: 450px;
 }
+.header-banner__slider .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+/*
+ * Блок с вкладками поверх баннера
+ */
 .top-players {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: calc(50% - 1146px/2);
+  z-index: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 24, 37, 0.5)), to(rgba(7, 5, 15, 0.5)));
   background: -webkit-linear-gradient(top, rgba(27, 24, 37, 0.5) 0%, rgba(7, 5, 15, 0.5) 100%);
   background: -o-linear-gradient(top, rgba(27, 24, 37, 0.5) 0%, rgba(7, 5, 15, 0.5) 100%);
@@ -2387,6 +2525,8 @@ header {
   padding: 5px 10px;
   font-size: 14px;
   text-transform: uppercase;
+  color: white;
+  text-decoration: none;
 }
 .top-players__tab:not(.active) {
   background: #1D1A21;
@@ -2407,8 +2547,12 @@ header {
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
   margin-right: 10px;
 }
+.top-players__tournament {
+  padding: 10px 12px 17px 10px;
+}
 .top-players__content {
   height: 272px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2418,10 +2562,56 @@ header {
   flex-direction: column;
 }
 .top-players__players-list {
-  padding: 0 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  overflow: auto;
+  padding: 20px 10px;
+}
+.top-players .participants-list {
+  font-size: 14px;
+}
+.header-tournament {
+  position: relative;
+  margin-bottom: 10px;
+}
+.header-tournament__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 170px;
+  margin-left: auto;
+  height: 120px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header-tournament__title {
+  margin-bottom: 5px;
+}
+.header-tournament__info {
+  font-size: 12px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+.header-tournament__btn {
+  font-size: 13px;
+}
+.header-tournament__img {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .header-news {
   height: 60px;
@@ -2451,7 +2641,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: calc(50% - 573px);
+  padding-left: calc(50% - 1146px/2);
   background: -webkit-linear-gradient(340.49deg, #2C0E48 67.37%, #6A0C4E 83.41%, #D30131 100%);
   background: -o-linear-gradient(340.49deg, #2C0E48 67.37%, #6A0C4E 83.41%, #D30131 100%);
   background: linear-gradient(109.51deg, #2C0E48 67.37%, #6A0C4E 83.41%, #D30131 100%);
@@ -2551,25 +2741,82 @@ header {
   background-size: contain;
   background-position: center;
 }
-.content-header {
+/*
+ * Сортировка
+ */
+.header-sort {
   background: #1D1A21;
   height: 40px;
   margin-bottom: 20px;
+  position: relative;
 }
-.content-header__left-block {
+.header-sort__left-block {
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
 }
-.content-header__right-block {
+.header-sort__right-block {
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+}
+.header-sort__btn {
+  font-family: "Roboto", sans-serif;
+  border-radius: 0;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  text-align: center;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+  color: white;
+  padding: 0;
+  height: 40px;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.header-sort__btn.active .header-sort__btn-icon,
+.header-sort__btn:hover .header-sort__btn-icon {
+  fill: #D30131;
+}
+.header-sort__btn-icon {
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
+  fill: white;
+  margin-right: 10px;
+}
+.header-sort__search-btn {
+  background: none;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
+  height: 100%;
+  padding: 5px;
+  margin-left: 15px;
 }
 .vip-info {
   margin-bottom: 14px;
+  margin-top: 37px;
 }
 .vip-info_bg {
   background: rgba(0, 0, 0, 0.5);
@@ -2611,12 +2858,12 @@ header {
 }
 .participants-list {
   width: 100%;
+  font-size: 18px;
 }
 .participants-list td {
   padding: 0;
 }
 .participants-list__item {
-  font-size: 18px;
   height: 36px;
 }
 .participants-list__num {
@@ -2624,7 +2871,6 @@ header {
   height: 30px;
   text-align: center;
   position: relative;
-  padding-top: 4px;
 }
 .participants-list__num:before {
   content: '';
@@ -2660,6 +2906,7 @@ header {
 .participants-list__num > span {
   z-index: 1;
   font-size: 14px;
+  line-height: 30px;
   color: black;
   font-weight: bold;
   position: relative;
