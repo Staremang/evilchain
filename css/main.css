@@ -2381,6 +2381,33 @@ header {
 .btn-global.active {
   background: #D30131;
 }
+.checkbox {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  -webkit-box-shadow: 0 0 0 1px #B2B3B3;
+  box-shadow: 0 0 0 1px #B2B3B3;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: top;
+}
+.checkbox:checked:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #D30131;
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
 /*
  * Всплывающее окно регистрации 
  */
@@ -3581,6 +3608,9 @@ header {
   top: 0;
   right: -1px;
 }
+/*
+ * Оформление профиля
+ */
 .profile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3652,6 +3682,9 @@ header {
 .profile__link > svg {
   position: relative;
 }
+/*
+ * Информация о пользователе
+ */
 .user {
   text-align: center;
   width: 200px;
@@ -3878,6 +3911,9 @@ header {
   font-size: 10px;
   line-height: 20px;
 }
+/*
+ * Баланс счета
+ */
 .balance {
   text-align: center;
   min-height: 580px;
@@ -3931,6 +3967,9 @@ header {
 .balance__title {
   font-size: 18px;
 }
+/*
+ * Бонусы
+ */
 .p-bonuses {
   margin-bottom: -30px;
 }
@@ -4044,4 +4083,139 @@ header {
 .p-bonuses-item__info_left {
   text-align: left;
   padding: 0;
+}
+/*
+ * Почта
+ */
+.p-mail {
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-mail__btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.p-mail__checkbox-block {
+  margin-right: 20px;
+}
+.mail-table {
+  width: 100%;
+  border-spacing: 0;
+  font-size: 18px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#1D1A21));
+  background: -webkit-linear-gradient(bottom, #000000 0%, #1D1A21 100%);
+  background: -o-linear-gradient(bottom, #000000 0%, #1D1A21 100%);
+  background: linear-gradient(0deg, #000000 0%, #1D1A21 100%);
+}
+.mail-table_view {
+  background: #8B8BA3;
+  color: black;
+  margin-top: 20px;
+}
+.mail-table_view .mail-table__row:hover {
+  background: white;
+}
+.mail-table_view .mail-table__icon {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M21.5961%2010.0769L19.9961%209L18.2362%2010.0769L8.63672%2016.5384V16.6922L18.2362%2023.1537L19.9961%2022.0768L21.5961%2023.1537L31.3556%2016.6922V16.5384L21.5961%2010.0769Z%22%20fill%3D%22%234B4444%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M22.2422%2023.7691L32.0017%2030.3844V17.3076L22.2422%2023.7691Z%22%20fill%3D%22%234B4444%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M8%2017.3076V30.3844L17.5995%2023.7691L8%2017.3076Z%22%20fill%3D%22%234B4444%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M21.5961%2024.3844L19.9961%2023.3075L18.2362%2024.3844L8.63672%2030.9997H11.9965H27.9957H31.3556L21.5961%2024.3844Z%22%20fill%3D%22%234B4444%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.mail-table__header {
+  height: 50px;
+  text-align: right;
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 25px;
+  text-decoration: underline;
+  color: #FFD53A;
+}
+.mail-table__row:hover {
+  background: #8B8BA3;
+}
+.mail-table__row.active {
+  background: white;
+  color: black;
+}
+.mail-table__row.active .mail-table__collapse {
+  display: block;
+}
+.mail-table__row.active .mail-table__username {
+  text-decoration: underline;
+}
+.mail-table__info {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.mail-table__checkbox-block,
+.mail-table__icon-block {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 40px;
+  flex: 0 0 40px;
+  max-width: 40px;
+  text-align: center;
+}
+.mail-table__icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M12.0774%2011H28.0734C29.7985%2011%2031.2099%2012.099%2031.8372%2013.5119L20.0754%2018.8497L8.31365%2013.5119C8.94094%2012.099%2010.5092%2011%2012.0774%2011ZM32.3077%2015.3959V25.6005C32.3077%2027.9554%2030.4258%2029.8394%2028.0734%2029.8394H12.0774C9.88189%2029.8394%208%2027.9554%208%2025.6005V15.3959L20.0754%2021.0477L32.3077%2015.3959Z%22%20fill%3D%22%23FFD53A%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-size: contain;
+  background-position: center;
+}
+.mail-table__username {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 170px;
+  flex: 0 0 170px;
+  max-width: 170px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.mail-table__theme {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 600px;
+  flex: 0 0 600px;
+  max-width: 600px;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.mail-table__date {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
+  max-width: 100px;
+  text-align: right;
+  padding-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.mail-table__collapse {
+  padding-left: 100px;
+  padding-bottom: 20px;
+  display: none;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.mail-table__collapse p {
+  margin: 0;
 }

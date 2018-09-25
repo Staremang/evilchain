@@ -1,5 +1,11 @@
 $(document).ready(function () {
 	console.log("v 0.1");
+	$('.mail-table__info').click(function (e) {
+		if (e.target.tagName == "INPUT")
+			return;
+		
+		$(this).parent().toggleClass('active');
+	})
 	
 	$('.tournament__slider').addClass('owl-carousel');
 	$('.tournament__slider').addClass('owl-theme');

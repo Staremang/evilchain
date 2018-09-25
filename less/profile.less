@@ -1,3 +1,6 @@
+/*
+ * Оформление профиля
+ */
 .profile {
 	display: flex;
 	margin-bottom: 31px;
@@ -70,6 +73,11 @@
 
 
 
+
+
+/*
+ * Информация о пользователе
+ */
 .user {
 	text-align: center;
 	width: 200px;
@@ -296,6 +304,17 @@
 
 
 
+
+
+
+
+
+
+
+
+/*
+ * Баланс счета
+ */
 .balance {
 	text-align: center;
 	min-height: 580px;
@@ -336,6 +355,17 @@
 	}
 }
 
+
+
+
+
+
+
+
+
+/*
+ * Бонусы
+ */
 .p-bonuses {
 	margin-bottom: -30px;
 	&__title {
@@ -448,6 +478,137 @@
 		&_left {
 			text-align: left;
 			padding: 0;
+		}
+	}
+}
+
+
+
+
+
+
+/*
+ * Почта
+ */
+.p-mail {
+	
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	&__btn-block {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-top: 10px;
+	}
+	&__checkbox-block {
+		margin-right: 20px;
+	}
+}
+.mail-table {
+	// 950
+	// 40 40 170 600 100
+	width: 100%;
+	border-spacing: 0;
+	font-size: 18px;
+	background: linear-gradient(0deg, #000000 0%, #1D1A21 100%);
+	&_view {
+		background: #8B8BA3;
+		color: black;
+		margin-top: 20px;
+		
+		.mail-table__row {
+			&:hover {
+				background: white;
+			}
+		}
+		.mail-table__icon {
+			background-image: data-uri("../img/icons/mail-open.svg");
+		}
+	}
+	&__header {
+		height: 50px;
+		text-align: right;
+		width: 100%;
+		padding-top: 20px;
+		padding-right: 25px;
+		
+		text-decoration: underline;
+		color: #FFD53A;
+	}
+	&__row {
+		&:hover {
+			background: #8B8BA3;
+		}
+		&.active {
+			background: white;
+			color: black;
+			.mail-table__collapse {
+				display: block;
+			}
+			.mail-table__username {
+				text-decoration: underline;
+			}
+		}
+	}
+	&__info {
+		height: 40px;
+		display: flex;
+		align-items: center;
+//		justify-content: space-between;
+		cursor: pointer;
+	}
+	&__checkbox-block, &__icon-block {
+		flex: 0 0 40px;
+		max-width: 40px;
+		text-align: center;
+	}
+	&__icon {
+		width: 40px;
+		height: 40px;
+		display: block;
+		background-image: data-uri("../img/icons/mail.svg");
+		background-size: contain;
+		background-position: center;
+	}
+	&__username {
+		flex: 0 0 170px;
+		max-width: 170px;
+		padding-left: 20px;
+		
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		
+	}
+	&__theme {
+		flex: 0 0 600px;
+		max-width: 600px;
+		padding-left: 20px;
+		
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	&__date {
+		flex: 0 0 100px;
+		max-width: 100px;
+		text-align: right;
+		padding-right: 20px;
+		
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	&__collapse {
+		padding-left: 40px+40px+20px;
+		padding-bottom: 20px;
+		display: none;
+		font-size: 14px;
+		text-decoration: underline;
+		p {
+			margin: 0;
 		}
 	}
 }
