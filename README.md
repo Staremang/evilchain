@@ -5,4 +5,6 @@
 - VIP: https://staremang.github.io/evilchain/vip.html (100%)
 
 Профиль
-- Информация профиля: https://staremang.github.io/evilchain/profile-info.html (50%)
+- Профиль > Информация: https://staremang.github.io/evilchain/profile-info.html (100%)
+- Профиль > Кошелек: https://staremang.github.io/evilchain/profile-balance.html (100%)
+- Профиль > Бонусы: https://staremang.github.io/evilchain/profile-bonuses.html (99%)

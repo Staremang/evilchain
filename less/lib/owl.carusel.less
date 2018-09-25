@@ -160,7 +160,7 @@
 		text-align: center;
 		-webkit-tap-highlight-color: transparent;
 
-		[class*='owl-'] {
+		button[class*='owl-'] {
 			color: @nav-color;
 			font-size: @nav-font-size;
 			margin: @nav-margin;
@@ -176,7 +176,7 @@
 				text-decoration: none;
 			}
 		}
-		.disabled {
+		&.disabled {
 			opacity: @nav-disabled-opacity;
 			cursor: default;
 		}
@@ -218,31 +218,45 @@
 }
 
 .profile-theme {
+	max-width: 930px;
+	margin-left: auto;
+	margin-right: auto;
 	
-	// Styling Next and Prev buttons
 	.owl-nav {
-		margin-top: 10px;
-		text-align: center;
+		position: absolute;
+		height: 0;
+		top: 70px;
+		left: 0;
+		right: 0;
 		-webkit-tap-highlight-color: transparent;
 
-		[class*='owl-'] {
-			color: @nav-color;
-			font-size: @nav-font-size;
-			margin: @nav-margin;
-			padding: @nav-padding;
-			background: @nav-background;
-			display: inline-block;
+		button[class*='owl-'] {
+			position: absolute;
+			width: 10px;
+			height: 30px;
+			top: 0;
+			
+			display: block;
 			cursor: pointer;
-			border-radius: 3px;
+			outline: none;
 
-			&:hover {
-				background: @nav-background-hover;
-				color:@nav-color-hover;
-				text-decoration: none;
-			}
+//			&:hover {
+//				background: @nav-background-hover;
+//				color:@nav-color-hover;
+//				text-decoration: none;
+//			}
 		}
-		.disabled {
-			opacity: @nav-disabled-opacity;
+		button.owl-prev {
+			background: data-uri("../img/icons/arrow-left.svg");
+			left: -20px;
+		}
+		button.owl-next {
+			background: data-uri("../img/icons/arrow-right.svg"); 
+			right: -20px;
+		}
+		&.disabled {
+			display: block;
+			opacity: .2;
 			cursor: default;
 		}
 	}

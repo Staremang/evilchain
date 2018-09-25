@@ -228,12 +228,12 @@
 			<div class="container">
 				<div class="profile">
 					<div class="profile__menu">
-						<a href="#" class="profile__link profile__link_left active">
+						<a href="#" class="profile__link profile__link_left">
 							<svg width="41" height="40" viewBox="0 0 41 40" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M4.05736 1.53369C4.76718 6.84343 9.26272 11.4452 12.8118 11.4452C14.1132 10.6192 16.9525 10.2653 19.9101 10.1473H20.0284H20.265C23.2226 10.2653 25.9436 10.6192 27.3632 11.4452C30.794 11.4452 35.2896 6.84343 35.9994 1.53369C37.3007 7.78738 36.236 12.0352 33.7516 15.929C33.6333 19.9408 33.3967 22.1827 30.9123 24.5425C31.2672 25.8405 31.5038 30.4422 27.5998 31.3862C25.9436 35.28 23.5775 37.7579 20.3833 38.4658L20.0284 38.3479L19.7918 38.4658C16.4793 37.7579 14.1132 35.28 12.5752 31.3862C8.5529 30.4422 8.78951 25.8405 9.26272 24.5425C6.66004 22.1827 6.42343 19.9408 6.42343 15.929C3.82075 12.0352 2.75602 7.78738 4.05736 1.53369Z"/>
 							</svg>
 						</a>
-						<a href="#" class="profile__link profile__link_left">
+						<a href="#" class="profile__link profile__link_left active">
 							<svg width="41" height="40" viewBox="0 0 41 40" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M30.325 15.5754C30.4433 15.6934 30.4433 15.8114 30.5616 15.9293C30.2067 20.1771 33.2826 23.363 34.584 26.9028C35.5304 29.6167 33.046 34.9264 29.142 34.9264C23.1085 34.9264 16.9567 34.9264 10.9232 34.9264C7.01918 34.9264 4.65311 29.6167 5.48123 26.9028C6.54597 23.363 9.26696 20.1771 9.03035 15.9293V15.8114C9.26696 15.9293 9.38526 15.9293 9.62187 15.9293H10.3317C10.8049 15.9293 11.9879 15.5754 11.9879 15.1034V12.9795H27.2491V15.1034C27.2491 15.5754 28.4322 15.9293 28.9054 15.9293H29.6152C29.9701 15.9293 30.2067 15.8114 30.325 15.5754Z"/>
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M9.62221 9.67529H10.332H28.9057H29.6156C30.0888 9.67529 30.562 10.1473 30.562 10.6192V11.3272V14.5131C30.562 14.985 30.0888 15.457 29.6156 15.457H28.9057C28.4325 15.457 28.0776 14.985 28.0776 14.5131V12.1532H11.1602V14.5131C11.1602 14.985 10.8052 15.457 10.332 15.457H9.62221C9.149 15.457 8.67578 14.985 8.67578 14.5131V11.3272V10.6192C8.67578 10.1473 9.149 9.67529 9.62221 9.67529Z"/>
@@ -258,63 +258,31 @@
 						</a>
 					</div>
 					<div class="profile__content">
-						<div class="profile-info">
-							<div class="user">
-								<a href="#" class="user__avatar">
-									<!-- Ссылка на аватар пользователя -->
-									<img src="#" alt="" class="user__photo">
-									<div class="user__hover-overlay">
-										<svg width="71" height="64" viewBox="0 0 71 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.63571 8.9539H18.2571L20.2857 3.56121C20.9957 1.72973 22.2129 0 24.4443 0H46.6571C48.8886 0 50.0043 1.72973 50.7143 3.56121L52.8443 8.9539H61.4657C66.74 8.9539 71 13.2273 71 18.5183V54.4356C71 59.7266 66.74 64 61.4657 64H9.63571C4.36143 64 0 59.7266 0 54.4356V18.5183C0 13.2273 4.36143 8.9539 9.63571 8.9539ZM57.3071 14.9571C59.9443 14.9571 62.0743 17.0938 62.0743 19.7393C62.0743 22.3847 59.9443 24.5215 57.3071 24.5215C54.67 24.5215 52.54 22.3847 52.54 19.7393C52.54 17.0938 54.67 14.9571 57.3071 14.9571ZM32.9643 47.0079V39.1733H25.0529V33.7806H32.9643V25.9459H38.1371V33.7806H46.0486V39.1733H38.1371V47.0079H32.9643ZM35.5 17.9078C45.7443 17.9078 54.0614 26.2512 54.0614 36.5278C54.0614 46.7027 45.7443 55.0461 35.5 55.0461C25.3571 55.0461 17.04 46.7027 17.04 36.5278C17.04 26.2512 25.3571 17.9078 35.5 17.9078Z" fill="white"/>
-										</svg>
+						<div class="balance">
+							<div class="balance__row">
+								<div class="balance__item">
+									<div class="balance__img-container">
+										<img src="img/coin-white.png" alt="Баланс">
 									</div>
-									<div class="user__photo-overlay"></div>
-									<div class="user__level">235</div>
-								</a>
-								<div class="user__name">Имя Пользователя</div>
-								<div class="user__vip-time">VIP  24:56:09</div>
-<!--								<a href="#" class="user__link">Купить VIP статус</a>-->
-							</div>
-							<div class="profile-info__container">
-								<div class="profile-bonuses">
-									<div class="profile-bonuses__item">
-										<div class="profile-bonuses__label">
-											<img src="img/bonus-1.svg" alt="Бонус">
-										</div>
-										<div class="profile-bonuses__time">02:25:00</div>
-									</div>
-									<div class="profile-bonuses__item">
-										<div class="profile-bonuses__label">
-											<img src="img/bonus-2.svg" alt="Бонус">
-										</div>
-										<div class="profile-bonuses__time">02:25:00</div>
-									</div>
-									<div class="profile-bonuses__item">
-										<div class="profile-bonuses__label">
-											<img src="img/bonus-3.svg" alt="Бонус">
-										</div>
-										<div class="profile-bonuses__time">02:25:00</div>
-									</div>
-									<div class="profile-bonuses__item">
-										<div class="profile-bonuses__label">
-											<img src="img/bonus-4.svg" alt="Бонус">
-										</div>
-										<div class="profile-bonuses__time">02:25:00</div>
-									</div>
-									<div class="profile-bonuses__item">
-										<div class="profile-bonuses__label">
-											<img src="img/bonus-5.svg" alt="Бонус">
-										</div>
-										<div class="profile-bonuses__time">02:25:00</div>
-									</div>
-									<div class="profile-bonuses__item">
-										<div class="profile-bonuses__label">
-											<img src="img/bonus-6.svg" alt="Бонус">
-										</div>
-										<div class="profile-bonuses__time">02:25:00</div>
-									</div>
+									<div class="balance__val">200 589</div>
+									<div class="balance__name">За все время</div>
 								</div>
-								<div class="profile-info__balance">2 589</div>
+								<div class="balance__item balance__item_orange">
+									<div class="balance__img-container">
+										<img src="img/coin.png" alt="Баланс">
+									</div>
+									<div class="balance__val">200 589</div>
+									<div class="balance__name">Ваш  баланс</div>
+								</div>
+								<div class="balance__item">
+									<div class="balance__img-container">
+										<img src="img/coin-white.png" alt="Баланс">
+									</div>
+									<div class="balance__val">200 589</div>
+									<div class="balance__name">Последняя сумма</div>
+								</div>
+							</div>
+							<div class="balance__btn-block">
 								<button class="btn-global">
 									<i class="btn-global__icon">
 										<svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -328,238 +296,7 @@
 									<span>ПОПОЛНИТЬ <br>баланс</span>
 								</button>
 							</div>
-						</div>
-						
-						<div class="achievement profile-theme">
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-1.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-2.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-3.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>50 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 90%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">900 000/1 000 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-4.png)"></div>
-								<div class="achievement__title">Выиграть <br>что-нибудь</div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 0%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">0/5</div>
-							</div>
-							<div class="achievement__item active">
-								<div class="achievement__img" style="background-image: url(img/achievement-5.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>15 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress-full">ГОТОВО</div>
-								</div>
-								<div class="achievement__val">1000/1000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-6.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-7.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-8.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-9.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-10.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-11.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-12.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-13.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-14.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-15.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-16.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-17.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-18.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-19.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-20.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
-							<div class="achievement__item">
-								<div class="achievement__img" style="background-image: url(img/achievement-21.png)"></div>
-								<div class="achievement__title">Выиграть 1 000 <br>коинов </div>
-								<div class="achievement__subtitle">Награда <br>5 фриспинов</div>
-								<div class="achievement__progress-block">
-									<div class="achievement__progress">
-										<div class="achievement__progress-bar" style="width: 50%"></div>
-									</div>
-								</div>
-								<div class="achievement__val">500/1 000</div>
-							</div>
+							<div class="balance__title">Информация о пополнении счета.</div>
 						</div>
 					</div>
 					<div class="profile__menu">

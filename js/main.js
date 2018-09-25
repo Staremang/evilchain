@@ -7,7 +7,6 @@ $(document).ready(function () {
 		items: 3,
 		margin: 30,
 		loop: true,
-		rtl: false,
 //		nav:true,
 	})
 	
@@ -17,7 +16,6 @@ $(document).ready(function () {
 		stagePadding: 10,
 		items: 5,
 		margin: 20,
-		rtl: false,
 		loop: true,
 //		nav:true,
 	})
@@ -34,11 +32,25 @@ $(document).ready(function () {
 	
 	$('.achievement').addClass('owl-carousel');
 	$('.achievement').owlCarousel({
-		stagePadding: 10,
+		loop: true,
+//		stagePadding: 10,
 		items: 5,
 		margin: 20,
-		loop: true,
-//		rtl: false,
+		
 		nav:true,
+		navText: ['', ''],
+		dots: false
+	})
+	$('.p-bonuses__slider').addClass('owl-carousel');
+	$('.p-bonuses__slider').addClass('profile-theme');
+	$('.p-bonuses__slider').owlCarousel({
+		loop: true,
+//		stagePadding: 10,
+		items: 5,
+		margin: 20,
+		
+		nav:true,
+		navText: ['', ''],
+		dots: false
 	})
 })

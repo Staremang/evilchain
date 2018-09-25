@@ -128,6 +128,9 @@ footer, header {
 	color: white;
 	position: relative;
 	height: 40px;
+	width: 170px;
+	padding-left: $height + 5px;
+	padding-right: 5px;
 	
 	display: flex;
 	align-items: center;
@@ -159,6 +162,9 @@ footer, header {
 		width: auto;
 		padding-left: 40px+12;
 		padding-right: 12px;
+	}
+	&_block {
+		width: 100%;
 	}
 	&__icon {
 		position: absolute;
@@ -201,6 +207,10 @@ footer, header {
 
 
 
+
+/*
+ * Всплывающее окно регистрации 
+ */
 .registration {
 	position: fixed;
 //	position: absolute;
@@ -280,6 +290,12 @@ footer, header {
 	}
 }
 
+
+
+
+/*
+ * Шапка с кнопками
+ */
 .header-menu {
 	background: rgba(0, 0, 0, 0.75);
 	z-index: 20;
@@ -306,6 +322,7 @@ footer, header {
 	}
 	&__block {
 		display: flex;
+		align-items: center;
 		position: absolute;
 		height: 40px;
 		top: 15px;
@@ -314,6 +331,79 @@ footer, header {
 			width: 362px;
 			justify-content: space-between;
 		}
+	}
+	
+	/* Пользователь залогинен */
+	
+	&__bonuses {
+		margin-right: 20px;
+		height: 40px;
+		width: 30px;
+		.bg-img("action-label-bg.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		text-align: center;
+		padding-top: 6px;
+		
+		img {
+			width: 19px;
+			height: 19px;
+		}
+	}
+	&__balance {
+		font-size: 18px;
+		position: relative;
+		margin-right: 20px;
+		padding-left: 36px;
+		&:before {
+			content: '';
+			.bg-img("coin.png");
+			background-size: contain;
+			width: 25px;
+			height: 25px;
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: -1px;
+		}
+	}
+	&__avatar {
+		position: relative;
+		width: 39px;
+		height: 40px;
+		margin-right: 20px;
+		&:after {
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			.bg-img("header-avatar-overlay.svg");
+		}
+		&_notice {
+			&:before {
+				content: '';
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				background: #FF002B;
+				border-radius: 50%;
+				top: 0;
+				right: -10px;
+			}
+		}
+	}
+	&__avatar-photo {
+		height: 35px;
+		width: 35px;
+		position: absolute;
+		bottom: 1px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		
+//		background: red;
+		border-radius: 50%;
 	}
 }
 
