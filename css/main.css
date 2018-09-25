@@ -2865,22 +2865,7 @@ header {
   font-size: 18px;
   margin-bottom: 76px;
 }
-.terms-of-use__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-}
 .terms-of-use__item {
-  margin-left: 15px;
-  margin-right: 15px;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 calc(33.333333% - 30px);
-  flex: 0 0 calc(33.333333% - 30px);
-  max-width: calc(33.333333% - 30px);
   border: 1px solid white;
   height: 70px;
   margin-bottom: 30px;
@@ -4218,4 +4203,15 @@ header {
 }
 .mail-table__collapse p {
   margin: 0;
+}
+/*
+ * Блокировка
+ */
+.p-blocking__text {
+  margin-top: 0;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.p-blocking__text b {
+  font-weight: bold;
 }
