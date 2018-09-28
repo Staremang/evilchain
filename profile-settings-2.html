@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Почта - Evilchain</title>
+	<title>Настройки - Evilchain</title>
 	
 	
     <link rel="stylesheet" href="css/main.min.css">
@@ -259,71 +259,117 @@
 					</div>
 					<div class="profile__content">
 						<div class="profile__container">
-							<div class="mail-table">
-								<div class="mail-table__header">У Вас есть 3 новых сообщения</div>
-								<div class="mail-table__row">
-									<div class="mail-table__info">
-										<span class="mail-table__checkbox-block"><input type="checkbox" class="checkbox"></span>
-										<span class="mail-table__icon-block"><i class="mail-table__icon"></i></span>
-										<span class="mail-table__username">NBo777ptYoung</span>
-										<span class="mail-table__theme">Бита added you to the card Лобби казино on Казино Reply via email</span>
-										<span class="mail-table__date">14 июл.</span>
+							<div class="row">
+								<div class="form col-6">
+									<div class="form__title form__title_underline">Сменить пароль</div>
+									<form class="form__group">
+										<div class="form__input-group">
+											<label for="settings-1" class="form__label">Введите Ваш e-mail:</label>
+											<span class="form__input form-control">
+												<input id="settings-1" type="email" name="email" class="form-control__input" required>
+											</span>
+										</div>
+										<div class="form__btn-block">
+											<button type="submit" class="btn-global">
+												<i class="btn-global__icon">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.51515 -0.000244141V7.41617H0V12.5833H7.51515V19.9998H12.4848V12.5833H20V7.41617H12.4848V-0.000244141H7.51515Z" fill="#FEFEFE"></path></svg>
+												</i>
+												<span>ПОЛУЧИТЬ КОД</span>
+											</button>
+										</div>
+									</form>
+									<div class="form__group">
+										<div class="form__input-group">
+											<label for="settings-2" class="form__label">Введите код:</label>
+											<span class="form__input form-control">
+												<input id="settings-2" type="text" name="code" class="form-control__input" disabled>
+											</span>
+										</div>
+										<div class="form__btn-block">
+											<button class="btn-global" disabled>
+												<i class="btn-global__icon">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.51515 -0.000244141V7.41617H0V12.5833H7.51515V19.9998H12.4848V12.5833H20V7.41617H12.4848V-0.000244141H7.51515Z" fill="#FEFEFE"></path></svg>
+												</i>
+												<span>ОТПРАВИТЬ КОД</span>
+											</button>
+										</div>
 									</div>
-									<div class="mail-table__collapse">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.
+									<div class="form__group">
+										<div class="form__input-group disabled">
+											<label for="settings-3" class="form__label">Новый пароль:</label>
+											<!-- Класс .form-control__password отвечает за кнопку "Показать пароль" -->
+											<span class="form__input form-control form-control__password">
+												<input id="settings-3" type="password" name="pass-1" class="form-control__input" disabled>
+											</span>
+										</div>
+										<div class="form__input-group disabled">
+											<label for="settings-4" class="form__label">Повторите пароль:</label>
+											<!-- Класс .form-control__password отвечает за кнопку "Показать пароль" -->
+											<span class="form__input form-control form-control__password">
+												<input id="settings-4" type="password" name="pass-2" class="form-control__input" disabled>
+											</span>
+										</div>
+										<div class="form__btn-block">
+											<button class="btn-global" disabled>
+												<i class="btn-global__icon">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.51515 -0.000244141V7.41617H0V12.5833H7.51515V19.9998H12.4848V12.5833H20V7.41617H12.4848V-0.000244141H7.51515Z" fill="#FEFEFE"></path></svg>
+												</i>
+												<span>СМЕНИТЬ ПАРОЛЬ</span>
+											</button>
+										</div>
 									</div>
 								</div>
-								<div class="mail-table__row">
-									<div class="mail-table__info">
-										<span class="mail-table__checkbox-block"><input type="checkbox" class="checkbox"></span>
-										<span class="mail-table__icon-block"><i class="mail-table__icon"></i></span>
-										<span class="mail-table__username">NBo777ptYoung</span>
-										<span class="mail-table__theme">Бита added you to the card Лобби казино on Казино Reply via email</span>
-										<span class="mail-table__date">14 июл.</span>
-									</div>
-									<div class="mail-table__collapse">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.
+								<div class="form form_space-between col-6">
+									<form class="form__group">
+										<div class="form__title form__title_underline">Сменить e-mail</div>
+										<div class="settings-timer">
+											<div class="settings-timer__title">
+												Таймер. Смена пароля произойдет через 14 дней. <br>
+												Вы можете отменить смену пароля.
+											</div>
+											<div class="settings-timer__container">
+												<div class="settings-timer__block">
+													<div class="settings-timer__val">
+														<div class="settings-timer__num">0</div>
+														<div class="settings-timer__num">5</div>
+													</div>
+													<div class="settings-timer__name">день</div>
+												</div>
+												<div class="settings-timer__delimiter">:</div>
+												<div class="settings-timer__block">
+													<div class="settings-timer__val">
+														<div class="settings-timer__num">1</div>
+														<div class="settings-timer__num">8</div>
+													</div>
+													<div class="settings-timer__name">часы</div>
+												</div>
+												<div class="settings-timer__delimiter">:</div>
+												<div class="settings-timer__block">
+													<div class="settings-timer__val">
+														<div class="settings-timer__num">0</div>
+														<div class="settings-timer__num">9</div>
+													</div>
+													<div class="settings-timer__name">минуты</div>
+												</div>
+											</div>
+										</div>
+										<div class="form__btn-block">
+											<button type="submit" class="btn-global">
+												<i class="btn-global__icon">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="white"/></svg>
+												</i>
+												<span>ОТМЕНИТЬ <br>смену e-mail</span>
+											</button>
+										</div>
+									</form>
+									<div class="form__group">
+										<div class="form__title form__title_underline">Сменить язык</div>
+										<div class="language-switch">
+											<input type="radio" name="lang" value="en" class="language-switch__item language-switch__item_en" checked>
+											<input type="radio" name="lang" value="ru" class="language-switch__item language-switch__item_ru" >
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="mail-table  mail-table_view">
-								<div class="mail-table__row">
-									<div class="mail-table__info">
-										<span class="mail-table__checkbox-block"><input type="checkbox" class="checkbox"></span>
-										<span class="mail-table__icon-block"><i class="mail-table__icon"></i></span>
-										<span class="mail-table__username">NBo777ptYoung</span>
-										<span class="mail-table__theme">Бита added you to the card Лобби казино on Казино Reply via email</span>
-										<span class="mail-table__date">14 июл.</span>
-									</div>
-									<div class="mail-table__collapse">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.
-									</div>
-								</div>
-								<div class="mail-table__row">
-									<div class="mail-table__info">
-										<span class="mail-table__checkbox-block"><input type="checkbox" class="checkbox"></span>
-										<span class="mail-table__icon-block"><i class="mail-table__icon"></i></span>
-										<span class="mail-table__username">NBo777ptYoung</span>
-										<span class="mail-table__theme">Бита added you to the card Лобби казино on Казино Reply via email</span>
-										<span class="mail-table__date">14 июл.</span>
-									</div>
-									<div class="mail-table__collapse">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.</p>
-									</div>
-								</div>
-							</div>
-							<div class="mail-btn-block">
-								<div class="mail-btn-block__checkbox-block">
-									<input type="checkbox" class="checkbox">
-								</div>
-								<button class="btn-global btn-global_auto">
-									<i class="btn-global__icon">
-										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.17188 9.6857L11.4161 14.9299L6.10206 20.2439L9.7558 23.8976L15.0698 18.5836L20.314 23.8278L23.8281 20.3137L18.5839 15.0695L23.8979 9.75551L20.2442 6.10177L14.9302 11.4158L9.68599 6.17159L6.17188 9.6857Z" fill="#FEFEFE"/></svg>
-									</i>
-									<span>УДАЛИТЬ ПИСЬМО</span>
-								</button>
 							</div>
 						</div>
 					</div>
@@ -336,13 +382,13 @@
 								<path d="M19.3706 26.4748C19.3706 27.0648 19.2522 27.6548 19.0156 28.0088C18.779 28.4807 18.4241 28.9527 17.9509 29.1887C17.596 29.5427 17.1228 29.7787 16.5313 30.0147C16.058 30.1326 15.4665 30.2506 14.875 30.2506C14.1652 30.2506 13.5737 30.1326 12.9821 30.0147C12.3906 29.7787 11.9174 29.5427 11.4442 29.1887C10.971 28.8347 10.6161 28.4807 10.3795 27.8908C10.1429 27.3008 9.90625 26.7108 9.90625 26.0029L11.9174 25.6489C12.0357 26.4748 12.2723 27.1828 12.8638 27.6548C13.3371 28.1267 14.0469 28.3627 14.875 28.3627C15.5848 28.3627 16.058 28.2447 16.5313 27.8908C17.0045 27.5368 17.1228 27.0648 17.1228 26.4748C17.1228 25.7669 16.8862 25.1769 16.413 24.8229C15.8214 24.4689 14.875 24.3509 13.5737 24.3509V22.463C14.0469 22.463 14.4018 22.463 14.875 22.345C15.2299 22.345 15.5848 22.1091 15.9397 21.9911C16.1764 21.7551 16.413 21.6371 16.6496 21.4011C16.7679 21.1651 16.8862 20.8111 16.8862 20.4571C16.8862 19.9852 16.7679 19.5132 16.413 19.1592C16.058 18.8052 15.5848 18.6872 14.875 18.6872C14.0469 18.6872 13.3371 18.9232 12.8638 19.3952C12.3906 19.7492 12.154 20.4571 12.154 21.5191H10.0246C10.0246 20.6931 10.1429 19.9852 10.3795 19.5132C10.6161 18.9232 10.971 18.4512 11.4442 17.9793C11.7991 17.6253 12.2723 17.3893 12.8638 17.1533C13.4554 16.9173 14.1652 16.7993 14.875 16.7993C15.4665 16.7993 16.058 16.9173 16.5313 17.1533C17.0045 17.2713 17.4777 17.5073 17.8326 17.8613C18.3058 18.0973 18.5424 18.5692 18.779 18.9232C19.0156 19.3952 19.1339 19.9852 19.1339 20.4571C19.1339 20.9291 19.0156 21.1651 18.8973 21.5191C18.779 21.8731 18.6607 22.1091 18.4241 22.463C18.1875 22.699 17.8326 22.817 17.4777 23.053C17.1228 23.171 16.7679 23.289 16.413 23.289C16.8862 23.289 17.2411 23.407 17.596 23.643C18.0692 23.879 18.3058 24.115 18.5424 24.3509C18.8973 24.7049 19.0156 24.9409 19.1339 25.4129C19.2522 25.7669 19.3706 26.1209 19.3706 26.4748ZM29.663 30.0147H23.038V28.1267H25.2857V20.8111C25.1674 21.1651 25.0491 21.4011 24.8125 21.6371C24.5759 21.8731 24.221 22.1091 23.8661 22.345C23.5112 22.463 23.1563 22.581 22.8014 22.699C22.3281 22.817 21.8549 22.817 21.5 22.817V20.8111C21.9732 20.8111 22.4465 20.6931 22.9197 20.5751C23.2746 20.4571 23.7478 20.2211 24.1027 19.8672C24.4576 19.5132 24.6942 19.1592 24.9308 18.6872C25.1674 18.2152 25.2857 17.7433 25.2857 17.0353H27.5335V28.1267H29.663V30.0147Z"/>
 							</svg>
 						</a>
-						<a href="#" class="profile__link profile__link_right">
+						<a href="#" class="profile__link profile__link_right active">
 							<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.6445 25.1327L18.5265 25.2507C18.1725 26.1946 17.5826 27.0206 16.7566 27.7285L16.6386 27.8465C15.8127 28.4365 14.7507 28.6725 13.6888 28.7905H13.5708C12.5088 28.6725 11.5649 28.4365 10.6209 27.8465L10.5029 27.7285C9.67696 27.0206 9.08699 26.1946 8.73301 25.2507V25.1327C8.37903 24.0707 8.37903 23.0088 8.73301 22.0648V21.8288C9.08699 20.8849 9.67696 20.0589 10.5029 19.351H10.6209C11.5649 18.643 12.5088 18.407 13.5708 18.407H13.6888C14.7507 18.407 15.8127 18.643 16.6386 19.351H16.7566C17.5826 20.0589 18.1725 20.8849 18.5265 21.8288L18.6445 22.0648C18.8805 23.0088 18.8805 24.0707 18.6445 25.1327ZM23.4823 22.3008L24.8982 21.3569L24.0722 18.643L22.3023 18.761L20.8864 16.8731L21.4764 15.1032L19.2345 13.4513L17.8186 14.6312L15.5767 13.8052L14.9867 12.1533H12.2728L11.8009 13.8052L9.44097 14.6312L8.02504 13.4513L5.78316 15.1032L6.37313 16.8731L4.9572 18.761L3.18729 18.643L2.36133 21.3569L3.89525 22.3008V24.7787L2.36133 25.7226L3.18729 28.4365L4.9572 28.3185L6.37313 30.3244L5.78316 31.9763L8.02504 33.6282L9.44097 32.4483L11.8009 33.2743L12.2728 34.9262H14.9867L15.5767 33.2743L17.8186 32.4483L19.2345 33.6282L21.4764 31.9763L20.8864 30.3244L22.3023 28.3185L24.0722 28.4365L24.8982 25.7226L23.4823 24.7787V22.3008Z"/>
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M32.685 14.2774L32.567 14.3954C32.331 15.1034 31.977 15.6933 31.387 16.1653L31.2691 16.2833C30.6791 16.6373 29.9711 16.8733 29.1452 16.8733C28.3192 16.8733 27.6112 16.6373 27.0213 16.2833L26.9033 16.1653C26.3133 15.6933 25.9593 15.1034 25.7233 14.3954L25.6053 14.2774C25.4873 13.5695 25.4873 12.8615 25.6053 12.1535L25.7233 12.0355C25.9593 11.3276 26.3133 10.7376 26.9033 10.2656H27.0213C27.6112 9.79364 28.3192 9.55765 29.1452 9.55765C29.9711 9.55765 30.6791 9.79364 31.2691 10.2656H31.387C31.977 10.7376 32.331 11.3276 32.567 12.0355L32.685 12.1535C32.803 12.8615 32.803 13.5695 32.685 14.2774ZM35.8708 13.5695L37.5227 12.7435L37.1688 10.8556L35.3988 10.6196L34.5729 9.20367L35.2809 7.43376L33.7469 6.25382L32.213 7.19777L30.6791 6.6078L30.0891 4.83789H28.2012L27.6112 6.6078L26.0773 7.19777L24.5434 6.25382L23.0095 7.43376L23.7174 9.20367L22.8915 10.6196L21.1216 10.8556L20.7676 12.7435L22.4195 13.5695L22.6555 15.2214L21.4755 16.5193L22.4195 18.2892L24.1894 17.8172L25.4873 18.8792L25.3693 20.7671L27.2573 21.3571L28.3192 19.9411H29.9711L31.0331 21.3571L32.921 20.7671L32.803 18.8792L34.1009 17.8172L35.8708 18.2892L36.8148 16.5193L35.6348 15.2214L35.8708 13.5695Z"/>
 							</svg>
 						</a>
-						<a href="#" class="profile__link profile__link_right  profile__link_notice active">
+						<a href="#" class="profile__link profile__link_right  profile__link_notice ">
 							<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5821 5.07373C25.7237 5.07373 32.4494 9.6755 32.4494 15.3392C32.4494 15.6932 32.3314 16.0472 32.3314 16.2832C35.2812 17.5811 37.1691 19.823 37.1691 22.4189C37.1691 25.3687 34.5733 27.9646 30.7974 29.1445L29.8535 34.9262L26.6676 29.7345C22.4199 29.7345 18.762 27.9646 17.1101 25.4867C14.7502 25.4867 12.3904 25.3687 10.6204 24.3068L2.95083 29.3805L5.31071 21.3569C3.5408 19.823 2.71484 17.4631 2.71484 15.3392C2.71484 9.6755 9.32251 5.07373 17.5821 5.07373ZM29.6175 15.4572V15.3392C29.6175 10.8554 24.1898 7.31562 17.5821 7.31562C10.8564 7.31562 5.42871 10.8554 5.42871 15.3392C5.42871 17.1091 6.13667 18.5251 7.78859 19.941L6.72664 24.1888L10.8564 21.9469C12.5084 22.7728 14.0423 23.0088 16.1662 23.1268C16.1662 22.8908 16.1662 22.6549 16.1662 22.4189C16.1662 18.4071 20.8859 15.2212 26.6676 15.2212C27.7296 15.2212 28.6735 15.3392 29.6175 15.4572ZM26.6676 17.5811C31.0334 17.5811 34.5733 19.705 34.5733 22.4189C34.5733 24.5428 32.5674 26.1947 29.6175 27.0206L29.0275 30.0885L26.6676 27.3746C22.3019 27.3746 18.762 25.1327 18.762 22.4189C18.762 19.705 22.3019 17.5811 26.6676 17.5811Z"/>
 							</svg>

@@ -12,10 +12,12 @@
 - Профиль > Кошелек: https://staremang.github.io/evilchain/profile-balance.html (100%)
 - Профиль > Бонусы: https://staremang.github.io/evilchain/profile-bonuses.html (95%)
 - Профиль > Почта: https://staremang.github.io/evilchain/profile-mail.html (100%)
-- Профиль > Блокировка: https://staremang.github.io/evilchain/profile-blocking.html (10%)
+- Профиль > Блокировка: https://staremang.github.io/evilchain/profile-blocking.html (100%)
 - Профиль > Календарь: --- (0%)
-- Профиль > Настройки: --- (0%)
+- Профиль > Настройки: https://staremang.github.io/evilchain/profile-settings.html (100%)
+- Профиль > Настройки (с таймером): https://staremang.github.io/evilchain/profile-settings-2.html (100%)
 - Профиль > Статистика: --- (0%)
 
 Системные страницы
 - Чистая: https://staremang.github.io/evilchain/clear.html
+- Формы и прочее: https://staremang.github.io/evilchain/test.html
