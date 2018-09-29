@@ -746,10 +746,22 @@ select {
 		font-size: 14px;
 	}
 }
-.header-tournament {
+
+
+
+
+
+
+
+
+
+
+.tournament-item {
 	position: relative;
 	margin-bottom: 10px;
+	display: flex;
 	&__block {
+		flex: 1 0 auto;
 		display: flex;
 		flex-direction: column;
 		width: 170px;
@@ -758,6 +770,7 @@ select {
 		justify-content: space-between;
 	}
 	&__title {
+		font-size: 14px;
 		margin-bottom: 5px;
 	}
 	&__info {
@@ -777,9 +790,8 @@ select {
 		background-size: cover;
 		background-position: center;
 		
-		position: absolute;
-		top: 0;
-		left: 0;
+		flex: 0 0 auto;
+		margin-right: 10px;
 	}
 }
 

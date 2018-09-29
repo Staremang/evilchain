@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Почта - Evilchain</title>
+	<title>Блокировка - Evilchain</title>
 
 
 	<link rel="stylesheet" href="css/main.min.css">
@@ -70,19 +70,19 @@
 						</div>
 						<div class="top-players__content tab-content">
 							<div class="tab-pane active top-players__tournament" id="header-tab-1" role="tabpanel">
-								<div class="tournament-teim">
-									<div class="tournament-teim__img" style="background-image: url(img/game-2.png)"></div>
-									<div class="tournament-teim__block">
-										<div class="tournament-teim__text">
-											<div class="tournament-teim__title">Ltgacy Horserace</div>
-											<div class="tournament-teim__info">
+								<div class="tournament-item">
+									<div class="tournament-item__img" style="background-image: url(img/game-2.png)"></div>
+									<div class="tournament-item__block">
+										<div class="tournament-item__text">
+											<div class="tournament-item__title">Ltgacy Horserace</div>
+											<div class="tournament-item__info">
 												До конца турнира: <b class="nowrap">22ч. 36м. 01с.</b>
 											</div>
-											<div class="tournament-teim__info">
+											<div class="tournament-item__info">
 												Призовой фонд: <b class="nowrap">250,000.01</b>
 											</div>
 										</div>
-										<button class="tournament-teim__btn btn-global btn-global_auto">
+										<button class="tournament-item__btn btn-global btn-global_auto">
 											<i class="btn-global__icon">
 												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M7.51515 -0.000488281V7.41593H0V12.5831H7.51515V19.9995H12.4848V12.5831H20V7.41593H12.4848V-0.000488281H7.51515Z" fill="#FEFEFE" /></svg>
@@ -283,77 +283,93 @@
 					</div>
 					<div class="profile__content">
 						<div class="profile__container">
-							<div class="mail-table">
-								<div class="mail-table__header">У Вас есть 3 новых сообщения</div>
-								<div class="mail-table__row">
-									<div class="mail-table__info">
-										<span class="mail-table__checkbox-block"><input type="checkbox" class="checkbox"></span>
-										<span class="mail-table__icon-block"><i class="mail-table__icon"></i></span>
-										<span class="mail-table__username">NBo777ptYoung</span>
-										<span class="mail-table__theme">Бита added you to the card Лобби казино on Казино Reply via email</span>
-										<span class="mail-table__date">14 июл.</span>
+							<div class="row">
+								<div class="col-6">
+									<div class="calendar">
+										<div class="calendar__header">
+											<button class="calendar__btn" onclick="Calendar.calGetMonth(-1)">
+												<svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3323 0.750977V19.7918L0.976562 10.2714L15.3323 0.750977Z" fill="#FEFEFE" /></svg>
+											</button>
+											<div class="calendar__mon" id="bd_calendar_header"></div>
+											<button class="calendar__btn" onclick="Calendar.calGetMonth(1)">
+												<svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M0.859375 0.0595703V19.7823L15.592 9.96056L0.859375 0.0595703Z" fill="#FEFEFE" /></svg>
+											</button>
+										</div>
+										<div class="calendar__body" id="bd_calendar_table_wrap"></div>
 									</div>
-									<div class="mail-table__collapse">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.
-									</div>
+
 								</div>
-								<div class="mail-table__row">
-									<div class="mail-table__info">
-										<span class="mail-table__checkbox-block"><input type="checkbox" class="checkbox"></span>
-										<span class="mail-table__icon-block"><i class="mail-table__icon"></i></span>
-										<span class="mail-table__username">NBo777ptYoung</span>
-										<span class="mail-table__theme">Бита added you to the card Лобби казино on Казино Reply via email</span>
-										<span class="mail-table__date">14 июл.</span>
-									</div>
-									<div class="mail-table__collapse">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.
+								<div class="col-6">
+									<div class="event">
+										<div class="event__container">
+											<div class="event__header">
+												<div class="event__day">14</div>
+												<div class="event__mon">июня 2018</div>
+											</div>
+											<div class="event__item">
+												<div class="event-tournament">
+													<div class="event-tournament__img" style="background-image: url(img/game-2.png)"></div>
+													<div class="event-tournament__block">
+														<div class="event-tournament__text">
+															<div class="event-tournament__title">Ltgacy Horserace</div>
+															<div class="event-tournament__info">
+																Заканчивается: <br><span class="nowrap">22ч. 36м. 01с.</span>
+															</div>
+															<div class="event-tournament__info">
+																Приз: <span class="nowrap">250,000.01</span>
+															</div>
+														</div>
+														<button class="btn-global">
+															<i class="btn-global__icon">
+																<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M7.51515 -0.000488281V7.41593H0V12.5831H7.51515V19.9995H12.4848V12.5831H20V7.41593H12.4848V-0.000488281H7.51515Z" fill="#FEFEFE" /></svg>
+															</i>
+															<span>ПРИСОЕДИНИТЬСЯ <br>к турниру</span>
+														</button>
+													</div>
+												</div>
+												<p class="event__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsum commodi, fugit impedit enim temporibus cupiditate vitae recusandae nesciunt voluptatem tempore dolorem. Aliquam recusandae amet eligendi doloribus officiis natus fugiat!</p>
+											</div>
+											<div class="event__item">
+												<h3 class="event__title">Название НОВОСТИ</h3>
+												<p class="event__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsum commodi, fugit impedit enim temporibus cupiditate vitae recusandae nesciunt voluptatem tempore dolorem. Aliquam recusandae amet eligendi doloribus officiis natus fugiat!</p>
+											</div>
+											<div class="event__item">
+												<div class="event-tournament">
+													<div class="event-tournament__img" style="background-image: url(img/game-2.png)"></div>
+													<div class="event-tournament__block">
+														<div class="event-tournament__text">
+															<div class="event-tournament__title">Ltgacy Horserace</div>
+															<div class="event-tournament__info">
+																Заканчивается: <br><span class="nowrap">22ч. 36м. 01с.</span>
+															</div>
+															<div class="event-tournament__info">
+																Приз: <span class="nowrap">250,000.01</span>
+															</div>
+														</div>
+														<button class="btn-global">
+															<i class="btn-global__icon">
+																<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M7.51515 -0.000488281V7.41593H0V12.5831H7.51515V19.9995H12.4848V12.5831H20V7.41593H12.4848V-0.000488281H7.51515Z" fill="#FEFEFE" /></svg>
+															</i>
+															<span>ПРИСОЕДИНИТЬСЯ <br>к турниру</span>
+														</button>
+													</div>
+												</div>
+												<p class="event__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsum commodi, fugit impedit enim temporibus cupiditate vitae recusandae nesciunt voluptatem tempore dolorem. Aliquam recusandae amet eligendi doloribus officiis natus fugiat!</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="mail-table  mail-table_view">
-								<div class="mail-table__row">
-									<div class="mail-table__info">
-										<span class="mail-table__checkbox-block"><input type="checkbox" class="checkbox"></span>
-										<span class="mail-table__icon-block"><i class="mail-table__icon"></i></span>
-										<span class="mail-table__username">NBo777ptYoung</span>
-										<span class="mail-table__theme">Бита added you to the card Лобби казино on Казино Reply via email</span>
-										<span class="mail-table__date">14 июл.</span>
-									</div>
-									<div class="mail-table__collapse">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.
-									</div>
-								</div>
-								<div class="mail-table__row">
-									<div class="mail-table__info">
-										<span class="mail-table__checkbox-block"><input type="checkbox" class="checkbox"></span>
-										<span class="mail-table__icon-block"><i class="mail-table__icon"></i></span>
-										<span class="mail-table__username">NBo777ptYoung</span>
-										<span class="mail-table__theme">Бита added you to the card Лобби казино on Казино Reply via email</span>
-										<span class="mail-table__date">14 июл.</span>
-									</div>
-									<div class="mail-table__collapse">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis.</p>
-									</div>
-								</div>
-							</div>
-							<div class="mail-btn-block">
-								<div class="mail-btn-block__checkbox-block">
-									<input type="checkbox" class="checkbox">
-								</div>
-								<button class="btn-global btn-global_auto">
-									<i class="btn-global__icon">
-										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M6.17188 9.6857L11.4161 14.9299L6.10206 20.2439L9.7558 23.8976L15.0698 18.5836L20.314 23.8278L23.8281 20.3137L18.5839 15.0695L23.8979 9.75551L20.2442 6.10177L14.9302 11.4158L9.68599 6.17159L6.17188 9.6857Z" fill="#FEFEFE" /></svg>
-									</i>
-									<span>УДАЛИТЬ ПИСЬМО</span>
-								</button>
-							</div>
+
+
 						</div>
 					</div>
 					<div class="profile__menu">
-						<a href="#" class="profile__link profile__link_right">
+						<a href="#" class="profile__link profile__link_right active">
 							<svg width="41" height="40" viewBox="0 0 41 40" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.76591 6.8877H8.84181V8.53961C8.84181 9.60156 9.66993 10.4275 10.853 10.4275C11.9177 10.4275 12.7458 9.60156 12.7458 8.53961V6.8877H26.5874V8.53961C26.5874 9.60156 27.5338 10.4275 28.5985 10.4275C29.6633 10.4275 30.6097 9.60156 30.6097 8.53961V6.8877H33.6856C35.1053 6.8877 36.4066 8.06764 36.4066 9.48357V32.3744C36.4066 33.7903 35.1053 34.9703 33.6856 34.9703H5.76591C4.22796 34.9703 3.04492 33.7903 3.04492 32.3744V9.48357C3.04492 8.06764 4.22796 6.8877 5.76591 6.8877ZM6.23912 15.0293H33.3307V32.1384H6.23912V15.0293Z" />
 								<path d="M12.3366 6.06195C12.3366 5.47545 11.6863 5 10.8841 5C10.0819 5 9.43164 5.47545 9.43164 6.06195V8.7924C9.43164 9.3789 10.0819 9.85435 10.8841 9.85435C11.6863 9.85435 12.3366 9.3789 12.3366 8.7924V6.06195Z" />
@@ -367,7 +383,7 @@
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M32.685 14.2774L32.567 14.3954C32.331 15.1034 31.977 15.6933 31.387 16.1653L31.2691 16.2833C30.6791 16.6373 29.9711 16.8733 29.1452 16.8733C28.3192 16.8733 27.6112 16.6373 27.0213 16.2833L26.9033 16.1653C26.3133 15.6933 25.9593 15.1034 25.7233 14.3954L25.6053 14.2774C25.4873 13.5695 25.4873 12.8615 25.6053 12.1535L25.7233 12.0355C25.9593 11.3276 26.3133 10.7376 26.9033 10.2656H27.0213C27.6112 9.79364 28.3192 9.55765 29.1452 9.55765C29.9711 9.55765 30.6791 9.79364 31.2691 10.2656H31.387C31.977 10.7376 32.331 11.3276 32.567 12.0355L32.685 12.1535C32.803 12.8615 32.803 13.5695 32.685 14.2774ZM35.8708 13.5695L37.5227 12.7435L37.1688 10.8556L35.3988 10.6196L34.5729 9.20367L35.2809 7.43376L33.7469 6.25382L32.213 7.19777L30.6791 6.6078L30.0891 4.83789H28.2012L27.6112 6.6078L26.0773 7.19777L24.5434 6.25382L23.0095 7.43376L23.7174 9.20367L22.8915 10.6196L21.1216 10.8556L20.7676 12.7435L22.4195 13.5695L22.6555 15.2214L21.4755 16.5193L22.4195 18.2892L24.1894 17.8172L25.4873 18.8792L25.3693 20.7671L27.2573 21.3571L28.3192 19.9411H29.9711L31.0331 21.3571L32.921 20.7671L32.803 18.8792L34.1009 17.8172L35.8708 18.2892L36.8148 16.5193L35.6348 15.2214L35.8708 13.5695Z" />
 							</svg>
 						</a>
-						<a href="#" class="profile__link profile__link_right  profile__link_notice active">
+						<a href="#" class="profile__link profile__link_right  profile__link_notice ">
 							<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5821 5.07373C25.7237 5.07373 32.4494 9.6755 32.4494 15.3392C32.4494 15.6932 32.3314 16.0472 32.3314 16.2832C35.2812 17.5811 37.1691 19.823 37.1691 22.4189C37.1691 25.3687 34.5733 27.9646 30.7974 29.1445L29.8535 34.9262L26.6676 29.7345C22.4199 29.7345 18.762 27.9646 17.1101 25.4867C14.7502 25.4867 12.3904 25.3687 10.6204 24.3068L2.95083 29.3805L5.31071 21.3569C3.5408 19.823 2.71484 17.4631 2.71484 15.3392C2.71484 9.6755 9.32251 5.07373 17.5821 5.07373ZM29.6175 15.4572V15.3392C29.6175 10.8554 24.1898 7.31562 17.5821 7.31562C10.8564 7.31562 5.42871 10.8554 5.42871 15.3392C5.42871 17.1091 6.13667 18.5251 7.78859 19.941L6.72664 24.1888L10.8564 21.9469C12.5084 22.7728 14.0423 23.0088 16.1662 23.1268C16.1662 22.8908 16.1662 22.6549 16.1662 22.4189C16.1662 18.4071 20.8859 15.2212 26.6676 15.2212C27.7296 15.2212 28.6735 15.3392 29.6175 15.4572ZM26.6676 17.5811C31.0334 17.5811 34.5733 19.705 34.5733 22.4189C34.5733 24.5428 32.5674 26.1947 29.6175 27.0206L29.0275 30.0885L26.6676 27.3746C22.3019 27.3746 18.762 25.1327 18.762 22.4189C18.762 19.705 22.3019 17.5811 26.6676 17.5811Z" />
 							</svg>
@@ -545,6 +561,30 @@
 	<script src="js/libs/owl.carousel.min.js"></script>
 
 	<script src="js/main.min.js"></script>
+	<script>
+		Calendar.init(9, 2018, {
+			10: { // Октябрь 
+				1: [1, 2], // Массив с номерами мероприятий в этот день 
+				6: [3],
+				21: [4],
+				13: [5],
+				30: [6],
+				29: [7],
+				22: [8],
+				17: [9],
+				16: [10],
+				12: [11]
+			},
+			9: { // Сентябрь
+				21: [12], // 21 сентября
+				13: [13],
+				30: [14],
+				29: [15]
+			}
+		});
+		Calendar.calGetMonth(0);
+
+	</script>
 </body>
 
 </html>

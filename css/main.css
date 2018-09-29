@@ -2925,11 +2925,17 @@ select.form-control__input {
 .top-players .participants-list {
   font-size: 14px;
 }
-.header-tournament {
+.tournament-item {
   position: relative;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.header-tournament__block {
+.tournament-item__block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2944,10 +2950,11 @@ select.form-control__input {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.header-tournament__title {
+.tournament-item__title {
+  font-size: 14px;
   margin-bottom: 5px;
 }
-.header-tournament__info {
+.tournament-item__info {
   font-size: 12px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -2959,17 +2966,18 @@ select.form-control__input {
   flex-wrap: wrap;
   margin-bottom: 3px;
 }
-.header-tournament__btn {
+.tournament-item__btn {
   font-size: 13px;
 }
-.header-tournament__img {
+.tournament-item__img {
   width: 120px;
   height: 120px;
   background-size: cover;
   background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 10px;
 }
 .header-news {
   height: 60px;
@@ -4626,4 +4634,202 @@ select.form-control__input {
 }
 .language-switch__item_en:before {
   background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2249%22%20height%3D%2228%22%20viewBox%3D%220%200%2049%2028%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0%2027.9999H47.9984V0H0V27.9999Z%22%20fill%3D%22%23FEFEFE%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M32.0781%2010.1709L47.9978%201.31623V0H46.8008L28.7266%2010.1709H32.0781Z%22%20fill%3D%22%23BE2836%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M31.3594%2018.427L47.9972%2027.7603V25.8458L34.7109%2018.427H31.3594Z%22%20fill%3D%22%23BE2836%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0%202.15375L14.1242%2010.1708H17.4757L0%200.358887V2.15375Z%22%20fill%3D%22%23BE2836%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M16.7576%2018.427L0%2027.88V27.9996H2.99242L20.1091%2018.427H16.7576Z%22%20fill%3D%22%23BE2836%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M44.6443%200H27.8867V9.45296L44.6443%200Z%22%20fill%3D%22%23363571%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M20.4685%200H3.71094L20.4685%209.45296V0Z%22%20fill%3D%22%23363571%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M48.0026%2010.1707V3.70923L36.5117%2010.1707H48.0026Z%22%20fill%3D%22%23363571%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M48.0026%2024.7689V18.427H36.5117L48.0026%2024.7689Z%22%20fill%3D%22%23363571%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M4.66797%2027.9999H20.468V19.1453L4.66797%2027.9999Z%22%20fill%3D%22%23363571%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M27.8867%2027.9999H43.6867L27.8867%2019.1453V27.9999Z%22%20fill%3D%22%23363571%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0%2018.427V25.1278L11.7303%2018.427H0Z%22%20fill%3D%22%23363571%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0%2010.171H11.7303L0%203.47021V10.171Z%22%20fill%3D%22%23363571%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M21.9045%200V11.8461H0V16.7521H21.9045V27.9999H26.3333V16.7521H47.9984V11.8461H26.3333V0H21.9045Z%22%20fill%3D%22%23BE2836%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+.calendar {
+  margin-top: 10px;
+}
+.calendar__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #1D1A21;
+  height: 40px;
+  margin-bottom: 2px;
+}
+.calendar__btn {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 40px;
+  flex: 0 0 40px;
+  max-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-box-shadow: 2px 0px 4px rgba(29, 26, 33, 0.5);
+  box-shadow: 2px 0px 4px rgba(29, 26, 33, 0.5);
+  background: -webkit-linear-gradient(315deg, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+  background: -o-linear-gradient(315deg, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+  background: linear-gradient(135deg, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+}
+.calendar__btn > svg {
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  fill: #ffffff;
+}
+.calendar__body {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.calendar__table {
+  width: 100%;
+  border-spacing: 5px;
+}
+.calendar__mon {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  text-align: center;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 14px;
+}
+.calendar__day {
+  width: 14.28571429%;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+.calendar__day_event {
+  cursor: pointer;
+  background: -webkit-linear-gradient(315deg, #2C0E48 0%, #6A0C4E 50.2%, #D30131 100%);
+  background: -o-linear-gradient(315deg, #2C0E48 0%, #6A0C4E 50.2%, #D30131 100%);
+  background: linear-gradient(135deg, #2C0E48 0%, #6A0C4E 50.2%, #D30131 100%);
+  -webkit-box-shadow: 2px 0px 2px rgba(29, 26, 33, 0.5);
+  box-shadow: 2px 0px 2px rgba(29, 26, 33, 0.5);
+}
+.calendar__day_event:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  bottom: 7px;
+  left: 7px;
+  right: 7px;
+  background: -webkit-linear-gradient(135deg, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+  background: -o-linear-gradient(135deg, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+  background: linear-gradient(315deg, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+  -webkit-box-shadow: inset 2px 0px 2px rgba(29, 26, 33, 0.5);
+  box-shadow: inset 2px 0px 2px rgba(29, 26, 33, 0.5);
+}
+.calendar__day_event > span {
+  z-index: 1;
+  position: relative;
+}
+.calendar__day_event-old {
+  color: black;
+}
+.calendar__day_event-old:before {
+  background: #FEFEFE;
+}
+.calendar__day_active {
+  color: white;
+}
+.calendar__day_active:before {
+  background: #1D1A21;
+}
+.calendar__day_last {
+  color: #98989B;
+}
+.event {
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#1D1A21));
+  background: -webkit-linear-gradient(bottom, #000000 0%, #1D1A21 100%);
+  background: -o-linear-gradient(bottom, #000000 0%, #1D1A21 100%);
+  background: linear-gradient(0deg, #000000 0%, #1D1A21 100%);
+  margin-top: 10px;
+  position: relative;
+  padding-bottom: 40px;
+}
+.event:after {
+  content: '';
+  width: 30px;
+  height: 10px;
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%2230%22%20height%3D%2210%22%20viewBox%3D%220%200%2030%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0%200L0%204.47368L14.9663%2010L30%204.47368V0L14.9663%205.52632L0%200Z%22%20fill%3D%22%23FEFEFE%22%2F%3E%0A%3C%2Fsvg%3E%0A") no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+.event__container {
+  padding: 20px;
+  height: 440px;
+  overflow: auto;
+}
+.event__header {
+  text-align: center;
+  padding-bottom: 14px;
+}
+.event__day {
+  font-weight: bold;
+  font-size: 36px;
+  color: #FFD53A;
+  margin-bottom: 5px;
+}
+.event__mon {
+  font-size: 18px;
+}
+.event__item {
+  border-top: 1px solid #FFFFFF;
+  padding: 20px 0;
+}
+.event__title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.event__description {
+  margin: 0;
+}
+.event-tournament {
+  position: relative;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.event-tournament__block {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.event-tournament__title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.event-tournament__info {
+  margin-bottom: 7px;
+}
+.event-tournament__img {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 20px;
 }
