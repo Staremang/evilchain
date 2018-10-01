@@ -16,7 +16,7 @@
 - Профиль > Календарь: https://staremang.github.io/evilchain/profile-blocking.html (100%)
 - Профиль > Настройки: https://staremang.github.io/evilchain/profile-calendar.html (100%)
 - Профиль > Настройки (с таймером): https://staremang.github.io/evilchain/profile-settings-2.html (100%)
-- Профиль > Статистика: https://staremang.github.io/evilchain/profile-statistics.html (0%)
+- Профиль > Статистика: https://staremang.github.io/evilchain/profile-statistics.html (90%)
 
 Системные страницы
 - Чистая: https://staremang.github.io/evilchain/clear.html
