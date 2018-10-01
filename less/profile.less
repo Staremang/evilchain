@@ -952,6 +952,10 @@
 
 
 
+
+/*
+ * Календарь
+ */
 .calendar {
 	margin-top: 10px;
 
@@ -1157,6 +1161,65 @@
 		background-position: center;
 
 		flex: 0 0 auto;
+		margin-right: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Статистика
+ */
+.statistics {
+	&__header {
+		display: flex;
+		justify-content: flex-end;
+		height: 35px;
+		padding-top: 5px;
+	}
+	&__tab {
+		text-decoration: none;
+		color: white;
+		margin-left: 28px;
+		&.active {
+			color: #FFD53A;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+	}
+	&__wrapper {
+		
+	}
+}
+.tournament-table {
+	th {
+		font-size: 10px;
+	}
+
+	tr {
+		&.active {
+			background: rgba(255, 255, 255, 0.2);
+			font-weight: bold;
+		}
+	}
+}
+.bid-table {
+	td {
+		&:last-child {
+			padding-right: 70px;
+		}
+	}
+	img {
+		width: 30px;
+		height: 30px;
 		margin-right: 20px;
 	}
 }
