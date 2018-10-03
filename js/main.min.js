@@ -180,7 +180,7 @@ function each(e, t) {
 var Calendar = {
 	calGetEvent: function (num) { // Нажатие на мероприятние
 		console.log(this);
-//		this.classList.add('calendar__day_active');
+		//		this.classList.add('calendar__day_active');
 	},
 	calGetCurEvents: function (e) {
 		if (!cur.calEvents[cur.calMon]) {
@@ -251,7 +251,7 @@ var Calendar = {
 						if (d > g) { // Если событие уже прошло
 							calItem.classList.add('calendar__day_event-old');
 						}
-						
+
 						calItem.setAttribute('data-event', eventIdArr.toString());
 						calItem.addEventListener('click', function () {
 							this.classList.add('calendar__day_active');
@@ -273,13 +273,13 @@ var Calendar = {
 					calItem.innerHTML = '<span>' + (u - a) + '</span>';
 
 				}
-				
+
 				calRow.appendChild(calItem);
-				
+
 			}
-			
+
 			calTable.appendChild(calRow);
-			
+
 		}
 
 		document.getElementById("bd_calendar_header").innerHTML = monName[cur.calMon - 1];
@@ -310,6 +310,21 @@ var Calendar = {
 
 
 $(document).ready(function () {
+	$('.tournament-item__banner').click(function (e) {
+		e.preventDefault();
+		$(this).parent().toggleClass('active');
+	})
+	
+	$('.tournament-item__banner').hover(function () {
+		$('.tournament-item__banner').addClass('tournament-item__banner_overlay');
+		$(this).addClass('tournament-item__banner_active')
+	}, function () {
+		$('.tournament-item__banner').removeClass('tournament-item__banner_overlay');
+		$(this).removeClass('tournament-item__banner_active');
+	})
+	
+	
+	
 	$('.mail-table__info').click(function (e) {
 		if (e.target.tagName == 'INPUT')
 			return;

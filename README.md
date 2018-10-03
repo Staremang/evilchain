@@ -5,7 +5,8 @@
 - Главная: https://staremang.github.io/evilchain/ (90%)
 - Акции: https://staremang.github.io/evilchain/sale.html (100%)
 - VIP: https://staremang.github.io/evilchain/vip.html (100%)
-- Турнир --- (0%)
+- Турнир: https://staremang.github.io/evilchain/tournament.html (100%)
+- Турнир (залогинен): https://staremang.github.io/evilchain/tournament-login.html (100%)
 
 Профиль (Вход выполнен)
 - Профиль > Информация: https://staremang.github.io/evilchain/profile-info.html (100%)
@@ -16,7 +17,7 @@
 - Профиль > Календарь: https://staremang.github.io/evilchain/profile-blocking.html (100%)
 - Профиль > Настройки: https://staremang.github.io/evilchain/profile-calendar.html (100%)
 - Профиль > Настройки (с таймером): https://staremang.github.io/evilchain/profile-settings-2.html (100%)
-- Профиль > Статистика: https://staremang.github.io/evilchain/profile-statistics.html (90%)
+- Профиль > Статистика: https://staremang.github.io/evilchain/profile-statistics.html (95%)
 
 Системные страницы
 - Чистая: https://staremang.github.io/evilchain/clear.html
