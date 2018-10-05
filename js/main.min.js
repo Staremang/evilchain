@@ -314,7 +314,7 @@ $(document).ready(function () {
 		e.preventDefault();
 		$(this).parent().toggleClass('active');
 	})
-	
+
 	$('.m-tournament-item__banner').click(function (e) {
 		e.preventDefault();
 		$(this).parent().toggleClass('active');
@@ -394,17 +394,41 @@ $(document).ready(function () {
 
 
 
-	$('.achievement').addClass('owl-carousel');
-	$('.achievement').owlCarousel({
+	$('.achievement-slider').addClass('owl-carousel');
+	$('.achievement-slider').owlCarousel({
 		loop: true,
-		//		stagePadding: 10,
 		items: 5,
 		margin: 20,
-
 		nav: true,
 		navText: ['', ''],
 		dots: false
 	})
+
+	$('.achievement-slider-mobile').addClass('owl-carousel');
+	$('.achievement-slider-mobile').owlCarousel({
+		loop: false,
+		items: 5,
+		margin: 30,
+		autoWidth: true,
+
+		stagePadding: 20,
+
+		nav: false,
+		dots: false,
+		//		
+		//		responsive: {
+		//			490: {
+		//				items: 3,
+		//			},
+		//			610: {
+		//				items: 5,
+		//			},
+		//			730: {
+		//				items: 6,
+		//			}
+		//		}
+	})
+
 	$('.p-bonuses__slider').addClass('owl-carousel');
 	$('.p-bonuses__slider').addClass('profile-theme');
 	$('.p-bonuses__slider').owlCarousel({

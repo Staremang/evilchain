@@ -103,6 +103,43 @@ header {
 }
 
 
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 18px;
+	text-align: center;
+
+	thead {
+		background: black;
+//		color: #FFD53A;
+		font-size: 14px;
+//		font-weight: normal;
+//		text-transform: uppercase;
+	}
+
+	tbody {
+		background: rgba(196, 218, 232, 0.2);
+//		tr {
+//			border-bottom: 1px solid white;
+//		}
+	}
+
+//	th,
+//	td {
+//		height: 40px;
+//		padding: 5px 20px;
+//		color: inherit;
+//		font-weight: inherit;
+//
+//
+//		> * {
+//			vertical-align: middle;
+//			max-height: 100%;
+//		}
+//	}
+}
+
+
 .m-account {
 	padding-bottom: 20-6px;
 	.bg-img("bg.png");
@@ -617,6 +654,32 @@ header {
 		width: 26px;
 	}
 
+	&__title {
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+
+	&__btn {
+
+
+		padding: 0;
+		background-color: transparent;
+		border: 0;
+		-webkit-appearance: none;
+
+		cursor: pointer;
+		padding: 10px;
+
+		> span {
+			width: 30px;
+			height: 30px;
+			background-image: data-uri('../img/icons/btn-close.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: inline-block;
+		}
+	}
+
 	.btn-global {
 		font-size: 14px;
 		height: 30px;
@@ -1111,6 +1174,15 @@ header {
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 20px;
+	}
+}
+
+
+
+.form {
+	&__input {
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 }
 

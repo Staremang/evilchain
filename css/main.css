@@ -2503,6 +2503,18 @@ select.form-control__input {
   background-color: #C4C4C4;
   cursor: not-allowed;
 }
+.form-control__input::-webkit-input-placeholder {
+  color: black;
+}
+.form-control__input:-ms-input-placeholder {
+  color: black;
+}
+.form-control__input::-ms-input-placeholder {
+  color: black;
+}
+.form-control__input::placeholder {
+  color: black;
+}
 .form-control__show-pass {
   display: inline-block;
   margin: 0;
@@ -2621,6 +2633,11 @@ select.form-control__input {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+.form__input-group_right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .form__label {
   -webkit-box-flex: 0;
@@ -4419,6 +4436,8 @@ select.form-control__input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-decoration: inherit;
+  color: inherit;
 }
 .achievement__item.active .achievement__img {
   opacity: 1;

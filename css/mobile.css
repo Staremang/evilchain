@@ -2503,6 +2503,18 @@ select.form-control__input {
   background-color: #C4C4C4;
   cursor: not-allowed;
 }
+.form-control__input::-webkit-input-placeholder {
+  color: black;
+}
+.form-control__input:-ms-input-placeholder {
+  color: black;
+}
+.form-control__input::-ms-input-placeholder {
+  color: black;
+}
+.form-control__input::placeholder {
+  color: black;
+}
 .form-control__show-pass {
   display: inline-block;
   margin: 0;
@@ -2621,6 +2633,11 @@ select.form-control__input {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+.form__input-group_right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .form__label {
   -webkit-box-flex: 0;
@@ -4338,6 +4355,8 @@ select.form-control__input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-decoration: inherit;
+  color: inherit;
 }
 .achievement__item.active .achievement__img {
   opacity: 1;
@@ -5257,6 +5276,19 @@ header {
 .btn-global_auto {
   width: auto;
 }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  text-align: center;
+}
+.table thead {
+  background: black;
+  font-size: 14px;
+}
+.table tbody {
+  background: rgba(196, 218, 232, 0.2);
+}
 .m-account {
   padding-bottom: 14px;
   background-image: url("../img/bg.png");
@@ -5723,6 +5755,26 @@ header {
   height: 26px;
   width: 26px;
 }
+.header-menu__title {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.header-menu__btn {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.header-menu__btn > span {
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2222.5146%22%20height%3D%225.62865%22%20rx%3D%222%22%20transform%3D%22matrix(0.709225%20-0.704982%200.709225%200.704982%205.04004%2020.8723)%22%20fill%3D%22white%22%2F%3E%0A%3Crect%20width%3D%2222.5146%22%20height%3D%225.62865%22%20rx%3D%222%22%20transform%3D%22matrix(0.709225%200.704982%20-0.709225%200.704982%208.99194%205.15942)%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
 .header-menu .btn-global {
   font-size: 14px;
   height: 30px;
@@ -6141,6 +6193,12 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
+.form__input {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 @media screen and (max-width: 767px) {
   .header-menu__logo {
@@ -6591,4 +6649,484 @@ header {
 .m-tournament-table__last-child td {
   padding-bottom: 7px;
   height: 35px;
+}
+.m-profile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 15px 10px;
+  background: #000000;
+}
+.m-profile-nav__col {
+  padding: 5px 10px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.m-profile-nav__link {
+  border: 1px solid #2C2C36;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  position: relative;
+}
+.m-profile-nav__link.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+.m-profile-nav__link_notice:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  display: block;
+  background: #D30131;
+  border-radius: 50%;
+  top: 10px;
+  right: 23.07692308%;
+}
+.m-profile {
+  padding: 20px 0;
+}
+/*
+ * Настройки
+ */
+.settings-timer {
+  height: 172px;
+  padding: 10px;
+}
+.settings-timer__title {
+  font-size: 24px;
+}
+.settings-timer__container {
+  margin-top: 20px;
+}
+.settings-timer__num {
+  width: 30px;
+  height: 35px;
+  padding: 2px;
+}
+.settings-timer__name {
+  font-size: 18px;
+}
+.settings-timer__delimiter {
+  padding-top: 0;
+}
+/*
+ * Баланс
+ */
+.m-balance {
+  background: rgba(196, 218, 232, 0.2);
+  padding: 7px 10px 10px;
+}
+.m-balance__title {
+  font-size: 18px;
+  text-align: right;
+  margin-bottom: 3px;
+}
+.m-balance__title_orange {
+  color: #FFD53A;
+}
+.m-balance__val {
+  background: black;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+.m-balance__val_large {
+  padding: 16px 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: #FFD53A;
+}
+.m-balance__val:last-child {
+  margin-bottom: 0;
+}
+.m-balance__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.m-balance-info {
+  height: 140px;
+}
+.m-balance-info__text {
+  width: 193px;
+  text-align: center;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 61px;
+}
+/*
+ * Блокировка
+ */
+.p-blocking__info {
+  background: rgba(196, 218, 232, 0.2);
+  padding: 10px;
+  margin-top: 6px;
+}
+.p-blocking .form {
+  padding: 20px 16px;
+}
+.self-harm {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+/*
+ * Почта
+ */
+.m-mail {
+  margin-top: 20px;
+}
+.m-mail__title {
+  color: #FFD53A;
+  text-decoration: underline;
+  font-size: 18px;
+  text-align: right;
+  margin-bottom: 4px;
+}
+.m-mail__container {
+  max-height: 490px;
+  overflow: auto;
+}
+.m-mail-item {
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 6px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  padding: 10px 0;
+  text-decoration: inherit;
+  color: inherit;
+}
+.m-mail-item:hover,
+.m-mail-item:active,
+.m-mail-item:focus,
+.m-mail-item.active {
+  background: none;
+}
+.m-mail-item_new {
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#1D1A21));
+  background: -webkit-linear-gradient(bottom, #000000 0%, #1D1A21 100%);
+  background: -o-linear-gradient(bottom, #000000 0%, #1D1A21 100%);
+  background: linear-gradient(0deg, #000000 0%, #1D1A21 100%);
+}
+.m-mail-item_new:hover,
+.m-mail-item_new:active,
+.m-mail-item_new:focus,
+.m-mail-item_new.active {
+  background: black;
+}
+.m-mail-item_new:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #D30131;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+}
+.m-mail-item_new .m-mail-item__text {
+  color: #949494;
+}
+.m-mail-item__date {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 110px;
+  flex: 0 0 110px;
+  max-width: 110px;
+  text-align: center;
+}
+.m-mail-item__date > *:first-child {
+  margin-bottom: 3px;
+}
+.m-mail-item__preview {
+  padding-left: 40px;
+  max-width: calc(100% - 150px);
+}
+.m-mail-item__sender {
+  margin-bottom: 3px;
+}
+.m-mail-item__text {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  font-style: italic;
+}
+.m-mail-full {
+  padding: 10px 16px 30px;
+}
+.m-mail-full__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.m-mail-full__text {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.m-mail-full__info {
+  text-align: right;
+  margin-bottom: 16px;
+}
+.m-mail-full__sender {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.m-mail-full__time {
+  margin-left: 20px;
+}
+.m-mail-full__btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.m-mail-full__btn-block > .btn-global {
+  font-size: 13px;
+}
+/*
+ * Календарь
+ */
+.m-calendar-event {
+  background: black;
+  padding: 10px 10px 20px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 212px;
+}
+.m-calendar-event_old .m-calendar-event__date {
+  background: #FFD53A;
+  color: #1D1A21;
+}
+.m-calendar-event_now .m-calendar-event__date {
+  background: #2C0E48;
+  color: white;
+}
+.m-calendar-event__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.m-calendar-event__text {
+  font-size: 18px;
+  color: #949494;
+}
+.m-calendar-event__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+}
+.m-calendar-event__date {
+  height: 40px;
+  width: 152px;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 7px;
+  background: #6A0C4E;
+  color: white;
+}
+.m-calendar-event__date > span {
+  font-size: 18px;
+}
+.m-event-info {
+  padding: 10px 16px 30px;
+}
+.m-event-info__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.m-event-info__text {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.m-event-info__btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.m-event-info .m-tournament-info {
+  font-size: 18px;
+}
+.m-event-info .m-tournament-info__img {
+  width: 142px;
+  height: 100px;
+}
+.m-achievement-list__title {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.m-achievement-list__container {
+  padding: 10px 20px;
+}
+.m-achievement-list__container_white-bg {
+  background: rgba(196, 218, 232, 0.2);
+}
+.m-achievement-list .achievement__img {
+  width: 90px;
+  height: 90px;
+}
+.m-achievement-list .achievement__val {
+  font-size: 12px;
+  color: #FFD53A;
+}
+.m-achievement-list .achievement__item {
+  width: 90px;
+}
+.m-achievement-list .achievement__progress-block {
+  width: 90px;
+}
+.m-achievement-info {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.m-achievement-info__img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 40px;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #6A0C4E;
+  border: 2px solid #FFFFFF;
+}
+.m-achievement-info__img > img {
+  width: 130px;
+  height: 130px;
+}
+.m-achievement-info__content {
+  padding-left: 310px;
+  max-width: 630px;
+}
+.m-achievement-info__title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.m-achievement-info__subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFD53A;
+  margin-bottom: 15px;
+}
+.m-achievement-info__description {
+  font-size: 18px;
+}
+.m-achievement-info__timer {
+  height: 80px;
+  text-align: center;
+  background: #D30131;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: auto;
+  padding-top: 20px;
+}
+.m-achievement-info__btn {
+  margin-top: 50px;
+}
+.m-bonuses__block {
+  padding: 10px;
+}
+.m-bonuses__block_white-bg {
+  padding: 14px 10px 6px;
+  background: rgba(196, 218, 232, 0.2);
+}
+.m-bonuses__title {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.m-bonus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 10px;
+  text-decoration: inherit;
+  color: inherit;
+}
+.m-bonus__img {
+  width: 60px;
+  height: 60px;
+  background-color: #3A3939;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+.m-bonus__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.m-bonus__btn {
+  margin-left: auto;
+}
+.m-bonus__timer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+.m-bonus_active {
+  background-color: red;
+}
+.m-bonus_active .m-bonus__title {
+  font-size: 14px;
+  width: 300px;
 }

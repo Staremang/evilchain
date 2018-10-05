@@ -131,11 +131,13 @@ header {
 		display: block;
 	}
 }
+
 .dropdown {
 	position: relative;
+
 	> .dropdown-menu {
 		display: none;
-		
+
 		&.show {
 			display: block;
 		}
@@ -363,6 +365,10 @@ select {
 			background-color: #C4C4C4;
 			cursor: not-allowed;
 		}
+
+		&::placeholder {
+			color: black; 
+		}
 	}
 
 	&__show-pass {
@@ -498,6 +504,10 @@ select {
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 10px;
+		
+		&_right {
+			justify-content: flex-end;
+		}
 	}
 
 	&__label {
@@ -621,10 +631,10 @@ select {
 	> span {
 		z-index: 1;
 		font-size: 10px;
-//		line-height: 20px;
+		//		line-height: 20px;
 		color: black;
 		font-weight: bold;
-//		position: relative;
+		//		position: relative;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -694,7 +704,7 @@ select {
  * Всплывающее окно регистрации 
  */
 .registration {
-	
+
 	&_modal {
 		position: fixed;
 		//	position: absolute;
@@ -709,7 +719,7 @@ select {
 		overflow: auto;
 		padding-top: 97px;
 		padding-bottom: 100px;
-		
+
 		display: none;
 	}
 
@@ -967,7 +977,7 @@ select {
 			background-image: data-uri('../img/icons/icon-fb.png');
 		}
 	}
-	
+
 	&__link {
 		display: flex;
 		align-items: center;
@@ -977,12 +987,13 @@ select {
 		padding: 5px 0;
 		border-bottom: 1px solid white;
 		position: relative;
-		
+
 		fill: white;
+
 		&:hover {
 			fill: #FF002B;
 		}
-		
+
 		&_notice {
 			&:before {
 				content: '';
@@ -996,15 +1007,18 @@ select {
 			}
 		}
 	}
+
 	&__icon {
 		margin-right: 10px;
 		fill: inherit;
 	}
+
 	&__profile {
 		padding-left: 50px;
 		position: relative;
 		margin-bottom: 15px;
 	}
+
 	&__level {
 		background: linear-gradient(144deg, #2C0E48 15%, #6A0C4E 50%, #D30131 100%);
 		border-radius: 50%;
@@ -1017,6 +1031,7 @@ select {
 		font-weight: bold;
 		padding-top: 11px;
 	}
+
 	&__name {
 		margin-bottom: 6px;
 	}
@@ -1488,7 +1503,7 @@ select {
 		filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
 		fill: white;
 	}
-	
+
 	&__text {
 		margin-left: 10px;
 	}
@@ -1551,8 +1566,8 @@ select {
 				width: 76%;
 				height: 76%;
 				left: 12%;
-				top: 12%; 
-//				transform: translate3d(3.5px, 3.5px, 0);
+				top: 12%;
+				//				transform: translate3d(3.5px, 3.5px, 0);
 				z-index: 0;
 			}
 		}
