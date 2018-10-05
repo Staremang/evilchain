@@ -315,6 +315,11 @@ $(document).ready(function () {
 		$(this).parent().toggleClass('active');
 	})
 	
+	$('.m-tournament-item__banner').click(function (e) {
+		e.preventDefault();
+		$(this).parent().toggleClass('active');
+	})
+
 	$('.tournament-item__banner').hover(function () {
 		$('.tournament-item__banner').addClass('tournament-item__banner_overlay');
 		$(this).addClass('tournament-item__banner_active')
@@ -322,9 +327,9 @@ $(document).ready(function () {
 		$('.tournament-item__banner').removeClass('tournament-item__banner_overlay');
 		$(this).removeClass('tournament-item__banner_active');
 	})
-	
-	
-	
+
+
+
 	$('.mail-table__info').click(function (e) {
 		if (e.target.tagName == 'INPUT')
 			return;
@@ -332,11 +337,22 @@ $(document).ready(function () {
 		$(this).parent().toggleClass('active');
 	})
 
+
+
 	$('.tournament__slider').addClass('owl-carousel');
 	$('.tournament__slider').addClass('owl-theme');
 	$('.tournament__slider').owlCarousel({
 		items: 3,
 		margin: 30,
+		loop: true,
+		//		nav:true,
+	})
+
+	$('.tournament__slider-mobile').addClass('owl-carousel');
+	$('.tournament__slider-mobile').addClass('owl-theme');
+	$('.tournament__slider-mobile').owlCarousel({
+		items: 1,
+		margin: 0,
 		loop: true,
 		//		nav:true,
 	})
@@ -348,7 +364,24 @@ $(document).ready(function () {
 		items: 5,
 		margin: 20,
 		loop: true,
-		//		nav:true,
+	})
+
+	$('.new-game__slider-mobile').addClass('owl-carousel');
+	$('.new-game__slider-mobile').addClass('owl-theme');
+	$('.new-game__slider-mobile').owlCarousel({
+		stagePadding: 0,
+		items: 3,
+		margin: 6,
+		loop: true,
+		responsive: {
+			586: {
+				items: 4,
+			},
+
+			736: {
+				items: 5,
+			},
+		}
 	})
 
 

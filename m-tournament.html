@@ -3,10 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Статистика - Evilchain</title>
+	<title>Главная - Evilchain</title>
 
 
-	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+	<!--	<link rel="stylesheet" href="css/main.min.css">-->
+	<link rel="stylesheet" href="css/mobile.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700,900&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -17,196 +20,17 @@
 				<div class="header-menu__container">
 					<a href="#" class="header-menu__logo"></a>
 					<div class="header-menu__block">
-						<div class="header-menu__bonuses">
-							<img src="img/bonus-2.svg" alt="Бонус">
-						</div>
-						<div class="header-menu__bonuses">
-							<img src="img/bonus-3.svg" alt="Бонус">
-						</div>
-						<div class="header-menu__bonuses">
-							<img src="img/bonus-4.svg" alt="Бонус">
-						</div>
-						<div class="header-menu__balance">45678, 89</div>
-
-
-						<div class="dropdown">
-							<!-- &.header-menu__avatar_notice - иконка уведомлений -->
-							<a href="#" class="header-menu__avatar header-menu__avatar_notice" data-toggle="dropdown">
-								<!-- Ссылка на аватар пользователя -->
-								<img src="" alt="" class="header-menu__avatar-photo">
-							</a>
-							<div class="top-dropdown-menu dropdown-menu dropdown-menu-right">
-								<div class="top-dropdown-menu__profile">
-									<div class="top-dropdown-menu__level">235</div>
-									<div class="top-dropdown-menu__name">Имя Профиля</div>
-									<div class="top-dropdown-menu__vip">VIP 24:56:09</div>
-								</div>
-								<a href="#" class="top-dropdown-menu__link top-dropdown-menu__link_notice">
-									<svg class="top-dropdown-menu__icon" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0774 11H28.0734C29.7985 11 31.2099 12.099 31.8372 13.5119L20.0754 18.8497L8.31365 13.5119C8.94094 12.099 10.5092 11 12.0774 11ZM32.3077 15.3959V25.6005C32.3077 27.9554 30.4258 29.8394 28.0734 29.8394H12.0774C9.88189 29.8394 8 27.9554 8 25.6005V15.3959L20.0754 21.0477L32.3077 15.3959Z" />
-									</svg>
-									ПОЧТА
-								</a>
-								<a href="#" class="top-dropdown-menu__link">
-									<svg class="top-dropdown-menu__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0716 30.3122C9.4443 27.4863 13.0512 25.4454 16.5014 23.5614C17.4423 23.0904 17.756 21.5205 17.2855 20.7355C16.6582 19.9505 16.0309 18.8516 15.8741 17.5956C15.2468 17.4386 14.7763 16.4966 14.6195 15.8687C14.6195 15.2407 14.3058 14.2987 14.9331 13.9847C14.6195 9.74587 16.5014 6.44898 20.2651 7.07696C24.1857 6.44898 25.9108 9.74587 25.5972 13.9847C26.3813 14.2987 26.0676 15.2407 25.9108 15.8687C25.754 16.4966 25.4403 17.4386 24.813 17.5956C24.4994 18.8516 24.0289 19.9505 23.2448 20.7355C22.9311 21.5205 23.2448 23.0904 24.0289 23.5614C27.479 25.4454 31.086 27.4863 30.6155 30.3122C30.145 32.5101 28.7336 33.4521 26.3813 33.4521H23.2448H20.2651H17.4423H14.149C11.7967 33.4521 10.5421 32.5101 10.0716 30.3122Z" />
-									</svg>
-									ПРОФИЛЬ
-								</a>
-								<button type="submit" class="top-dropdown-menu__btn btn-global">
-									<i class="btn-global__icon">
-										<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.4118H2.95858V16.3529L8.52071 13.1765L13.9645 10L8.52071 6.82353L2.95858 3.64706V6.58824H0V13.4118ZM6.0355 0H18.9349C19.5266 0 20 0.588235 20 1.17647V18.8235C20 19.4118 19.5266 20 18.9349 20H6.0355V17.1765H16.4497C16.9231 17.1765 17.2781 16.8235 17.2781 16.3529V3.64706C17.2781 3.17647 16.9231 2.82353 16.4497 2.82353H6.0355V0Z" /></svg>
-									</i>
-									<span>ВЫЙТИ</span>
-								</button>
-							</div>
-						</div>
-
 						<button class="btn-global btn-global_auto">
 							<i class="btn-global__icon">
-								<svg width="20" height="15" viewBox="0 0 20 15" xmlns="http://www.w3.org/2000/svg">
+								<svg width="15" height="12" viewBox="0 0 20 15" xmlns="http://www.w3.org/2000/svg">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M20 0H0L9.94012 15L20 0Z" /></svg>
 							</i>
 							<span>RU</span>
 						</button>
+						<button class="header-menu__menu" data-toggle="modal" data-target="#mobile-nav">
+							<span></span>
+						</button>
 					</div>
-				</div>
-			</div>
-			<div class="header-banner">
-				<div class="header-banner__slider">
-					<div class="header-banner__item" style="background-image: url(img/banner.png)"></div>
-					<div class="header-banner__item" style="background-image: url(img/banner.png)"></div>
-					<div class="header-banner__item" style="background-image: url(img/banner.png)"></div>
-					<div class="header-banner__item" style="background-image: url(img/banner.png)"></div>
-				</div>
-				<div class="top-players">
-					<div class="top-players__block">
-						<div class="top-players__header nav" role="tablist">
-							<a href="#header-tab-1" class="top-players__tab active" data-toggle="tab" role="tab">
-								<i class="top-players__tab-icon">
-									<svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M21.3671 5.79725C20.8608 4.87491 20.557 4.05504 20.0506 3.1327C19.7468 2.62029 19.2405 2.21036 18.9367 1.69794C18.7342 1.39049 18.4304 1.39049 18.2278 0.980563C18.2278 0.878081 18.5316 0.160702 18.5316 0.0582191C14.0759 -0.556677 11.3418 3.85008 12.3544 8.05187L11.038 8.35932C11.1392 7.43697 11.2405 6.30966 9.92405 5.4898C9.82278 5.38732 10.5316 5.07987 10.5316 4.87491C10.5316 4.66994 10.4304 4.56746 10.4304 4.26001C10.4304 3.64511 10.3291 2.72277 9.11392 2.5178C7.29114 2.72277 8 4.15753 8 4.97739C6.98734 4.97739 7.08861 5.59228 7.18987 6.00221C7.3924 6.41215 7.29114 6.92456 7.18987 7.23201C7.08861 7.43697 6.88608 7.43697 6.78481 7.53945C6.78481 7.74442 7.08861 7.94939 6.98734 8.05187C6.88608 8.25683 6.78481 8.4618 6.88608 8.76925C6.98734 8.87173 7.3924 9.07669 7.49367 9.17918L1.01266 10.8189C0.911392 10.8189 0.810127 10.9214 0.810127 11.0239V11.1263C0.810127 11.2288 1.01266 11.3313 1.11392 11.3313L7.89873 9.69159H8.10126C8.20253 9.58911 7.29114 10.204 7.6962 11.9462C6.48101 11.9462 4.75949 13.5859 4.4557 14.9182C2.63291 15.0207 2.32911 16.7629 2.22785 19.4274C2.22785 20.7597 1.62025 21.9895 0.708861 22.3994C1.11392 22.297 1.41772 22.297 1.62025 22.1945C1.11392 22.6044 0.911392 22.9119 0.506329 23.2193C1.51899 22.8094 1.51899 22.7069 2.02532 22.1945C1.72152 22.7069 0.911392 23.5268 0 24.3466C1.31646 23.7317 3.13924 22.297 3.74684 21.5796C3.34177 22.5019 3.03797 22.8094 2.73418 23.1168C3.8481 22.3994 4.65823 21.5796 4.65823 20.5548C4.65823 19.2225 3.03797 16.0455 4.35443 15.6356C4.05063 18.0952 5.06329 19.5299 7.08861 19.9399C6.88608 21.3746 6.58228 21.887 6.68354 22.297C6.68354 22.8094 7.08861 22.9119 8.40506 23.9367C8.70886 24.2441 8.91139 24.7565 9.31645 25.064C9.41772 25.1665 9.82278 24.859 9.92405 25.064C10.1266 25.1665 10.1266 25.5764 10.3291 25.7814C10.4304 25.9863 11.6456 26.1913 11.7468 25.6789C11.5443 25.5764 11.443 25.269 11.1392 25.064C11.038 24.6541 10.7342 24.6541 10.5316 24.5516C10.2278 24.0392 9.92405 23.9367 9.72152 23.7317C9.01266 23.3218 8.40506 23.1168 8.10126 22.3994C8 22.1945 8.10126 21.9895 8 21.6821C8.60759 20.8622 9.72152 18.6076 10.0253 18.8125C9.72152 19.4274 9.41772 20.1448 9.21519 20.9647C8.60759 21.6821 8.40506 22.092 8.60759 22.3994C9.31645 23.1168 10.5316 23.5268 10.9367 24.2441C11.038 24.4491 11.443 24.0392 11.6456 24.2441C11.7468 24.4491 11.9494 24.7565 12.2532 24.7565C12.2532 25.1665 12.4557 25.064 12.557 25.1665C13.0633 25.1665 13.6709 24.9615 13.5696 24.7565C13.4684 24.4491 13.3671 24.1416 12.962 24.1416C13.0633 23.6292 11.1392 23.1168 10.1266 22.3994C9.92405 22.1945 10.0253 21.6821 9.82278 21.4771C11.038 19.9399 13.1646 19.0175 12.8608 17.0703C13.9747 17.0703 16.5063 16.0455 16.8101 15.943C17.2152 15.943 17.6203 15.7381 18.0253 15.7381C19.038 15.6356 21.1646 15.5331 21.3671 15.6356C21.0633 15.7381 20.4557 16.5579 20.0506 16.9679C19.8481 17.1728 19.6456 16.9679 19.443 17.0703C19.3418 17.2753 19.038 17.0703 18.9367 17.1728C18.8354 17.0703 18.7342 16.9679 18.5316 16.9679C18.5316 16.8654 18.2278 16.7629 18.1266 16.8654C17.7215 16.9679 17.2152 17.3778 17.1139 17.6852C17.2152 17.9927 17.6203 17.9927 18.0253 18.0952C18.2278 18.0952 18.4304 18.1977 18.6329 18.3001C18.8354 18.4026 19.2405 18.3001 19.443 18.0952C19.6456 18.0952 19.8481 18.1977 19.9494 18.0952C20.2532 17.4803 21.0633 16.7629 21.7722 16.353C21.9747 16.148 22.481 16.148 22.481 15.7381C22.2785 14.8157 21.7722 14.7132 21.2658 14.5083C21.7722 14.4058 22.5823 14.0983 23.0886 13.9959C23.0886 14.0983 23.2911 14.3033 23.4937 14.6108C23.5949 14.9182 23.5949 15.3281 23.6962 15.4306C23.6962 16.6604 23.4937 16.6604 23.6962 16.9679C24 17.3778 24.4051 17.4803 24.8101 17.3778C24.8101 17.3778 25.0127 16.8654 24.8101 16.6604C24.7089 16.353 24.7089 15.943 24.6076 15.6356C24.3038 14.8157 23.6962 14.0983 23.6962 13.8934C23.6962 13.7909 23.6962 13.2785 23.3924 13.176C22.8861 13.2785 20.557 13.0735 20.0506 13.176C20.3544 12.0487 20.0506 10.6139 19.7468 10.6139C19.2405 9.58911 18.0253 8.56428 17.519 7.33449L19.7468 6.71959C19.9494 6.92456 20.1519 7.12952 20.3544 7.43697C20.8608 7.53945 21.3671 6.82208 21.4684 6.30966L29.8734 4.36249L32 3.54263L29.5696 3.85008L21.3671 5.79725ZM12.4557 8.56428C12.557 8.66676 12.557 8.87173 12.6582 8.97421C12.3544 9.48663 11.9494 9.99904 11.5443 9.89656C11.3418 9.89656 11.1392 9.48663 11.1392 8.97421V8.87173L12.4557 8.56428ZM17.4177 6.82208C17.3165 6.51463 17.3165 6.20718 17.4177 5.89973C17.519 5.89973 18.1266 5.89973 18.2278 6.00221C18.5316 6.20718 18.7342 6.30966 19.038 6.41215L17.4177 6.82208Z" fill="white" /></svg>
-								</i>
-								Турнир
-							</a>
-							<a href="#header-tab-2" class="top-players__tab" data-toggle="tab" role="tab">
-								<i class="top-players__tab-icon">
-									<svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M9.15979 14.8301V3.47754C9.15979 1.22754 10.6171 0.000488281 13.6356 0.000488281C16.6542 0.000488281 18.1115 1.22754 18.1115 3.47754V14.8301C18.1115 15.853 17.6951 16.6709 16.8624 17.1826C16.0297 17.7959 14.9888 18.0005 13.6356 18.0005C10.6171 18.0005 9.15979 16.978 9.15979 14.8301ZM14.2602 15.0347V2.96631C14.2602 2.65967 14.052 2.45508 13.6356 2.45508C13.2193 2.45508 13.0111 2.65967 13.0111 2.96631V15.0347C13.0111 15.3413 13.2193 15.5459 13.6356 15.5459C14.052 15.5459 14.2602 15.3413 14.2602 15.0347ZM8.43127 2.45557H6.24536V17.8989H2.18585V2.45557H0V0.205566H8.43127V2.45557ZM22.7957 17.8989V11.3535C24.9816 11.3535 26.3348 11.1489 27.0634 10.6372C27.6879 10.2285 28.0002 9.41016 28.0002 8.18311V3.27393C28.0002 2.04639 27.5838 1.22852 26.7511 0.819336C26.0225 0.410156 24.7734 0.205566 23.108 0.205566H18.9444V17.8989H22.7957ZM24.1489 3.68262V7.87598C24.1489 8.48975 23.7325 8.79639 22.7957 8.79639V2.76221C23.7325 2.76221 24.1489 3.06934 24.1489 3.68262Z" fill="white" /></svg>
-								</i>
-								Игроков
-							</a>
-						</div>
-						<div class="top-players__content tab-content">
-							<div class="tab-pane active top-players__tournament" id="header-tab-1" role="tabpanel">
-								<div class="tournament-info">
-									<div class="tournament-info__img" style="background-image: url(img/game-2.png)"></div>
-									<div class="tournament-info__block">
-										<div class="tournament-info__text">
-											<div class="tournament-info__title">Ltgacy Horserace</div>
-											<div class="tournament-info__info">
-												До конца турнира: <b class="nowrap">22ч. 36м. 01с.</b>
-											</div>
-											<div class="tournament-info__info">
-												Призовой фонд: <b class="nowrap">250,000.01</b>
-											</div>
-										</div>
-										<button class="tournament-info__btn btn-global btn-global_auto">
-											<i class="btn-global__icon">
-												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M7.51515 -0.000488281V7.41593H0V12.5831H7.51515V19.9995H12.4848V12.5831H20V7.41593H12.4848V-0.000488281H7.51515Z" fill="#FEFEFE" /></svg>
-											</i>
-											<span>ПРИСОЕДИНИТЬСЯ <br>к турниру</span>
-										</button>
-									</div>
-								</div>
-								<table class="participants-list">
-									<tr class="participants-list__item">
-										<td>
-											<div class="participants-list__num participants-list__num_orange"><span>1</span></div>
-										</td>
-										<td><b>NikName</b></td>
-										<td>345 ур.</td>
-										<td class="participants-list__price"><b>455 000</b></td>
-									</tr>
-									<tr class="participants-list__item">
-										<td>
-											<div class="participants-list__num participants-list__num_orange"><span>2</span></div>
-										</td>
-										<td><b>NikName</b></td>
-										<td>345 ур.</td>
-										<td class="participants-list__price"><b>455 000</b></td>
-									</tr>
-									<tr class="participants-list__item">
-										<td>
-											<div class="participants-list__num participants-list__num_orange"><span>3</span></div>
-										</td>
-										<td><b>NikName</b></td>
-										<td>345 ур.</td>
-										<td class="participants-list__price"><b>455 000</b></td>
-									</tr>
-								</table>
-							</div>
-							<div class="tab-pane top-players__players-list" id="header-tab-2" role="tabpanel">
-								<table class="participants-list">
-									<tr class="participants-list__item">
-										<td>
-											<div class="participants-list__num participants-list__num_orange"><span>1</span></div>
-										</td>
-										<td><b>NikName</b></td>
-										<td>345 ур.</td>
-										<td class="participants-list__price"><i class="i-arrow-up"></i></td>
-									</tr>
-									<tr class="participants-list__item">
-										<td>
-											<div class="participants-list__num participants-list__num_orange"><span>2</span></div>
-										</td>
-										<td><b>NikName</b></td>
-										<td>345 ур.</td>
-										<td class="participants-list__price"><i class="i-arrow-down"></i></td>
-									</tr>
-									<tr class="participants-list__item">
-										<td>
-											<div class="participants-list__num participants-list__num_orange"><span>3</span></div>
-										</td>
-										<td><b>NikName</b></td>
-										<td>345 ур.</td>
-										<td class="participants-list__price"><i class="i-arrow-up"></i></td>
-									</tr>
-									<tr class="participants-list__item">
-										<td>
-											<div class="participants-list__num participants-list__num_orange"><span>4</span></div>
-										</td>
-										<td><b>NikName</b></td>
-										<td>345 ур.</td>
-										<td class="participants-list__price"><i class="i-arrow-down"></i></td>
-									</tr>
-									<tr class="participants-list__item">
-										<td>
-											<div class="participants-list__num participants-list__num_orange"><span>5</span></div>
-										</td>
-										<td><b>NikName</b></td>
-										<td>345 ур.</td>
-										<td class="participants-list__price"><i class="i-arrow-up"></i></td>
-									</tr>
-									<tr class="participants-list__item">
-										<td>
-											<div class="participants-list__num participants-list__num_orange"><span>6</span></div>
-										</td>
-										<td><b>NikName</b></td>
-										<td>345 ур.</td>
-										<td class="participants-list__price"><i class="i-arrow-down"></i></td>
-									</tr>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="header-news">
-				<div class="header-news__plate">
-					<div class="header-news__title">news</div>
 				</div>
 			</div>
 			<div class="nav nav_header">
@@ -280,457 +104,326 @@
 		</header>
 		<div class="content">
 			<div class="container">
-				<div class="profile">
-					<div class="profile__menu">
-						<a href="#" class="profile__link profile__link_left">
-							<svg width="41" height="40" viewBox="0 0 41 40" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4.05736 1.53369C4.76718 6.84343 9.26272 11.4452 12.8118 11.4452C14.1132 10.6192 16.9525 10.2653 19.9101 10.1473H20.0284H20.265C23.2226 10.2653 25.9436 10.6192 27.3632 11.4452C30.794 11.4452 35.2896 6.84343 35.9994 1.53369C37.3007 7.78738 36.236 12.0352 33.7516 15.929C33.6333 19.9408 33.3967 22.1827 30.9123 24.5425C31.2672 25.8405 31.5038 30.4422 27.5998 31.3862C25.9436 35.28 23.5775 37.7579 20.3833 38.4658L20.0284 38.3479L19.7918 38.4658C16.4793 37.7579 14.1132 35.28 12.5752 31.3862C8.5529 30.4422 8.78951 25.8405 9.26272 24.5425C6.66004 22.1827 6.42343 19.9408 6.42343 15.929C3.82075 12.0352 2.75602 7.78738 4.05736 1.53369Z" />
-							</svg>
-						</a>
-						<a href="#" class="profile__link profile__link_left">
-							<svg width="41" height="40" viewBox="0 0 41 40" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M30.325 15.5754C30.4433 15.6934 30.4433 15.8114 30.5616 15.9293C30.2067 20.1771 33.2826 23.363 34.584 26.9028C35.5304 29.6167 33.046 34.9264 29.142 34.9264C23.1085 34.9264 16.9567 34.9264 10.9232 34.9264C7.01918 34.9264 4.65311 29.6167 5.48123 26.9028C6.54597 23.363 9.26696 20.1771 9.03035 15.9293V15.8114C9.26696 15.9293 9.38526 15.9293 9.62187 15.9293H10.3317C10.8049 15.9293 11.9879 15.5754 11.9879 15.1034V12.9795H27.2491V15.1034C27.2491 15.5754 28.4322 15.9293 28.9054 15.9293H29.6152C29.9701 15.9293 30.2067 15.8114 30.325 15.5754Z" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M9.62221 9.67529H10.332H28.9057H29.6156C30.0888 9.67529 30.562 10.1473 30.562 10.6192V11.3272V14.5131C30.562 14.985 30.0888 15.457 29.6156 15.457H28.9057C28.4325 15.457 28.0776 14.985 28.0776 14.5131V12.1532H11.1602V14.5131C11.1602 14.985 10.8052 15.457 10.332 15.457H9.62221C9.149 15.457 8.67578 14.985 8.67578 14.5131V11.3272V10.6192C8.67578 10.1473 9.149 9.67529 9.62221 9.67529Z" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M21.9252 5.07373C22.99 5.07373 23.8181 5.89969 23.8181 6.96164C23.8181 8.02358 22.99 8.84954 21.9252 8.84954C21.452 8.84954 20.9788 8.61355 20.7422 8.37757C21.0971 8.02358 21.3337 7.55161 21.3337 6.96164C21.3337 6.37167 21.0971 5.7817 20.7422 5.54571C20.9788 5.19172 21.452 5.07373 21.9252 5.07373Z" />
-								<path d="M18.8499 8.84954C19.8953 8.84954 20.7428 8.0043 20.7428 6.96164C20.7428 5.91897 19.8953 5.07373 18.8499 5.07373C17.8045 5.07373 16.957 5.91897 16.957 6.96164C16.957 8.0043 17.8045 8.84954 18.8499 8.84954Z" />
-							</svg>
-						</a>
-						<a href="#" class="profile__link profile__link_left profile__link_notice ">
-							<svg width="41" height="40" viewBox="0 0 41 40" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0531 21.3569V32.4484C35.0531 33.8643 33.9883 35.1622 32.8053 35.1622H7.36998C6.06864 35.1622 5.00391 33.8643 5.00391 32.4484V21.3569H35.0531Z" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M20.1463 10.7376H20.8561C21.4476 10.7376 22.0391 10.1476 22.0391 9.43968V9.0857C22.0391 9.0857 22.0391 8.9677 22.0391 8.84971C23.2222 7.90576 24.4052 7.0798 25.4699 6.9618C26.1798 6.9618 27.3628 7.43378 27.5994 7.90576C27.9543 8.14175 23.4588 10.2656 23.3405 10.7376C24.8784 10.3836 33.1597 8.84971 32.9231 6.9618C32.4499 4.36593 23.932 3.77596 21.3293 8.02375C21.0927 7.90576 20.9744 7.90576 20.8561 7.90576H19.3181C19.0815 7.90576 18.9632 7.90576 18.8449 8.02375C16.1239 3.77596 7.60607 4.36593 7.25116 6.9618C6.89625 8.84971 15.2958 10.3836 16.8338 10.7376C16.5972 10.2656 12.1016 8.14175 12.4565 7.90576C12.6931 7.43378 13.9945 6.9618 14.586 6.9618C15.6507 7.0798 16.8338 7.90576 18.0168 8.84971C18.0168 8.9677 18.0168 9.0857 18.0168 9.0857V9.43968C18.0168 10.1476 18.6083 10.7376 19.3181 10.7376H19.9097H20.1463Z" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.30665 12.5073H33.8714C35.1728 12.5073 36.3558 13.6873 36.3558 14.9852V18.997H3.82227V14.9852C3.82227 13.6873 4.887 12.5073 6.30665 12.5073Z" />
-							</svg>
-						</a>
-						<a href="#" class="profile__link profile__link_left active">
-							<svg width="41" height="40" viewBox="0 0 41 40" xmlns="http://www.w3.org/2000/svg">
-								<path d="M36.2241 11.4453H27.248V38.7499H36.2241V11.4453Z" />
-								<path d="M24.5112 16.7549H15.5352V38.6875H24.5112V16.7549Z" />
-								<path d="M12.9175 21.2388H3.94141V38.6957H12.9175V21.2388Z" />
-								<path d="M6.66323 18.289L29.2593 7.66953L30.4423 10.1474L34.4646 2.83177L26.1834 1.29785L27.3664 3.77573L4.88867 14.3952L6.66323 18.289Z" />
-							</svg>
-						</a>
-					</div>
-					<div class="profile__content">
-						<div class="profile__container">
-							<div class="statistics" role="tablist">
-								<div class="statistics__header nav">
-									<a href="#statistics-1" class="statistics__tab active" data-toggle="tab" role="tab">Турнирная таблица</a>
-									<a href="#statistics-2" class="statistics__tab" data-toggle="tab" role="tab">Таблица ставок</a>
-									<a href="#statistics-3" class="statistics__tab" data-toggle="tab" role="tab">Таблица выигрышей (выплат)</a>
-									<a href="#statistics-4" class="statistics__tab" data-toggle="tab" role="tab">История платежей</a>
-								</div>
-								<div class="statistics__wrapper tab-content">
-									<div id="statistics-1" role="tabpanel" class="tab-pane active tournament-list">
-										<div class="tournament-item">
-											<a href="#" class="tournament-item__banner" style="background-image: url(img/t-banner.jpg)">
-												<div class="tournament-item__bg"></div>
-												<div class="tournament-item__info tournament-info">
-													<div class="tournament-info__block">
-														<div class="tournament-info__text">
-															<div class="tournament-info__title">Ltgacy Horserace</div>
-															<div class="tournament-info__info">
-																До конца турнира: <b class="nowrap">22ч. 36м. 01с.</b>
-															</div>
-															<div class="tournament-info__info">
-																Призовой фонд: <b class="nowrap">250,000.01</b>
-															</div>
-														</div>
-														<button class="tournament-info__btn btn-global btn-global_auto">
-															<i class="btn-global__icon">
-																<svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<rect width="20" height="6" fill="white" />
-																</svg>
-															</i>
-															<span>ПОКИНУТЬ <br>турнир</span>
-														</button>
-													</div>
-												</div>
-												<div class="tournament-item__place">3</div>
-											</a>
-
-											<table class="table tournament-table">
-												<thead>
-													<tr>
-														<th>Места</th>
-														<th>ПРИЗ</th>
-														<th>Участники</th>
-														<th>Баллы</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>1</td>
-														<td><span class="table-coin">1000</span></td>
-														<td>Имя игры</td>
-														<td>4 545 242 520</td>
-													</tr>
-													<tr>
-														<td>2</td>
-														<td><span class="table-coin">500</span></td>
-														<td>Имя игры</td>
-														<td>545 242 520</td>
-													</tr>
-													<tr>
-														<td>3</td>
-														<td><span class="table-coin">100</span></td>
-														<td>Имя игры</td>
-														<td>242 520</td>
-													</tr>
-													<tr>
-														<td>4</td>
-														<td><span class="table-coin">50</span></td>
-														<td>Имя игры</td>
-														<td>520</td>
-													</tr>
-													<tr>
-														<td>5</td>
-														<td><span class="table-coin">10</span></td>
-														<td>Имя игры</td>
-														<td>1</td>
-													</tr>
-													<tr class="active">
-														<td>28</td>
-														<td><span class="table-coin">0</span></td>
-														<td>Имя игры</td>
-														<td>1</td>
-													</tr>
-												</tbody>
-											</table>
+				<div class="m-tournament-list">
+					<div class="m-tournament-item active">
+						<a href="#" class="m-tournament-item__banner">
+							<div class="m-tournament-item__info m-tournament-info">
+								<div class="m-tournament-info__img" style="background-image: url(img/game-1.png)"></div>
+								<div class="m-tournament-info__block">
+									<div class="m-tournament-info__text">
+										<div class="m-tournament-info__title">Ltgacy Horserace</div>
+										<div class="m-tournament-info__info">
+											<span class="m-tournament-info__label">Призовой фонд:</span>
+											<span class="m-tournament-info__val">250,000.01</span>
 										</div>
-										<div class="tournament-item">
-											<a href="#" class="tournament-item__banner" style="background-image: url(img/t-banner.jpg)">
-												<div class="tournament-item__bg"></div>
-												<div class="tournament-item__info tournament-info">
-													<div class="tournament-info__block">
-														<div class="tournament-info__text">
-															<div class="tournament-info__title">Ltgacy Horserace</div>
-															<div class="tournament-info__info">
-																До конца турнира: <b class="nowrap">22ч. 36м. 01с.</b>
-															</div>
-															<div class="tournament-info__info">
-																Призовой фонд: <b class="nowrap">250,000.01</b>
-															</div>
-														</div>
-														<button class="tournament-info__btn btn-global btn-global_auto">
-															<i class="btn-global__icon">
-																<svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<rect width="20" height="6" fill="white" />
-																</svg>
-															</i>
-															<span>ПОКИНУТЬ <br>турнир</span>
-														</button>
-													</div>
-												</div>
-												<div class="tournament-item__place">3</div>
-											</a>
-
-											<table class="table tournament-table">
-												<thead>
-													<tr>
-														<th>Места</th>
-														<th>ПРИЗ</th>
-														<th>Участники</th>
-														<th>Баллы</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>1</td>
-														<td><span class="table-coin">1000</span></td>
-														<td>Имя игры</td>
-														<td>4 545 242 520</td>
-													</tr>
-													<tr>
-														<td>2</td>
-														<td><span class="table-coin">500</span></td>
-														<td>Имя игры</td>
-														<td>545 242 520</td>
-													</tr>
-													<tr>
-														<td>3</td>
-														<td><span class="table-coin">100</span></td>
-														<td>Имя игры</td>
-														<td>242 520</td>
-													</tr>
-													<tr>
-														<td>4</td>
-														<td><span class="table-coin">50</span></td>
-														<td>Имя игры</td>
-														<td>520</td>
-													</tr>
-													<tr>
-														<td>5</td>
-														<td><span class="table-coin">10</span></td>
-														<td>Имя игры</td>
-														<td>1</td>
-													</tr>
-													<tr class="active">
-														<td>28</td>
-														<td><span class="table-coin">0</span></td>
-														<td>Имя игры</td>
-														<td>1</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div class="tournament-item">
-											<a href="#" class="tournament-item__banner" style="background-image: url(img/t-banner.jpg)">
-												<div class="tournament-item__bg"></div>
-												<div class="tournament-item__info tournament-info">
-													<div class="tournament-info__block">
-														<div class="tournament-info__text">
-															<div class="tournament-info__title">Ltgacy Horserace</div>
-															<div class="tournament-info__info">
-																До конца турнира: <b class="nowrap">22ч. 36м. 01с.</b>
-															</div>
-															<div class="tournament-info__info">
-																Призовой фонд: <b class="nowrap">250,000.01</b>
-															</div>
-														</div>
-														<button class="tournament-info__btn btn-global btn-global_auto">
-															<i class="btn-global__icon">
-																<svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<rect width="20" height="6" fill="white" />
-																</svg>
-															</i>
-															<span>ПОКИНУТЬ <br>турнир</span>
-														</button>
-													</div>
-												</div>
-												<div class="tournament-item__place">3</div>
-											</a>
-
-											<table class="table tournament-table">
-												<thead>
-													<tr>
-														<th>Места</th>
-														<th>ПРИЗ</th>
-														<th>Участники</th>
-														<th>Баллы</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>1</td>
-														<td><span class="table-coin">1000</span></td>
-														<td>Имя игры</td>
-														<td>4 545 242 520</td>
-													</tr>
-													<tr>
-														<td>2</td>
-														<td><span class="table-coin">500</span></td>
-														<td>Имя игры</td>
-														<td>545 242 520</td>
-													</tr>
-													<tr>
-														<td>3</td>
-														<td><span class="table-coin">100</span></td>
-														<td>Имя игры</td>
-														<td>242 520</td>
-													</tr>
-													<tr>
-														<td>4</td>
-														<td><span class="table-coin">50</span></td>
-														<td>Имя игры</td>
-														<td>520</td>
-													</tr>
-													<tr>
-														<td>5</td>
-														<td><span class="table-coin">10</span></td>
-														<td>Имя игры</td>
-														<td>1</td>
-													</tr>
-													<tr class="active">
-														<td>28</td>
-														<td><span class="table-coin">0</span></td>
-														<td>Имя игры</td>
-														<td>1</td>
-													</tr>
-												</tbody>
-											</table>
+										<div class="m-tournament-info__info">
+											<span class="m-tournament-info__label">До конца турнира:</span>
+											<span class="m-tournament-info__val">22ч. 36м. 01с.</span>
 										</div>
 									</div>
-									<div id="statistics-2" role="tabpanel" class="tab-pane">
-										<table class="table bid-table">
-											<thead>
-												<tr>
-													<th class="text-left">ID ПЛАТЕЖА</th>
-													<th>СУММА СТАВКИ </th>
-													<th>ИГРА </th>
-													<th>СТАТУС СТАВКИ</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td><span class="table-coin">1000</span></td>
-													<td><img src="img/game-1.png" alt=""> Название игры</td>
-													<td class="text-right"><span class="table-coin">4 545 242 520</span></td>
-												</tr>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td><span class="table-coin">500</span></td>
-													<td><img src="img/game-2.png" alt=""> Название игры 2</td>
-													<td class="text-right"><span class="table-coin">545 242 520</span></td>
-												</tr>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td><span class="table-coin">100</span></td>
-													<td><img src="img/game-3.png" alt=""> Название игры 33</td>
-													<td class="text-right"><span class="table-coin">242 520</span></td>
-												</tr>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td><span class="table-coin">50</span></td>
-													<td><img src="img/game-4.png" alt=""> Название игры 444</td>
-													<td class="text-right"><span class="table-coin">520</span></td>
-												</tr>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td><span class="table-coin">10</span></td>
-													<td><img src="img/game-1.png" alt=""> Название игры 5555</td>
-													<td class="text-right"><span class="table-coin">1</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div id="statistics-3" role="tabpanel" class="tab-pane">
-										<table class="table">
-											<thead>
-												<tr>
-													<th>Дата</th>
-													<th>Сумма</th>
-													<th>Валюта</th>
-													<th class="text-left">Статус</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>02.02.2018</td>
-													<td><span class="table-coin">1000</span></td>
-													<td>Bitcoin</td>
-													<td class="text-left"><span class="table-status table-status_1">в обработке</span></td>
-												</tr>
-												<tr>
-													<td>02.02.2018</td>
-													<td><span class="table-coin">500</span></td>
-													<td>Ripple</td>
-													<td class="text-left"><span class="table-status table-status_2">отмена</span></td>
-												</tr>
-												<tr>
-													<td>02.02.2018</td>
-													<td><span class="table-coin">100</span></td>
-													<td>BitcoinCash</td>
-													<td class="text-left"><span class="table-status table-status_3">завершен</span></td>
-												</tr>
-												<tr>
-													<td>02.02.2018</td>
-													<td><span class="table-coin">50</span></td>
-													<td>Monero</td>
-													<td class="text-left"><span class="table-status table-status_4">требует действия пользователя</span></td>
-												</tr>
-												<tr>
-													<td>02.02.2018</td>
-													<td><span class="table-coin">10</span></td>
-													<td>Dash</td>
-													<td class="text-left"><span class="table-status table-status_2">отмена</span></td>
-												</tr>
-												<tr>
-													<td>02.02.2018</td>
-													<td><span class="table-coin">1</span></td>
-													<td>Litecoin</td>
-													<td class="text-left"><span class="table-status table-status_5">новый</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<div id="statistics-4" role="tabpanel" class="tab-pane">
-										<table class="table">
-											<thead>
-												<tr>
-													<th class="text-left">ID ПЛАТЕЖА</th>
-													<th>Валюта</th>
-													<th>Дата</th>
-													<th>Сумма</th>
-													<th class="text-left">Статус платежа</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td>Bitcoin</td>
-													<td>02.02.2018</td>
-													<td><span class="table-coin">1000</span></td>
-													<td class="text-left"><span class="table-status table-status_1">в обработке</span></td>
-												</tr>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td>Ripple</td>
-													<td>05.02.2018</td>
-													<td><span class="table-coin">500</span></td>
-													<td class="text-left"><span class="table-status table-status_2">отмена</span></td>
-												</tr>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td>BitcoinCash</td>
-													<td>02.02.2018</td>
-													<td><span class="table-coin">100</span></td>
-													<td class="text-left"><span class="table-status table-status_3">завершен</span></td>
-												</tr>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td>Monero</td>
-													<td>02.09.2018</td>
-													<td><span class="table-coin">50</span></td>
-													<td class="text-left"><span class="table-status table-status_1">в обработке</span></td>
-												</tr>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td>Dash</td>
-													<td>02.02.2018</td>
-													<td><span class="table-coin">10</span></td>
-													<td class="text-left"><span class="table-status table-status_2">отмена</span></td>
-												</tr>
-												<tr>
-													<td class="text-left">2890265</td>
-													<td>Litecoin</td>
-													<td>11.09.2018</td>
-													<td><span class="table-coin">1</span></td>
-													<td class="text-left"><span class="table-status table-status_3">новый</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+									<button class="m-tournament-info__btn btn-global">
+										<i class="btn-global__icon">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.51515 -0.000488281V7.41593H0V12.5831H7.51515V19.9995H12.4848V12.5831H20V7.41593H12.4848V-0.000488281H7.51515Z" fill="#FEFEFE" /></svg>
+										</i>
+										<span>ПРИСОЕДИНИТЬСЯ <br>к турниру</span>
+									</button>
 								</div>
 							</div>
-						</div>
+						</a>
+						<table class="table m-tournament-table">
+							<thead>
+								<tr>
+									<th class="text-left">Место</th>
+									<th>Приз</th>
+									<th>Баллы</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="m-tournament-table__delimiter"></tr>
+								<tr class="m-tournament-table__first-child">
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>1</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">1000</span></td>
+									<td>4 545 242 520</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>2</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">500</span></td>
+									<td>545 242 520</td>
+									<td><i class="i-arrow-down i-arrow-down_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>3</span></div> <b>Ваше имя</b>
+									</td>
+									<td><span class="m-tournament-table__prize">100</span></td>
+									<td>242 520</td>
+									<td><i class="i-arrow-down i-arrow-down_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>4</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">50</span></td>
+									<td>520</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+								<tr class="m-tournament-table__last-child">
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>5</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">10</span></td>
+									<td>1</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="profile__menu">
-						<a href="#" class="profile__link profile__link_right">
-							<svg width="41" height="40" viewBox="0 0 41 40" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.76591 6.8877H8.84181V8.53961C8.84181 9.60156 9.66993 10.4275 10.853 10.4275C11.9177 10.4275 12.7458 9.60156 12.7458 8.53961V6.8877H26.5874V8.53961C26.5874 9.60156 27.5338 10.4275 28.5985 10.4275C29.6633 10.4275 30.6097 9.60156 30.6097 8.53961V6.8877H33.6856C35.1053 6.8877 36.4066 8.06764 36.4066 9.48357V32.3744C36.4066 33.7903 35.1053 34.9703 33.6856 34.9703H5.76591C4.22796 34.9703 3.04492 33.7903 3.04492 32.3744V9.48357C3.04492 8.06764 4.22796 6.8877 5.76591 6.8877ZM6.23912 15.0293H33.3307V32.1384H6.23912V15.0293Z" />
-								<path d="M12.3366 6.06195C12.3366 5.47545 11.6863 5 10.8841 5C10.0819 5 9.43164 5.47545 9.43164 6.06195V8.7924C9.43164 9.3789 10.0819 9.85435 10.8841 9.85435C11.6863 9.85435 12.3366 9.3789 12.3366 8.7924V6.06195Z" />
-								<path d="M30.0826 6.06195C30.0826 5.47545 29.4324 5 28.6302 5C27.828 5 27.1777 5.47545 27.1777 6.06195V8.7924C27.1777 9.3789 27.828 9.85435 28.6302 9.85435C29.4324 9.85435 30.0826 9.3789 30.0826 8.7924V6.06195Z" />
-								<path d="M19.3706 26.4748C19.3706 27.0648 19.2522 27.6548 19.0156 28.0088C18.779 28.4807 18.4241 28.9527 17.9509 29.1887C17.596 29.5427 17.1228 29.7787 16.5313 30.0147C16.058 30.1326 15.4665 30.2506 14.875 30.2506C14.1652 30.2506 13.5737 30.1326 12.9821 30.0147C12.3906 29.7787 11.9174 29.5427 11.4442 29.1887C10.971 28.8347 10.6161 28.4807 10.3795 27.8908C10.1429 27.3008 9.90625 26.7108 9.90625 26.0029L11.9174 25.6489C12.0357 26.4748 12.2723 27.1828 12.8638 27.6548C13.3371 28.1267 14.0469 28.3627 14.875 28.3627C15.5848 28.3627 16.058 28.2447 16.5313 27.8908C17.0045 27.5368 17.1228 27.0648 17.1228 26.4748C17.1228 25.7669 16.8862 25.1769 16.413 24.8229C15.8214 24.4689 14.875 24.3509 13.5737 24.3509V22.463C14.0469 22.463 14.4018 22.463 14.875 22.345C15.2299 22.345 15.5848 22.1091 15.9397 21.9911C16.1764 21.7551 16.413 21.6371 16.6496 21.4011C16.7679 21.1651 16.8862 20.8111 16.8862 20.4571C16.8862 19.9852 16.7679 19.5132 16.413 19.1592C16.058 18.8052 15.5848 18.6872 14.875 18.6872C14.0469 18.6872 13.3371 18.9232 12.8638 19.3952C12.3906 19.7492 12.154 20.4571 12.154 21.5191H10.0246C10.0246 20.6931 10.1429 19.9852 10.3795 19.5132C10.6161 18.9232 10.971 18.4512 11.4442 17.9793C11.7991 17.6253 12.2723 17.3893 12.8638 17.1533C13.4554 16.9173 14.1652 16.7993 14.875 16.7993C15.4665 16.7993 16.058 16.9173 16.5313 17.1533C17.0045 17.2713 17.4777 17.5073 17.8326 17.8613C18.3058 18.0973 18.5424 18.5692 18.779 18.9232C19.0156 19.3952 19.1339 19.9852 19.1339 20.4571C19.1339 20.9291 19.0156 21.1651 18.8973 21.5191C18.779 21.8731 18.6607 22.1091 18.4241 22.463C18.1875 22.699 17.8326 22.817 17.4777 23.053C17.1228 23.171 16.7679 23.289 16.413 23.289C16.8862 23.289 17.2411 23.407 17.596 23.643C18.0692 23.879 18.3058 24.115 18.5424 24.3509C18.8973 24.7049 19.0156 24.9409 19.1339 25.4129C19.2522 25.7669 19.3706 26.1209 19.3706 26.4748ZM29.663 30.0147H23.038V28.1267H25.2857V20.8111C25.1674 21.1651 25.0491 21.4011 24.8125 21.6371C24.5759 21.8731 24.221 22.1091 23.8661 22.345C23.5112 22.463 23.1563 22.581 22.8014 22.699C22.3281 22.817 21.8549 22.817 21.5 22.817V20.8111C21.9732 20.8111 22.4465 20.6931 22.9197 20.5751C23.2746 20.4571 23.7478 20.2211 24.1027 19.8672C24.4576 19.5132 24.6942 19.1592 24.9308 18.6872C25.1674 18.2152 25.2857 17.7433 25.2857 17.0353H27.5335V28.1267H29.663V30.0147Z" />
-							</svg>
+					<div class="m-tournament-item ">
+						<a href="#" class="m-tournament-item__banner">
+							<div class="m-tournament-item__info m-tournament-info">
+								<div class="m-tournament-info__img" style="background-image: url(img/game-1.png)"></div>
+								<div class="m-tournament-info__block">
+									<div class="m-tournament-info__text">
+										<div class="m-tournament-info__title">Ltgacy Horserace</div>
+										<div class="m-tournament-info__info">
+											<span class="m-tournament-info__label">Призовой фонд:</span>
+											<span class="m-tournament-info__val">250,000.01</span>
+										</div>
+										<div class="m-tournament-info__info">
+											<span class="m-tournament-info__label">До конца турнира:</span>
+											<span class="m-tournament-info__val">22ч. 36м. 01с.</span>
+										</div>
+									</div>
+									<button class="m-tournament-info__btn btn-global">
+										<i class="btn-global__icon">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.51515 -0.000488281V7.41593H0V12.5831H7.51515V19.9995H12.4848V12.5831H20V7.41593H12.4848V-0.000488281H7.51515Z" fill="#FEFEFE" /></svg>
+										</i>
+										<span>ПРИСОЕДИНИТЬСЯ <br>к турниру</span>
+									</button>
+								</div>
+							</div>
 						</a>
-						<a href="#" class="profile__link profile__link_right">
-							<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M18.6445 25.1327L18.5265 25.2507C18.1725 26.1946 17.5826 27.0206 16.7566 27.7285L16.6386 27.8465C15.8127 28.4365 14.7507 28.6725 13.6888 28.7905H13.5708C12.5088 28.6725 11.5649 28.4365 10.6209 27.8465L10.5029 27.7285C9.67696 27.0206 9.08699 26.1946 8.73301 25.2507V25.1327C8.37903 24.0707 8.37903 23.0088 8.73301 22.0648V21.8288C9.08699 20.8849 9.67696 20.0589 10.5029 19.351H10.6209C11.5649 18.643 12.5088 18.407 13.5708 18.407H13.6888C14.7507 18.407 15.8127 18.643 16.6386 19.351H16.7566C17.5826 20.0589 18.1725 20.8849 18.5265 21.8288L18.6445 22.0648C18.8805 23.0088 18.8805 24.0707 18.6445 25.1327ZM23.4823 22.3008L24.8982 21.3569L24.0722 18.643L22.3023 18.761L20.8864 16.8731L21.4764 15.1032L19.2345 13.4513L17.8186 14.6312L15.5767 13.8052L14.9867 12.1533H12.2728L11.8009 13.8052L9.44097 14.6312L8.02504 13.4513L5.78316 15.1032L6.37313 16.8731L4.9572 18.761L3.18729 18.643L2.36133 21.3569L3.89525 22.3008V24.7787L2.36133 25.7226L3.18729 28.4365L4.9572 28.3185L6.37313 30.3244L5.78316 31.9763L8.02504 33.6282L9.44097 32.4483L11.8009 33.2743L12.2728 34.9262H14.9867L15.5767 33.2743L17.8186 32.4483L19.2345 33.6282L21.4764 31.9763L20.8864 30.3244L22.3023 28.3185L24.0722 28.4365L24.8982 25.7226L23.4823 24.7787V22.3008Z" />
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M32.685 14.2774L32.567 14.3954C32.331 15.1034 31.977 15.6933 31.387 16.1653L31.2691 16.2833C30.6791 16.6373 29.9711 16.8733 29.1452 16.8733C28.3192 16.8733 27.6112 16.6373 27.0213 16.2833L26.9033 16.1653C26.3133 15.6933 25.9593 15.1034 25.7233 14.3954L25.6053 14.2774C25.4873 13.5695 25.4873 12.8615 25.6053 12.1535L25.7233 12.0355C25.9593 11.3276 26.3133 10.7376 26.9033 10.2656H27.0213C27.6112 9.79364 28.3192 9.55765 29.1452 9.55765C29.9711 9.55765 30.6791 9.79364 31.2691 10.2656H31.387C31.977 10.7376 32.331 11.3276 32.567 12.0355L32.685 12.1535C32.803 12.8615 32.803 13.5695 32.685 14.2774ZM35.8708 13.5695L37.5227 12.7435L37.1688 10.8556L35.3988 10.6196L34.5729 9.20367L35.2809 7.43376L33.7469 6.25382L32.213 7.19777L30.6791 6.6078L30.0891 4.83789H28.2012L27.6112 6.6078L26.0773 7.19777L24.5434 6.25382L23.0095 7.43376L23.7174 9.20367L22.8915 10.6196L21.1216 10.8556L20.7676 12.7435L22.4195 13.5695L22.6555 15.2214L21.4755 16.5193L22.4195 18.2892L24.1894 17.8172L25.4873 18.8792L25.3693 20.7671L27.2573 21.3571L28.3192 19.9411H29.9711L31.0331 21.3571L32.921 20.7671L32.803 18.8792L34.1009 17.8172L35.8708 18.2892L36.8148 16.5193L35.6348 15.2214L35.8708 13.5695Z" />
-							</svg>
+						<table class="table m-tournament-table">
+							<thead>
+								<tr>
+									<th class="text-left">Место</th>
+									<th>Приз</th>
+									<th>Баллы</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="m-tournament-table__delimiter"></tr>
+								<tr class="m-tournament-table__first-child">
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>1</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">1000</span></td>
+									<td>4 545 242 520</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>2</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">500</span></td>
+									<td>545 242 520</td>
+									<td><i class="i-arrow-down i-arrow-down_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>3</span></div> <b>Ваше имя</b>
+									</td>
+									<td><span class="m-tournament-table__prize">100</span></td>
+									<td>242 520</td>
+									<td><i class="i-arrow-down i-arrow-down_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>4</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">50</span></td>
+									<td>520</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+								<tr class="m-tournament-table__last-child">
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>5</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">10</span></td>
+									<td>1</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="m-tournament-item ">
+						<a href="#" class="m-tournament-item__banner">
+							<div class="m-tournament-item__info m-tournament-info">
+								<div class="m-tournament-info__img" style="background-image: url(img/game-1.png)"></div>
+								<div class="m-tournament-info__block">
+									<div class="m-tournament-info__text">
+										<div class="m-tournament-info__title">Ltgacy Horserace</div>
+										<div class="m-tournament-info__info">
+											<span class="m-tournament-info__label">Призовой фонд:</span>
+											<span class="m-tournament-info__val">250,000.01</span>
+										</div>
+										<div class="m-tournament-info__info">
+											<span class="m-tournament-info__label">До конца турнира:</span>
+											<span class="m-tournament-info__val">22ч. 36м. 01с.</span>
+										</div>
+									</div>
+									<button class="m-tournament-info__btn btn-global">
+										<i class="btn-global__icon">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.51515 -0.000488281V7.41593H0V12.5831H7.51515V19.9995H12.4848V12.5831H20V7.41593H12.4848V-0.000488281H7.51515Z" fill="#FEFEFE" /></svg>
+										</i>
+										<span>ПРИСОЕДИНИТЬСЯ <br>к турниру</span>
+									</button>
+								</div>
+							</div>
 						</a>
-						<a href="#" class="profile__link profile__link_right  profile__link_notice ">
-							<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5821 5.07373C25.7237 5.07373 32.4494 9.6755 32.4494 15.3392C32.4494 15.6932 32.3314 16.0472 32.3314 16.2832C35.2812 17.5811 37.1691 19.823 37.1691 22.4189C37.1691 25.3687 34.5733 27.9646 30.7974 29.1445L29.8535 34.9262L26.6676 29.7345C22.4199 29.7345 18.762 27.9646 17.1101 25.4867C14.7502 25.4867 12.3904 25.3687 10.6204 24.3068L2.95083 29.3805L5.31071 21.3569C3.5408 19.823 2.71484 17.4631 2.71484 15.3392C2.71484 9.6755 9.32251 5.07373 17.5821 5.07373ZM29.6175 15.4572V15.3392C29.6175 10.8554 24.1898 7.31562 17.5821 7.31562C10.8564 7.31562 5.42871 10.8554 5.42871 15.3392C5.42871 17.1091 6.13667 18.5251 7.78859 19.941L6.72664 24.1888L10.8564 21.9469C12.5084 22.7728 14.0423 23.0088 16.1662 23.1268C16.1662 22.8908 16.1662 22.6549 16.1662 22.4189C16.1662 18.4071 20.8859 15.2212 26.6676 15.2212C27.7296 15.2212 28.6735 15.3392 29.6175 15.4572ZM26.6676 17.5811C31.0334 17.5811 34.5733 19.705 34.5733 22.4189C34.5733 24.5428 32.5674 26.1947 29.6175 27.0206L29.0275 30.0885L26.6676 27.3746C22.3019 27.3746 18.762 25.1327 18.762 22.4189C18.762 19.705 22.3019 17.5811 26.6676 17.5811Z" />
-							</svg>
+						<table class="table m-tournament-table">
+							<thead>
+								<tr>
+									<th class="text-left">Место</th>
+									<th>Приз</th>
+									<th>Баллы</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="m-tournament-table__delimiter"></tr>
+								<tr class="m-tournament-table__first-child">
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>1</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">1000</span></td>
+									<td>4 545 242 520</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>2</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">500</span></td>
+									<td>545 242 520</td>
+									<td><i class="i-arrow-down i-arrow-down_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>3</span></div> <b>Ваше имя</b>
+									</td>
+									<td><span class="m-tournament-table__prize">100</span></td>
+									<td>242 520</td>
+									<td><i class="i-arrow-down i-arrow-down_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>4</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">50</span></td>
+									<td>520</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+								<tr class="m-tournament-table__last-child">
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>5</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">10</span></td>
+									<td>1</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="m-tournament-item ">
+						<a href="#" class="m-tournament-item__banner">
+							<div class="m-tournament-item__info m-tournament-info">
+								<div class="m-tournament-info__img" style="background-image: url(img/game-1.png)"></div>
+								<div class="m-tournament-info__block">
+									<div class="m-tournament-info__text">
+										<div class="m-tournament-info__title">Ltgacy Horserace</div>
+										<div class="m-tournament-info__info">
+											<span class="m-tournament-info__label">Призовой фонд:</span>
+											<span class="m-tournament-info__val">250,000.01</span>
+										</div>
+										<div class="m-tournament-info__info">
+											<span class="m-tournament-info__label">До конца турнира:</span>
+											<span class="m-tournament-info__val">22ч. 36м. 01с.</span>
+										</div>
+									</div>
+									<button class="m-tournament-info__btn btn-global">
+										<i class="btn-global__icon">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.51515 -0.000488281V7.41593H0V12.5831H7.51515V19.9995H12.4848V12.5831H20V7.41593H12.4848V-0.000488281H7.51515Z" fill="#FEFEFE" /></svg>
+										</i>
+										<span>ПРИСОЕДИНИТЬСЯ <br>к турниру</span>
+									</button>
+								</div>
+							</div>
 						</a>
-						<a href="#" class="profile__link profile__link_right">
-							<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.19756 16.6371H9.79343C9.55744 15.8112 9.43945 14.8672 9.43945 13.9233C9.43945 8.14157 14.1592 3.53979 19.9409 3.53979C25.7226 3.53979 30.4424 8.14157 30.4424 13.9233C30.4424 14.8672 30.3244 15.8112 30.0884 16.6371H32.6843C34.4542 16.6371 35.9881 18.0531 35.9881 19.823V29.8525C35.9881 33.5103 32.9203 36.5781 29.1445 36.5781H10.7374C6.96157 36.5781 4.01172 33.5103 4.01172 29.8525V19.823C4.01172 18.0531 5.42765 16.6371 7.19756 16.6371ZM22.0648 25.7227L22.7728 32.9203H17.1091L17.817 25.7227C16.9911 25.1327 16.4011 24.0708 16.4011 23.0088C16.4011 21.0029 18.053 19.469 19.9409 19.469C21.8288 19.469 23.4807 21.0029 23.4807 23.0088C23.4807 24.0708 22.8908 25.1327 22.0648 25.7227ZM12.9793 16.6371H27.0206C27.2566 15.8112 27.4925 14.8672 27.4925 13.9233C27.4925 9.79348 24.0707 6.48965 19.9409 6.48965C15.8111 6.48965 12.5073 9.79348 12.5073 13.9233C12.5073 14.8672 12.6253 15.8112 12.9793 16.6371Z" />
-							</svg>
-						</a>
+						<table class="table m-tournament-table">
+							<thead>
+								<tr>
+									<th class="text-left">Место</th>
+									<th>Приз</th>
+									<th>Баллы</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="m-tournament-table__delimiter"></tr>
+								<tr class="m-tournament-table__first-child">
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>1</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">1000</span></td>
+									<td>4 545 242 520</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>2</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">500</span></td>
+									<td>545 242 520</td>
+									<td><i class="i-arrow-down i-arrow-down_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>3</span></div> <b>Ваше имя</b>
+									</td>
+									<td><span class="m-tournament-table__prize">100</span></td>
+									<td>242 520</td>
+									<td><i class="i-arrow-down i-arrow-down_small"></i></td>
+								</tr>
+								<tr>
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>4</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">50</span></td>
+									<td>520</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+								<tr class="m-tournament-table__last-child">
+									<td class="text-left">
+										<div class="m-tournament-table__plate table-plate table-plate_orange"><span>5</span></div> <b>NickName</b>
+									</td>
+									<td><span class="m-tournament-table__prize">10</span></td>
+									<td>1</td>
+									<td><i class="i-arrow-up i-arrow-up_small"></i></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
@@ -740,22 +433,22 @@
 				<div class="terms-of-use__container">
 					<div class="terms-of-use__title">Условия использовния криптовалюты</div>
 					<div class="row">
-						<div class="col-4">
+						<div class="col-6 col-lg-4">
 							<div class="terms-of-use__item" style="background-image: url(img/logo-monero.png)"></div>
 						</div>
-						<div class="col-4">
+						<div class="col-6 col-lg-4">
 							<div class="terms-of-use__item" style="background-image: url(img/logo-ripple.png)"></div>
 						</div>
-						<div class="col-4">
+						<div class="col-6 col-lg-4">
 							<div class="terms-of-use__item" style="background-image: url(img/logo-btc.png)"></div>
 						</div>
-						<div class="col-4">
+						<div class="col-6 col-lg-4">
 							<div class="terms-of-use__item" style="background-image: url(img/logo-ltc.png)"></div>
 						</div>
-						<div class="col-4">
+						<div class="col-6 col-lg-4">
 							<div class="terms-of-use__item" style="background-image: url(img/logo-bch.png)"></div>
 						</div>
-						<div class="col-4">
+						<div class="col-6 col-lg-4">
 							<div class="terms-of-use__item" style="background-image: url(img/logo-dsh.png)"></div>
 						</div>
 					</div>
@@ -832,66 +525,201 @@
 		</footer>
 	</div>
 
+	<!--
+	<div class="m-modal" id="">
+		<div class="m-modal__header">
+			<div class="m-modal__logo"></div>
+			<div class="m-modal__title">МЕНЮ</div>
+			<button class="m-modal__btn" data-dismiss="modal"></button>
+		</div>
+		<div class="m-modal__content">
+
+		</div>
+	</div>
+-->
+
+	<div class="m-modal" id="mobile-nav">
+		<div class="m-modal__header">
+			<div class="m-modal__logo"></div>
+			<div class="m-modal__title">МЕНЮ</div>
+			<button class="m-modal__btn" data-dismiss="modal">
+				<span aria-hidden="true">×</span>
+			</button>
+		</div>
+		<div class="m-modal__content">
+			<div class="m-nav">
+				<div class="m-nav__title">Игры</div>
+				<a href="#" class="m-nav__link">Карточные</a>
+				<a href="#" class="m-nav__link">Слоты</a>
+				<a href="#" class="m-nav__link">Разное</a>
+				<a href="#" class="m-nav__link">Популярные</a>
+				<div class="m-nav__title">Игры</div>
+				<a href="#" class="m-nav__link">Акции</a>
+				<a href="#" class="m-nav__link">Турниры</a>
+				<a href="#" class="m-nav__link">VIP статус</a>
+				<a href="#" class="m-nav__link">Справка</a>
+				<div class="m-nav__title">Профиль</div>
+				<a href="#sign-up" data-toggle="modal" data-target="#sign-up" class="m-nav__link">Регистрация</a>
+				<a href="#sign-up" data-toggle="modal" data-target="#sign-in" class="m-nav__link">Вход</a>
+			</div>
+		</div>
+	</div>
 
 
-	<div class="registration registration_modal" id="registration">
-		<div class="registration__container">
-			<div class="row">
-				<form class="col-6">
-					<div class="registration__title">Детали учетной записи</div>
-					<div class="registration__input-group">
-						<label for="reg-name" class="registration__label">Имя пользователя</label>
-						<input id="reg-name" class="registration__input input" name="name" type="text" required>
+	<div class="m-modal" id="game-1">
+		<div class="m-modal__header">
+			<div class="m-modal__logo"></div>
+			<div class="m-modal__title">Название игры</div>
+			<button class="m-modal__btn" data-dismiss="modal">
+				<span aria-hidden="true">×</span>
+			</button>
+		</div>
+		<div class="m-modal__content">
+			<div class="m-modal-game">
+				<div class="m-modal-game__img" style="background-image: url(img/game-1.png)"></div>
+				<div class="m-modal-game__content">
+
+					<button class="m-modal-game__btn btn-global">
+						<i class="btn-global__icon">
+							<svg width="20" height="20" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.2727 -1.90735e-06V11.1246H0V18.8754H11.2727V30H18.7273V18.8754H30V11.1246H18.7273V-1.90735e-06H11.2727Z" />
+							</svg>
+						</i>
+						<span>РЕГИСТРАЦИЯ</span>
+					</button>
+					<button class="m-modal-game__btn btn-global">
+						<i class="btn-global__icon">
+							<svg width="20" height="20" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.2727 -1.90735e-06V11.1246H0V18.8754H11.2727V30H18.7273V18.8754H30V11.1246H18.7273V-1.90735e-06H11.2727Z" />
+							</svg>
+						</i>
+						<span>РЕГИСТРАЦИЯ</span>
+					</button>
+					<div class="m-modal-game__stars-block">
+						<!-- Обратный порядок звезд -->
+						<i class="m-modal-game__star"></i>
+						<i class="m-modal-game__star"></i>
+						<i class="m-modal-game__star"></i>
+						<i class="m-modal-game__star"></i>
+						<i class="m-modal-game__star"></i>
 					</div>
-					<div class="registration__input-group">
-						<label for="reg-pass" class="registration__label">Пароль</label>
-						<input id="reg-pass" class="registration__input input" name="pass" type="password" required>
-					</div>
-					<div class="registration__input-group">
-						<label for="reg-pass-2" class="registration__label">Пароль (повтор)</label>
-						<input id="reg-pass-2" class="registration__input input" name="pass-2" type="password" required>
-					</div>
-					<div class="registration__input-group">
-						<label for="reg-mail" class="registration__label">Эл. адрес</label>
-						<input id="reg-mail" class="registration__input input" name="mail" type="email" required>
-					</div>
-					<div class="registration__input-group">
-						<label for="reg-mail-2" class="registration__label">Электронная почта (повтор)</label>
-						<input id="reg-mail-2" class="registration__input input" name="mail-2" type="email" required>
-					</div>
-					<div class="registration__input-group">
-						<label for="reg-code" class="registration__label">Промо код</label>
-						<input id="reg-code" class="registration__input input" name="promo" type="text" required>
-					</div>
-					<div class="registration__info">
-						<p class="registration__text">Мы хотим, чтобы вы точно знали, как работает наш сервис, и почему нам нужны ваши регистрационные данные. Эта информация помогает нам поставлять и развивать наши продукты и услуги. Соглашаясь, вы даете нам разрешение на обработку ваших личных данных, включая конфиденциальные данные, чтобы мы могли предоставить эти услуги.</p>
-						<label class="registration__checkbox-label">
-							<input class="checkbox" type="checkbox" required>
-							Я прочитал и принимаю <a class="orange" href="#">Условия и Политику конфиденциальности</a> и признаю, что мне исполнилось 18 лет.
-						</label>
-						<label class="registration__checkbox-label">
-							<input class="checkbox" type="checkbox" required>
-							Я подтверждаю, что у меня нет другой учетной записи пользователя в (НАЗВАНИЕ САЙТА) себя в вашем сервисе.
-						</label>
-						<p class="registration__text">Контролером ваших персональных данных является Probe Investment Limited, базирующаяся в Suite 109, Level 4, <span class="nowrap">Sir William Reid Street, Gzira, GRZ1033, Мальта</span>. Информация о защите ваших персональных данных предоставляется сотрудником по защите данных, с которым вы можете связаться здесь: ........................................... <a href="#" class="orange">Показать больше</a></p>
-					</div>
-					<div class="registration__btn-block">
-						<button type="submit" class="btn-global btn-global_large">
-							<i class="btn-global__icon">
-								<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-									<path d="M11.2727 -1.90735e-06V11.1246H0V18.8754H11.2727V30H18.7273V18.8754H30V11.1246H18.7273V-1.90735e-06H11.2727Z" />
-								</svg>
-							</i>
-							<span>ЗАРЕГИСТРИРОВАТЬСЯ</span>
-						</button>
-					</div>
-				</form>
-				<div class="col-6">
-					<div class="registration__img"></div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="m-modal" id="sign-up">
+		<div class="m-modal__header">
+			<div class="m-modal__logo"></div>
+			<div class="m-modal__title">Регистрация</div>
+			<button class="m-modal__btn" data-dismiss="modal">
+				<span aria-hidden="true">×</span>
+			</button>
+		</div>
+		<div class="m-modal__content">
+			<div class="registration">
+				<form class="row">
+					<div class="col-sm-5">
+						<div class="registration__input-group">
+							<label for="reg-name" class="registration__label">Имя пользователя</label>
+							<input id="reg-name" class="registration__input input" name="name" type="text" required>
+						</div>
+						<div class="registration__input-group">
+							<label for="reg-pass" class="registration__label">Пароль</label>
+							<input id="reg-pass" class="registration__input input" name="pass" type="password" required>
+						</div>
+						<div class="registration__input-group">
+							<label for="reg-pass-2" class="registration__label">Пароль (повтор)</label>
+							<input id="reg-pass-2" class="registration__input input" name="pass-2" type="password" required>
+						</div>
+						<div class="registration__input-group">
+							<label for="reg-mail" class="registration__label">Эл. адрес</label>
+							<input id="reg-mail" class="registration__input input" name="mail" type="email" required>
+						</div>
+						<div class="registration__input-group">
+							<label for="reg-mail-2" class="registration__label">Электронная почта (повтор)</label>
+							<input id="reg-mail-2" class="registration__input input" name="mail-2" type="email" required>
+						</div>
+						<div class="registration__input-group">
+							<label for="reg-code" class="registration__label">Промо код</label>
+							<input id="reg-code" class="registration__input input" name="promo" type="text" required>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="registration__info">
+							<p class="registration__text">Мы хотим, чтобы вы точно знали, как работает наш сервис, и почему нам нужны ваши регистрационные данные. Эта информация помогает нам поставлять и развивать наши продукты и услуги. Соглашаясь, вы даете нам разрешение на обработку ваших личных данных, включая конфиденциальные данные, чтобы мы могли предоставить эти услуги.</p>
+							<label class="registration__checkbox-label">
+								<input type="checkbox" required>
+								Я прочитал и принимаю <a class="orange" href="#">Условия и Политику конфиденциальности</a> и признаю, что мне исполнилось 18 лет.
+							</label>
+							<label class="registration__checkbox-label">
+								<input type="checkbox" required>
+								Я подтверждаю, что у меня нет другой учетной записи пользователя в (НАЗВАНИЕ САЙТА) себя в вашем сервисе.
+							</label>
+							<p class="registration__text">Контролером ваших персональных данных является Probe Investment Limited, базирующаяся в Suite 109, Level 4, <span class="nowrap">Sir William Reid Street, Gzira, GRZ1033, Мальта</span>. Информация о защите ваших персональных данных предоставляется сотрудником по защите данных, с которым вы можете связаться здесь: ........................................... <a href="#" class="orange">Показать больше</a></p>
+						</div>
+						<div class="registration__btn-block">
+							<button type="submit" class="btn-global">
+								<i class="btn-global__icon">
+									<svg width="20" height="20" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.2727 -1.90735e-06V11.1246H0V18.8754H11.2727V30H18.7273V18.8754H30V11.1246H18.7273V-1.90735e-06H11.2727Z" />
+									</svg>
+								</i>
+								<span>РЕГИСТРАЦИЯ</span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="m-modal" id="sign-in">
+		<div class="m-modal__header">
+			<div class="m-modal__logo"></div>
+			<div class="m-modal__title">Вход</div>
+			<button class="m-modal__btn" data-dismiss="modal">
+				<span aria-hidden="true">×</span>
+			</button>
+		</div>
+		<div class="m-modal__content">
+			<form class="m-sign-in">
+				<div class="m-sign-in__input-group">
+					<label for="sign-in-name" class="m-sign-in__label">Имя пользователя</label>
+					<input id="sign-in-name" class="m-sign-in__input input" name="name" type="text" required>
+				</div>
+				<div class="m-sign-in__input-group">
+					<label for="sign-in-pass" class="m-sign-in__label">Пароль</label>
+					<input id="sign-in-pass" class="m-sign-in__input input" name="pass" type="password" required>
+				</div>
+				<div class="m-sign-in__btn-group">
+					<a href="#sign-up" data-toggle="modal" data-target="#sign-up" class="m-sign-in__link">Регистрация</a>
+					<a href="#" class="m-sign-in__link">Забыли пароль</a>
+				</div>
+				<div class="m-sign-in__btn">
+					<button type="submit" class="btn-global">
+						<i class="btn-global__icon">
+							<svg width="20" height="20" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.2727 -1.90735e-06V11.1246H0V18.8754H11.2727V30H18.7273V18.8754H30V11.1246H18.7273V-1.90735e-06H11.2727Z" />
+							</svg>
+						</i>
+						<span>ВОЙТИ В ПРОФИЛЬ</span>
+					</button>
+				</div>
+				<div class="m-sign-in__social-title">Войти через:</div>
+				<div class="m-sign-in__social-auth">
+					<a href="#" class="m-sign-in__social m-sign-in__social_fb"></a>
+					<a href="#" class="m-sign-in__social m-sign-in__social_vk"></a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
 
 	<script src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

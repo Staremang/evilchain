@@ -114,6 +114,7 @@ textarea {
 
 .content {
 	flex: 1 0 auto;
+	overflow: hidden;
 }
 
 footer,
@@ -620,10 +621,14 @@ select {
 	> span {
 		z-index: 1;
 		font-size: 10px;
-		line-height: 20px;
+//		line-height: 20px;
 		color: black;
 		font-weight: bold;
-		position: relative;
+//		position: relative;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
 
@@ -689,19 +694,24 @@ select {
  * Всплывающее окно регистрации 
  */
 .registration {
-	position: fixed;
-	//	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
+	
+	&_modal {
+		position: fixed;
+		//	position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
 
-	z-index: 10;
+		z-index: 10;
 
-	background: rgba(0, 0, 0, 0.75);
-	overflow: auto;
-	padding-top: 97px;
-	padding-bottom: 100px;
+		background: rgba(0, 0, 0, 0.75);
+		overflow: auto;
+		padding-top: 97px;
+		padding-bottom: 100px;
+		
+		display: none;
+	}
 
 	&.show {
 		.registration__container {
@@ -877,6 +887,8 @@ select {
 			height: 100%;
 			width: 100%;
 			.bg-img("header-avatar-overlay.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
 		}
 
 		&_notice {
@@ -1391,6 +1403,7 @@ select {
 	&__item {
 		border: 1px solid white;
 		height: 70px;
+		width: 362px;
 		margin-bottom: 30px;
 
 		background-repeat: no-repeat;
@@ -1474,7 +1487,10 @@ select {
 	&__btn-icon {
 		filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
 		fill: white;
-		margin-right: 10px;
+	}
+	
+	&__text {
+		margin-left: 10px;
 	}
 
 	&__search-btn {
@@ -1514,8 +1530,8 @@ select {
 			border-radius: 50%;
 			background: white;
 			position: absolute;
-			width: 30px;
-			height: 30px;
+			width: 100%;
+			height: 100%;
 			left: 0;
 			top: 0;
 			transform: translateZ(0);
@@ -1532,11 +1548,11 @@ select {
 				border-radius: 50%;
 				background: #FFD53A;
 				position: absolute;
-				width: 23px;
-				height: 23px;
-				left: 0;
-				top: 0;
-				transform: translate3d(3.5px, 3.5px, 0);
+				width: 76%;
+				height: 76%;
+				left: 12%;
+				top: 12%; 
+//				transform: translate3d(3.5px, 3.5px, 0);
 				z-index: 0;
 			}
 		}

@@ -1,0 +1,169 @@
+.m-tournament-list {
+	margin-bottom: 20px;
+}
+
+.m-tournament-info {
+	position: relative;
+	display: flex;
+
+	//	&__img {
+	//		width: 142px;
+	//		height: 100px;
+	//		background-size: cover;
+	//		background-position: center;
+	//		background-repeat: no-repeat;
+	//	}
+	&__block {
+		flex: 1 0 auto;
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+		height: 114px;
+		justify-content: space-between;
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	&__info {
+		font-size: 18px;
+	}
+
+	&__label {
+		color: #FFD53A;
+		margin-bottom: 5px;
+	}
+
+	&__val {
+		font-weight: bold;
+	}
+
+	&__img {
+		//		width: 142px;
+		//		height: 100px;
+		width: 163px;
+		height: 114px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		flex: 0 0 auto;
+		margin-right: 10px;
+	}
+}
+
+.m-tournament-item {
+	margin-bottom: 6px;
+
+	&__banner {
+		cursor: pointer;
+		display: block;
+		text-decoration: none;
+		color: inherit;
+		background-color: black;
+		background-size: cover;
+		background-position: center;
+		padding: 10px;
+		height: 134px;
+		position: relative;
+
+		//		background-image: url(../img/t-banner.jpg);
+		overflow: hidden;
+
+	}
+
+	&__info {
+		position: relative;
+	}
+
+	&__place {
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		background: #D30131;
+		color: white;
+		font-size: 14px;
+		font-weight: bold;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		line-height: 20px;
+		padding: 5px 0;
+	}
+
+	&:not(.active) {
+		.m-tournament-table {
+			display: none;
+		}
+	}
+}
+
+.m-tournament-table {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 300;
+
+
+	thead {
+		background: black;
+	}
+
+	tbody {
+		background: black;
+
+		tr {
+			border-bottom: 0;
+		}
+	}
+
+	td {
+		height: 28px;
+		padding: 0 10px;
+		font-weight: 300;
+		b {
+			font-weight: bold;
+		}
+	}
+
+	th {
+		padding: 0 10px;
+		text-transform: capitalize;
+		font-size: 18px;
+	}
+	
+	tr {
+		&.active {
+			background: rgba(196, 196, 196, 0.2);
+		}
+		&.active_overflow {
+			
+		}
+	}
+	
+	&__prize {
+		color: #FFD53A;
+	}
+	&__plate {
+		margin-right: 20px;
+		font-weight: bold;
+	}
+	&__delimiter {
+		height: 6px;
+	}
+	&__first-child {
+		td {
+			padding-top: 7px;
+			height: 28+7px;
+		}
+	}
+	&__last-child {
+		td {
+			padding-bottom: 7px;
+			height: 28+7px;
+		}
+	}
+}

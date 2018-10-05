@@ -1,20 +1,41 @@
 .action-container {
 	margin-bottom: 20px;
-	&:hover {
+
+	&_hover {
 		.action {
-			&:after {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 100%;
-				width: 100%;
-				background: rgba(0, 0, 0, 0.5);
-				z-index: 1;
+			&:hover {
+				&:after {
+					display: none;
+				}
+
+				.action__block {
+					color: white;
+				}
+
+				.action__bg {
+					transform: translateX(0);
+				}
+
+			}
+		}
+
+		&:hover {
+			.action {
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					width: 100%;
+					background: rgba(0, 0, 0, 0.5);
+					z-index: 1;
+				}
 			}
 		}
 	}
 }
+
 .action {
 	height: 180px;
 	background-color: #C4C4C4;
@@ -24,30 +45,21 @@
 	color: white;
 	display: flex;
 	overflow: hidden;
+
 	&_black-text {
 		color: #000000;
 	}
-	&:hover {
-		&:after {
-			display: none;
-		}
-		.action__block {
-			color: white;
-		}
-		.action__bg {
-			transform: translateX(0);
-		}
-		
-	}
+
 	&__block {
 		position: relative;
 		padding: 20px;
 		z-index: 1;
 	}
+
 	&__bg {
 		transform: translateX(calc(-100% - 100px));
 		transition: transform .3s ease;
-		
+
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -55,6 +67,7 @@
 		width: 100%;
 		background: rgba(0, 0, 0, 0.85);
 		z-index: -1;
+
 		&:after {
 			position: absolute;
 			right: -100px;
@@ -68,19 +81,20 @@
 			border-right: 50px solid transparent;
 		}
 	}
+
 	&__title {
 		font-weight: bold;
 		margin-bottom: 13px;
 	}
-	&__text {
-		
-	}
+
+	&__text {}
+
 	&__label {
 		position: absolute;
 		top: 0;
 		right: 20px;
-		
-		
+
+
 		.bg-img("action-label-bg.svg");
 		width: 80px;
 		height: 95px;
