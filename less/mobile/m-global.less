@@ -103,6 +103,14 @@ header {
 }
 
 
+.table-responsive {
+
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
 .table {
 	width: 100%;
 	border-collapse: collapse;
@@ -111,39 +119,39 @@ header {
 
 	thead {
 		background: black;
-//		color: #FFD53A;
+		//		color: #FFD53A;
 		font-size: 14px;
-//		font-weight: normal;
-//		text-transform: uppercase;
+		//		font-weight: normal;
+		//		text-transform: uppercase;
 	}
 
 	tbody {
 		background: rgba(196, 218, 232, 0.2);
-//		tr {
-//			border-bottom: 1px solid white;
-//		}
+		//		tr {
+		//			border-bottom: 1px solid white;
+		//		}
 	}
 
-//	th,
-//	td {
-//		height: 40px;
-//		padding: 5px 20px;
-//		color: inherit;
-//		font-weight: inherit;
-//
-//
-//		> * {
-//			vertical-align: middle;
-//			max-height: 100%;
-//		}
-//	}
+	//	th,
+	//	td {
+	//		height: 40px;
+	//		padding: 5px 20px;
+	//		color: inherit;
+	//		font-weight: inherit;
+	//
+	//
+	//		> * {
+	//			vertical-align: middle;
+	//			max-height: 100%;
+	//		}
+	//	}
 }
 
 .table-status {
-//	font-weight: bold;
-//	position: relative;
-//	line-height: 20px;
-//	padding-left: 35px;
+	//	font-weight: bold;
+	//	position: relative;
+	//	line-height: 20px;
+	//	padding-left: 35px;
 	font-weight: normal;
 	padding-left: 0;
 	line-height: normal;
@@ -311,7 +319,7 @@ header {
 
 
 	&__header {
-		height: 70px;
+		height: 50px;
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
@@ -371,7 +379,7 @@ header {
 
 	&__content {
 		//		max-height: calc(100% - 70px);
-		height: calc(100% - 70px);
+		height: calc(100% - 50px);
 		overflow-x: hidden;
 		overflow-y: auto;
 		position: relative;
@@ -725,7 +733,54 @@ header {
 	}
 }
 
-//.header-menu-mobile {}
+
+.m-hero-banner {
+	.bg-img('hero-banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 370px;
+
+	&__content {
+		height: 100%;
+		padding: 6px;
+		background: rgba(0, 0, 0, 0.5);
+//		display: flex;
+		flex-direction: column;
+		
+		display: none;
+	}
+
+	&__title {
+		margin: 6px 0 0;
+		padding: 0 6px;
+		font-size: 24px;
+		font-weight: bold;
+
+	}
+
+	&__description {
+		padding: 0 6px;
+		font-size: 18px;
+	}
+}
+
+.m-hero-news {
+	background: rgba(0, 0, 0, 0.9);
+	margin-top: auto;
+	padding: 10px;
+	font-size: 18px;
+
+	&__title {
+		text-transform: uppercase;
+	}
+
+	&__date {
+
+		font-weight: bold;
+		color: #FFD53A;
+	}
+}
 
 .header-sort {
 	margin-bottom: 6px;
@@ -1225,6 +1280,7 @@ header {
 //screen and (max-width: 576px) {
 
 @media screen and (max-width: 767px) {
+
 	//
 	//	.col-1,
 	//	.col-2,
@@ -1241,6 +1297,34 @@ header {
 	//		flex: 0 0 100%;
 	//		max-width: 100%;
 	//	}
+	//
+	//	
+	//	.table {
+	//		&__col_only-horizontal {
+	//			display: none;
+	//		}
+	//	}
+	
+	.m-hero-banner {
+		&__content {
+			display: flex;
+		}
+	}
+	.header-news {
+		display: none;
+	}
+
+	.m-account {
+		padding-bottom: 0;
+
+		&__header {
+			padding: 10px;
+		}
+
+		&__footer {
+			padding: 6px 10px;
+		}
+	}
 
 	.header-menu {
 		&__logo {
@@ -1253,6 +1337,14 @@ header {
 
 		&__avatar {
 			display: none;
+		}
+
+		&__title {
+			display: none;
+		}
+
+		&__balance {
+			margin-right: 0;
 		}
 	}
 
@@ -1401,7 +1493,12 @@ header {
 			left: 0;
 			width: 100%;
 
-			background: rgba(255, 0, 0, 0.43);
+			//			background: rgba(255, 0, 0, 0.43);
+
+			.bg-img('hero-bonus-mobile.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
 
 		}
 	}
@@ -1438,6 +1535,7 @@ header {
 
 	.hero-winners {
 		width: 100%;
+		height: 342px;
 
 		&__header {
 			padding: 0;
@@ -1507,8 +1605,16 @@ header {
 
 
 	.m-modal {
+		&__logo {
+			width: 173px;
+		}
+
 		&__title {
 			display: none;
+		}
+
+		&__balance {
+			margin-right: 0;
 		}
 	}
 
@@ -1563,5 +1669,9 @@ header {
 			width: 40px;
 			height: 40px;
 		}
+	}
+
+	.jackpot-block {
+		height: 374px;
 	}
 }

@@ -51,6 +51,25 @@
 
 
 
+@media screen and (max-width: 767px) {
+	.m-profile-nav {
+
+		&__link {
+			height: 40px;
+			padding: 9px 0;
+
+			&_notice {
+				&:before {
+					top: 12px;
+					right: 7px;
+				}
+			}
+		}
+	}
+}
+
+
+
 
 
 
@@ -59,8 +78,8 @@
  */
 
 .settings-timer {
-	height: 172px;
-	padding: 10px;
+	height: auto;
+	padding: 10px 10px 20px;
 
 	&__title {
 		font-size: 24px;
@@ -82,6 +101,15 @@
 
 	&__delimiter {
 		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.settings-timer {
+
+		&__title {
+			font-size: 18px;
+		}
 	}
 }
 
@@ -353,6 +381,7 @@
 	&__text {
 		font-size: 18px;
 		color: #949494;
+		margin-bottom: 16px;
 	}
 
 	&__bottom {
@@ -450,6 +479,10 @@
 	display: flex;
 	flex-direction: column;
 
+	&__title {
+		display: none;
+	}
+
 	&__img {
 		width: 200px;
 		height: 200px;
@@ -512,6 +545,47 @@
 		margin-top: 50px;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.m-achievement-info {
+		&__title {
+			display: block;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: normal;
+			margin: 10px 0 16px;
+		}
+
+		&__description {
+			margin-bottom: 25px;
+		}
+
+		&__img {
+			position: relative;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__content {
+			padding-left: 0;
+			text-align: center;
+			margin-top: 8px;
+		}
+
+		&__btn {
+			margin-top: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+
+
+
+
 
 
 .m-bonuses {
@@ -579,6 +653,25 @@
 	}
 }
 
+@media screen and (max-width: 767px) {
+
+	.m-bonus {
+		&__img {
+			flex: 0 0 auto;
+		}
+
+		&__btn {
+			width: 40px;
+			padding-left: 40px;
+			padding-right: 0;
+
+			> span {
+				display: none;
+			}
+		}
+	}
+}
+
 
 
 
@@ -608,12 +701,24 @@
 		text-align: center;
 		color: #FFD53A;
 		font-size: 18px;
-		padding: 13px 0;
+		padding: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		&.active {
 			color: #333333;
 			background: #FFD53A;
 			text-decoration: none;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.statistics {
+		&__tab {
+			font-size: 14px;
 		}
 	}
 }
@@ -676,11 +781,14 @@
 }
 
 .m-info-active-bonuse {
+	margin-top: 20px;
+
 	&__title {
 		font-size: 18px;
 		color: #FFFFFF;
 		text-transform: uppercase;
 		margin-bottom: 6px;
+		padding-left: 16px;
 	}
 
 	&__item {
@@ -689,6 +797,7 @@
 		display: flex;
 		align-items: center;
 		padding: 16px;
+		font-size: 24px;
 
 		&:last-child {
 			border-bottom: 0;
@@ -696,9 +805,6 @@
 	}
 
 	&__name {
-
-		font-size: 24px;
-
 		color: #FFD53A;
 		padding-right: 10px;
 	}
@@ -706,7 +812,6 @@
 	&__timer {
 
 		font-weight: bold;
-		font-size: 24px;
 		margin-left: auto;
 	}
 }
@@ -718,7 +823,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	
+
 	margin-bottom: 20px;
 
 	&__avatar {
@@ -726,6 +831,7 @@
 		width: 110px;
 		height: 110px;
 		position: relative;
+		flex: 0 0 auto;
 
 		&:after {
 			content: '';
@@ -788,6 +894,7 @@
 	}
 
 	&__level {
+		flex: 0 0 auto;
 		height: 90px;
 		width: 90px;
 		border-radius: 50%;
@@ -799,4 +906,43 @@
 		padding-top: 30px;
 	}
 
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.m-info-account {
+		&__avatar {
+			width: 90px;
+			height: 90px;
+		}
+
+		&__photo {
+			width: 84px;
+			height: 84px;
+			bottom: 3px;
+			left: 3px;
+
+			&:after {
+				top: 16px;
+			}
+		}
+
+		&__level {
+			height: 54px;
+			width: 54px;
+			font-size: 18px;
+			padding-top: 15px;
+		}
+
+		&__info {
+			font-size: 14px;
+		}
+	}
+
+	.m-info-active-bonuse {
+		&__item {
+			font-size: 18px;
+		}
+	}
 }

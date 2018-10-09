@@ -5276,6 +5276,12 @@ header {
 .btn-global_auto {
   width: auto;
 }
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -5446,7 +5452,7 @@ header {
   z-index: 1000;
 }
 .m-modal__header {
-  height: 70px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5499,7 +5505,7 @@ header {
   display: inline-block;
 }
 .m-modal__content {
-  height: calc(100% - 70px);
+  height: calc(100% - 50px);
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
@@ -5806,6 +5812,46 @@ header {
 }
 .header-menu .btn-global__icon {
   width: 30px;
+}
+.m-hero-banner {
+  background-image: url("../img/hero-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 370px;
+}
+.m-hero-banner__content {
+  height: 100%;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: none;
+}
+.m-hero-banner__title {
+  margin: 6px 0 0;
+  padding: 0 6px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.m-hero-banner__description {
+  padding: 0 6px;
+  font-size: 18px;
+}
+.m-hero-news {
+  background: rgba(0, 0, 0, 0.9);
+  margin-top: auto;
+  padding: 10px;
+  font-size: 18px;
+}
+.m-hero-news__title {
+  text-transform: uppercase;
+}
+.m-hero-news__date {
+  font-weight: bold;
+  color: #FFD53A;
 }
 .header-sort {
   margin-bottom: 6px;
@@ -6224,6 +6270,23 @@ header {
   max-width: 100%;
 }
 @media screen and (max-width: 767px) {
+  .m-hero-banner__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-news {
+    display: none;
+  }
+  .m-account {
+    padding-bottom: 0;
+  }
+  .m-account__header {
+    padding: 10px;
+  }
+  .m-account__footer {
+    padding: 6px 10px;
+  }
   .header-menu__logo {
     width: 173px;
   }
@@ -6232,6 +6295,12 @@ header {
   }
   .header-menu__avatar {
     display: none;
+  }
+  .header-menu__title {
+    display: none;
+  }
+  .header-menu__balance {
+    margin-right: 0;
   }
   .nav_header {
     margin: 0;
@@ -6356,7 +6425,10 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 0, 0, 0.43);
+    background-image: url("../img/hero-bonus-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .get-bonus {
     margin-right: auto;
@@ -6385,6 +6457,7 @@ header {
   }
   .hero-winners {
     width: 100%;
+    height: 342px;
   }
   .hero-winners__header {
     padding: 0;
@@ -6436,8 +6509,14 @@ header {
     height: 30px;
     margin-bottom: 10px;
   }
+  .m-modal__logo {
+    width: 173px;
+  }
   .m-modal__title {
     display: none;
+  }
+  .m-modal__balance {
+    margin-right: 0;
   }
   .m-sign-in__btn-group {
     display: -webkit-box;
@@ -6477,6 +6556,9 @@ header {
   .m-modal-game__star {
     width: 40px;
     height: 40px;
+  }
+  .jackpot-block {
+    height: 374px;
   }
 }
 .m-action-container {
@@ -6673,6 +6755,25 @@ header {
   padding-bottom: 7px;
   height: 35px;
 }
+@media screen and (max-width: 767px) {
+  .m-tournament-item__banner {
+    padding: 5px 6px;
+    height: 110px;
+  }
+  .m-tournament-info__img {
+    width: 142px;
+    height: 100px;
+  }
+  .m-tournament-info__block {
+    height: 100px;
+  }
+  .m-tournament-info__info {
+    font-size: 14px;
+  }
+  .m-tournament-table__plate {
+    margin-right: 5px;
+  }
+}
 .m-profile-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6718,12 +6819,22 @@ header {
 .m-profile {
   padding: 20px 0;
 }
+@media screen and (max-width: 767px) {
+  .m-profile-nav__link {
+    height: 40px;
+    padding: 9px 0;
+  }
+  .m-profile-nav__link_notice:before {
+    top: 12px;
+    right: 7px;
+  }
+}
 /*
  * Настройки
  */
 .settings-timer {
-  height: 172px;
-  padding: 10px;
+  height: auto;
+  padding: 10px 10px 20px;
 }
 .settings-timer__title {
   font-size: 24px;
@@ -6741,6 +6852,11 @@ header {
 }
 .settings-timer__delimiter {
   padding-top: 0;
+}
+@media screen and (max-width: 767px) {
+  .settings-timer__title {
+    font-size: 18px;
+  }
 }
 /*
  * Баланс
@@ -6961,6 +7077,7 @@ header {
 .m-calendar-event__text {
   font-size: 18px;
   color: #949494;
+  margin-bottom: 16px;
 }
 .m-calendar-event__bottom {
   display: -webkit-box;
@@ -7045,6 +7162,9 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.m-achievement-info__title {
+  display: none;
+}
 .m-achievement-info__img {
   width: 200px;
   height: 200px;
@@ -7096,6 +7216,35 @@ header {
 }
 .m-achievement-info__btn {
   margin-top: 50px;
+}
+@media screen and (max-width: 767px) {
+  .m-achievement-info__title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 10px 0 16px;
+  }
+  .m-achievement-info__description {
+    margin-bottom: 25px;
+  }
+  .m-achievement-info__img {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .m-achievement-info__content {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .m-achievement-info__btn {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .m-bonuses__block {
   padding: 10px;
@@ -7153,6 +7302,21 @@ header {
   font-size: 14px;
   width: 300px;
 }
+@media screen and (max-width: 767px) {
+  .m-bonus__img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .m-bonus__btn {
+    width: 40px;
+    padding-left: 40px;
+    padding-right: 0;
+  }
+  .m-bonus__btn > span {
+    display: none;
+  }
+}
 /*
  * Статистика
  */
@@ -7175,12 +7339,26 @@ header {
   text-align: center;
   color: #FFD53A;
   font-size: 18px;
-  padding: 13px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .statistics__tab.active {
   color: #333333;
   background: #FFD53A;
   text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  .statistics__tab {
+    font-size: 14px;
+  }
 }
 /*
  * Информация об аккаунте
@@ -7227,11 +7405,15 @@ header {
   justify-content: flex-end;
   margin-top: 10px;
 }
+.m-info-active-bonuse {
+  margin-top: 20px;
+}
 .m-info-active-bonuse__title {
   font-size: 18px;
   color: #FFFFFF;
   text-transform: uppercase;
   margin-bottom: 6px;
+  padding-left: 16px;
 }
 .m-info-active-bonuse__item {
   background: black;
@@ -7243,18 +7425,17 @@ header {
   -ms-flex-align: center;
   align-items: center;
   padding: 16px;
+  font-size: 24px;
 }
 .m-info-active-bonuse__item:last-child {
   border-bottom: 0;
 }
 .m-info-active-bonuse__name {
-  font-size: 24px;
   color: #FFD53A;
   padding-right: 10px;
 }
 .m-info-active-bonuse__timer {
   font-weight: bold;
-  font-size: 24px;
   margin-left: auto;
 }
 .m-info-account {
@@ -7277,6 +7458,9 @@ header {
   width: 110px;
   height: 110px;
   position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .m-info-account__avatar:after {
   content: '';
@@ -7329,6 +7513,9 @@ header {
   font-weight: bold;
 }
 .m-info-account__level {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   height: 90px;
   width: 90px;
   border-radius: 50%;
@@ -7341,4 +7528,31 @@ header {
   font-size: 24px;
   font-weight: bold;
   padding-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .m-info-account__avatar {
+    width: 90px;
+    height: 90px;
+  }
+  .m-info-account__photo {
+    width: 84px;
+    height: 84px;
+    bottom: 3px;
+    left: 3px;
+  }
+  .m-info-account__photo:after {
+    top: 16px;
+  }
+  .m-info-account__level {
+    height: 54px;
+    width: 54px;
+    font-size: 18px;
+    padding-top: 15px;
+  }
+  .m-info-account__info {
+    font-size: 14px;
+  }
+  .m-info-active-bonuse__item {
+    font-size: 18px;
+  }
 }

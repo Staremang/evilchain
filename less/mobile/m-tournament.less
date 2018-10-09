@@ -124,6 +124,7 @@
 		height: 28px;
 		padding: 0 10px;
 		font-weight: 300;
+
 		b {
 			font-weight: bold;
 		}
@@ -134,36 +135,65 @@
 		text-transform: capitalize;
 		font-size: 18px;
 	}
-	
+
 	tr {
 		&.active {
 			background: rgba(196, 196, 196, 0.2);
 		}
-		&.active_overflow {
-			
-		}
+
+		&.active_overflow {}
 	}
-	
+
 	&__prize {
 		color: #FFD53A;
 	}
+
 	&__plate {
 		margin-right: 20px;
 		font-weight: bold;
 	}
+
 	&__delimiter {
 		height: 6px;
 	}
+
 	&__first-child {
 		td {
 			padding-top: 7px;
 			height: 28+7px;
 		}
 	}
+
 	&__last-child {
 		td {
 			padding-bottom: 7px;
 			height: 28+7px;
 		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.m-tournament-item {
+		
+		&__banner {
+			padding: 5px 6px;
+			height: 110px;
+		}
+	}
+	.m-tournament-info {
+		&__img {
+			width: 142px;
+			height: 100px;
+		}
+		&__block {
+			height: 100px;
+		}
+		&__info {
+
+			font-size: 14px;
+		}
+	}
+	.m-tournament-table__plate {
+		margin-right: 5px;
 	}
 }
