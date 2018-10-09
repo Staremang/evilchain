@@ -5289,6 +5289,29 @@ header {
 .table tbody {
   background: rgba(196, 218, 232, 0.2);
 }
+.table-status {
+  font-weight: normal;
+  padding-left: 0;
+  line-height: normal;
+}
+.table-status:before {
+  display: none;
+}
+.table-status_1 {
+  color: #FFD53A;
+}
+.table-status_2 {
+  color: #FF002B;
+}
+.table-status_3 {
+  color: #00FF44;
+}
+.table-status_4 {
+  color: #FFD53A;
+}
+.table-status_5 {
+  color: #00B3FF;
+}
 .m-account {
   padding-bottom: 14px;
   background-image: url("../img/bg.png");
@@ -7129,4 +7152,193 @@ header {
 .m-bonus_active .m-bonus__title {
   font-size: 14px;
   width: 300px;
+}
+/*
+ * Статистика
+ */
+.statistics__header {
+  height: auto;
+  padding-top: 0;
+  margin-bottom: 10px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.statistics__tab {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(50% - 20px);
+  flex: 0 0 calc(50% - 20px);
+  border: 1px solid #FFD53A;
+  height: 50px;
+  display: block;
+  margin: 0 10px 10px;
+  text-align: center;
+  color: #FFD53A;
+  font-size: 18px;
+  padding: 13px 0;
+}
+.statistics__tab.active {
+  color: #333333;
+  background: #FFD53A;
+  text-decoration: none;
+}
+/*
+ * Информация об аккаунте
+ */
+.m-info-balance__container {
+  padding: 10px 16px;
+  background: #000000;
+}
+.m-info-balance__title {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.m-info-balance__val {
+  background: #3E405B;
+  text-align: center;
+  font-size: 36px;
+  color: #FFD53A;
+  line-height: 50px;
+  height: 50px;
+}
+.m-info-balance__val > span {
+  position: relative;
+  padding-left: 37px;
+}
+.m-info-balance__val > span:before {
+  content: '';
+  background-image: url("../img/coin.png");
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.m-info-balance__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.m-info-active-bonuse__title {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.m-info-active-bonuse__item {
+  background: black;
+  border-bottom: 1px solid #2C2C36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px;
+}
+.m-info-active-bonuse__item:last-child {
+  border-bottom: 0;
+}
+.m-info-active-bonuse__name {
+  font-size: 24px;
+  color: #FFD53A;
+  padding-right: 10px;
+}
+.m-info-active-bonuse__timer {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: auto;
+}
+.m-info-account {
+  height: 130px;
+  padding: 10px 16px;
+  background: rgba(196, 218, 232, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.m-info-account__avatar {
+  display: block;
+  width: 110px;
+  height: 110px;
+  position: relative;
+}
+.m-info-account__avatar:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/header-avatar-overlay.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.m-info-account__photo {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 3px;
+  left: 5px;
+  border-radius: 50%;
+}
+.m-info-account__photo:after {
+  content: '';
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 22px;
+  width: 53px;
+  height: 59px;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22100%22%20height%3D%22113%22%20viewBox%3D%220%200%20100%20113%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M1.70118%200.185547C3.81723%2016.3363%2017.4657%2030.2704%2027.9402%2030.3759C32.1723%2027.948%2040.5307%2026.5757%2049.5239%2026.5757H50.0529H50.5819C59.4693%2026.5757%2067.8277%2027.948%2072.1656%2030.3759C82.5342%2030.2704%2096.1828%2016.3363%2098.2988%200.185547C102.214%2019.0809%2099.1452%2032.0649%2091.4217%2043.7822C91.1042%2056.0272%2090.4694%2062.7831%2082.7459%2070.1724C84.1213%2073.867%2084.8619%2087.801%2072.8004%2090.7567C67.8277%20102.58%2060.8447%20109.969%2050.8993%20112.186L50.0529%20111.974L49.1007%20112.186C39.2611%20109.969%2032.1723%20102.58%2027.1996%2090.7567C15.1381%2087.801%2015.8787%2073.867%2017.2541%2070.1724C9.53056%2062.7831%208.89575%2056.0272%208.57834%2043.7822C0.854762%2032.0649%20-2.21351%2019.0809%201.70118%200.185547Z%22%20fill%3D%22%232F133B%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.m-info-account__info {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-bottom: auto;
+}
+.m-info-account__name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.m-info-account__text {
+  color: #FFD53A;
+  margin-bottom: 3px;
+}
+.m-info-account__val {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.m-info-account__level {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2C0E48), color-stop(50%, #6A0C4E), to(#D30131));
+  background: -webkit-linear-gradient(top, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+  background: -o-linear-gradient(top, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+  background: linear-gradient(180deg, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+  margin-left: auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 30px;
 }

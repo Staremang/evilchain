@@ -507,6 +507,7 @@
 		margin-top: auto;
 		padding-top: 20px;
 	}
+
 	&__btn {
 		margin-top: 50px;
 	}
@@ -576,4 +577,226 @@
 			width: 300px;
 		}
 	}
+}
+
+
+
+
+
+
+
+/*
+ * Статистика
+ */
+.statistics {
+	&__header {
+		height: auto;
+		padding-top: 0;
+		margin-bottom: 10px;
+
+		flex-wrap: wrap;
+		padding: 0 4px;
+	}
+
+	&__tab {
+		flex: 0 0 calc(50% - 20px);
+
+		border: 1px solid #FFD53A;
+		height: 50px;
+		display: block;
+		margin: 0 10px 10px;
+		text-align: center;
+		color: #FFD53A;
+		font-size: 18px;
+		padding: 13px 0;
+
+		&.active {
+			color: #333333;
+			background: #FFD53A;
+			text-decoration: none;
+		}
+	}
+}
+
+
+
+
+
+
+
+/*
+ * Информация об аккаунте
+ */
+.m-info-balance {
+	&__container {
+		padding: 10px 16px;
+
+		background: #000000;
+	}
+
+	&__title {
+		font-size: 18px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		margin-bottom: 6px;
+	}
+
+	&__val {
+		background: #3E405B;
+		text-align: center;
+		font-size: 36px;
+		color: #FFD53A;
+		line-height: 50px;
+		height: 50px;
+
+		> span {
+			position: relative;
+			padding-left: 37px;
+
+			&:before {
+
+				content: '';
+				.bg-img("coin.png");
+				background-size: contain;
+				width: 30px;
+				height: 30px;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 6px;
+			}
+		}
+	}
+
+	&__btn-group {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 10px;
+	}
+}
+
+.m-info-active-bonuse {
+	&__title {
+		font-size: 18px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		margin-bottom: 6px;
+	}
+
+	&__item {
+		background: black;
+		border-bottom: 1px solid #2C2C36;
+		display: flex;
+		align-items: center;
+		padding: 16px;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	&__name {
+
+		font-size: 24px;
+
+		color: #FFD53A;
+		padding-right: 10px;
+	}
+
+	&__timer {
+
+		font-weight: bold;
+		font-size: 24px;
+		margin-left: auto;
+	}
+}
+
+.m-info-account {
+	height: 130px;
+	padding: 10px 16px;
+	background: rgba(196, 218, 232, 0.2);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	
+	margin-bottom: 20px;
+
+	&__avatar {
+		display: block;
+		width: 110px;
+		height: 110px;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			.bg-img("header-avatar-overlay.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__photo {
+		display: block;
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		bottom: 3px;
+		left: 5px;
+		border-radius: 50%;
+
+		&:after {
+			content: '';
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			top: 22px;
+
+			width: 53px;
+			height: 59px;
+			background-image: data-uri("../img/avatar-bg.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__info {
+		font-size: 18px;
+		margin-left: 10px;
+		margin-bottom: auto;
+	}
+
+	&__name {
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	&__text {
+		color: #FFD53A;
+		margin-bottom: 3px;
+	}
+
+	&__val {
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+
+	}
+
+	&__level {
+		height: 90px;
+		width: 90px;
+		border-radius: 50%;
+		background: linear-gradient(180deg, #2C0E48 0%, #6A0C4E 50%, #D30131 100%);
+		margin-left: auto;
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
+		padding-top: 30px;
+	}
+
 }

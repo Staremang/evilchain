@@ -35,7 +35,7 @@
 - Турнир (залогинен): https://staremang.github.io/evilchain/m-tournament-login.html (100%)
 
 ### Профиль (Вход выполнен)
-- Профиль > Информация: https://staremang.github.io/evilchain/m-profile-info.html 		(0%)
+- Профиль > Информация: https://staremang.github.io/evilchain/m-profile-info.html 		(70%)
 - Профиль > Кошелек: 	https://staremang.github.io/evilchain/m-profile-balance.html 	(70%)
 - Профиль > Бонусы: 	https://staremang.github.io/evilchain/m-profile-bonuses.html 	(70%)
 - Профиль > Награды: 	https://staremang.github.io/evilchain/m-profile-awards.html 	(70%)
@@ -44,4 +44,4 @@
 - Профиль > Календарь: 	https://staremang.github.io/evilchain/m-profile-calendar.html 	(70%)
 - Профиль > Настройки: 	https://staremang.github.io/evilchain/m-profile-settings.html 	(70%)
 - Профиль > Настройки (с таймером): https://staremang.github.io/evilchain/m-profile-settings-2.html (70%)
-- Профиль > Статистика: https://staremang.github.io/evilchain/m-profile-statistics.html (0%)
+- Профиль > Статистика: https://staremang.github.io/evilchain/m-profile-statistics.html (70%)
