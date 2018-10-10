@@ -1111,6 +1111,29 @@ header {
 	}
 }
 
+
+.jackpot-block {
+	height: 371px;
+	
+	&__item {
+		height: 124px;
+		padding-top: 14px;
+	}
+	&__img {
+		width: 160px;
+		height: 62px;
+		margin: 0 auto 5px;
+	}
+	&__val {
+		font-size: 20px;
+	}
+	&__num {
+		width: 28px;
+		height: 34px;
+		padding-top: 7px;
+	}
+}
+
 .section-bg-img {
 	padding: 20px 0;
 	margin-top: 20px;
@@ -1202,10 +1225,10 @@ header {
 		padding: 15px 0;
 	}
 
-	&__list {
-		max-height: 138px;
-		overflow: auto;
-	}
+//	&__list {
+//		max-height: 138px;
+//		overflow: auto;
+//	}
 
 	&__info {
 		display: flex;
@@ -1279,7 +1302,7 @@ header {
 //@media screen and (orientation: portrait),
 //screen and (max-width: 576px) {
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: @condition) {
 
 	//
 	//	.col-1,
@@ -1671,7 +1694,21 @@ header {
 		}
 	}
 
+
 	.jackpot-block {
 		height: 374px;
+		&__list {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	
+		&__animations {
+			display: none;
+		}
+
+		&__item {
+			height: 124px;
+			padding-top: 14px;
+		}
 	}
 }

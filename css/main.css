@@ -3901,7 +3901,67 @@ select.form-control__input {
 }
 .jackpot-block {
   height: 540px;
-  background: white url(../img/jackpot.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.jackpot-block__list {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 57.2425829%;
+  flex: 0 0 57.2425829%;
+  max-width: 57.2425829%;
+}
+.jackpot-block__animations {
+  background: white;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 42.7574171%;
+  flex: 0 0 42.7574171%;
+  max-width: 42.7574171%;
+}
+.jackpot-block__item {
+  height: 180px;
+  padding-top: 20px;
+  background: -webkit-radial-gradient(50% 50%, 328px, #332727 0%, #140D0D 100%);
+  background: -o-radial-gradient(50% 50%, 328px, #332727 0%, #140D0D 100%);
+  background: radial-gradient(328px at 50% 50%, #332727 0%, #140D0D 100%);
+}
+.jackpot-block__img {
+  width: 230px;
+  height: 90px;
+  margin: 0 auto 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.jackpot-block__img_gold {
+  background-image: url("../img/jackpot-gold.png");
+}
+.jackpot-block__img_silver {
+  background-image: url("../img/jackpot-silver.png");
+}
+.jackpot-block__img_bronze {
+  background-image: url("../img/jackpot-bronze.png");
+}
+.jackpot-block__val {
+  text-align: center;
+  font-size: 30px;
+  color: #FFD53A;
+}
+.jackpot-block__num {
+  border-radius: 3px;
+  background: -webkit-radial-gradient(50% 50%, 20px, #241919 0%, #1A1212 35.36%, #0D0909 100%);
+  background: -o-radial-gradient(50% 50%, 20px, #241919 0%, #1A1212 35.36%, #0D0909 100%);
+  background: radial-gradient(20px at 50% 50%, #241919 0%, #1A1212 35.36%, #0D0909 100%);
+  width: 40px;
+  height: 50px;
+  display: inline-block;
+  padding-top: 8px;
+}
+.jackpot-block__delimiter {
+  vertical-align: bottom;
 }
 .tournament__title {
   font-size: 24px;
