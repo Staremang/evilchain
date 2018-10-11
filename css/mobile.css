@@ -796,7 +796,7 @@ template {
   flex: 0 0 100%;
   max-width: 100%;
 }
-@media (min-width: 601px) {
+@media (min-width: 641px) {
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -2733,7 +2733,17 @@ select.form-control__input {
   margin-top: 0;
   margin-bottom: 25px;
 }
+.tournament__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .tournament__item {
+  max-width: calc(33.3333% - 20px);
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(33.3333% - 20px);
+  flex: 0 0 calc(33.3333% - 20px);
+  margin-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2744,6 +2754,9 @@ select.form-control__input {
   height: 330px;
   position: relative;
   margin-bottom: 10px;
+}
+.tournament__item:last-child {
+  margin-right: 0;
 }
 .tournament-timer {
   text-align: center;
@@ -2786,7 +2799,6 @@ select.form-control__input {
   padding-top: 34px;
 }
 .tournament-participants__list {
-  overflow: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0 20px;
@@ -5008,6 +5020,7 @@ header {
   -ms-flex: 0 0 155px;
   flex: 0 0 155px;
   margin: 0;
+  padding: 0 3px;
 }
 .tournament-prize__badge {
   height: 65px;
@@ -5095,7 +5108,7 @@ header {
   flex: 0 0 100%;
   max-width: 100%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .m-hero-banner__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5658,7 +5671,7 @@ header {
 .m-profile {
   padding: 20px 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .m-profile-nav__link {
     height: 40px;
     padding: 9px 0;
@@ -5692,7 +5705,7 @@ header {
 .settings-timer__delimiter {
   padding-top: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .settings-timer__title {
     font-size: 18px;
   }
@@ -6056,7 +6069,7 @@ header {
 .m-achievement-info__btn {
   margin-top: 50px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .m-achievement-info__title {
     display: block;
     text-align: center;
@@ -6141,7 +6154,7 @@ header {
   font-size: 14px;
   width: 300px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .m-bonus__img {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
@@ -6194,7 +6207,7 @@ header {
   background: #FFD53A;
   text-decoration: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .statistics__tab {
     font-size: 14px;
   }
@@ -6368,7 +6381,7 @@ header {
   font-weight: bold;
   padding-top: 30px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .m-info-account__avatar {
     width: 90px;
     height: 90px;

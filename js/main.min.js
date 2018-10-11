@@ -342,7 +342,7 @@ $(document).ready(function () {
 	$('.tournament__slider').addClass('owl-carousel');
 	$('.tournament__slider').addClass('owl-theme');
 	$('.tournament__slider').owlCarousel({
-		items: 3,
+		items: 1,
 		margin: 30,
 		loop: true,
 		//		nav:true,
